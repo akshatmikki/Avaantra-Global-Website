@@ -33,3 +33,8 @@
 //     </>
 //   )
 // }
+
+export default function DigitalMarketingPage() {
+  return <div>Digital Marketing Page Coming Soon...</div>;
+}
+
