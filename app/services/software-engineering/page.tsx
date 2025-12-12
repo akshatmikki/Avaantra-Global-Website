@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/navigation"
-import SoftwareEngineeringHero from "@/components/sections/services/software-engineering/hero"
+import {SoftwareEngineeringHero} from "@/components/sections/services/software-engineering/hero"
 import { ServiceOverview } from "@/components/sections/services/software-engineering/service-overview"
 import { Footer } from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
@@ -12,7 +12,7 @@ import Testimonials from "./Testimonials"
 import Industries from "./Industries"
 import Security from "./Security"
 import FAQ from "./FAQ"
-import FinalCTA from "./FinalCTA"
+// import FinalCTA from "./FinalCTA"
 
 export default function SoftwareEngineeringPage() {
   return (
@@ -29,7 +29,7 @@ export default function SoftwareEngineeringPage() {
       <Industries />
       <Security />
       <FAQ />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
       <Footer />
       <ScrollToTop />
     </>
