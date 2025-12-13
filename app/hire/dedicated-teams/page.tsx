@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/navigation"
+// import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/sections/hire/dedicated-teams/hero"
 import { ProblemSection } from "@/components/sections/hire/dedicated-teams/problem"
@@ -20,7 +20,7 @@ export const metadata = {
 export default function DedicatedTeamsPage() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <main>
         <HeroSection />
         <ProblemSection />

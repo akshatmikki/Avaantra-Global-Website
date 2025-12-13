@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { Rocket } from "lucide-react"
 export function SoftwareEngineeringHero() {
   return (
     <section className="relative bg-gradient-to-br from-dark via-gray-900 to-dark text-light py-20 md:py-32 overflow-hidden">
@@ -16,8 +17,9 @@ export function SoftwareEngineeringHero() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              🚀 Predictable Engineering Delivery
+            <div className="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <Rocket size={16} />
+              Predictable Engineering Delivery
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Software Engineering That Delivers <span className="text-primary">Predictable Results</span>
@@ -27,7 +29,7 @@ export function SoftwareEngineeringHero() {
               platforms — Avaantra helps you build, launch, and grow with engineering that moves your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-primary-dark text-light rounded-full px-8 py-6 text-lg">
+              <Button className="bg-primary hover:bg-[#E76A32] text-light rounded-full px-8 py-6 text-lg" style={{ backgroundColor: '#E76A32' }}>
                 Book Free 15-Minute Consultation →
               </Button>
               <Button

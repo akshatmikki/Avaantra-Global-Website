@@ -105,7 +105,7 @@ export function ProcessSection() {
           </div>
 
           <div className="text-center mt-10">
-            <Button size="lg" className="bg-primary hover:bg-primary-dark text-light rounded-full px-8">
+            <Button size="lg" className="bg-primary hover:bg-[#E76A32] text-light rounded-full px-8" style={{ backgroundColor: '#E76A32' }}>
               Get Free Quote
             </Button>
           </div>

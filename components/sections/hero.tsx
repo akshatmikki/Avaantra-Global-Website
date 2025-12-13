@@ -12,8 +12,8 @@ export default function Hero() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div className="space-y-6 z-10 order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight text-balance">
-                Build. Launch. Scale. <span className="text-primary">Predictably.</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance" style={{ color: '#1C2856' }}>
+                Build. Launch. Scale. <span className="text-primary" style={{ color: '#E76A32' }}>Predictably.</span>
               </h1>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed text-pretty">
                 Avaantra Global brings Engineering, AI, Marketing & Leadership into one ecosystem — giving you speed,
@@ -22,12 +22,13 @@ export default function Hero() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button className="bg-primary hover:bg-orange-600 text-white rounded-full px-8 py-6 text-base font-semibold">
+                <Button className="bg-primary hover:bg-[#E76A32] text-white rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32' }}>
                   Book a Free Strategy Call <ArrowRight size={18} className="ml-2" />
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-2 border-dark text-dark hover:bg-gray-50 rounded-full px-8 py-6 text-base font-semibold bg-transparent"
+                  className="border-2 hover:bg-gray-50 rounded-full px-8 py-6 text-base font-semibold bg-transparent"
+                  style={{ borderColor: '#1C2856', color: '#1C2856' }}
                 >
                   Hire a Dedicated Team
                 </Button>
@@ -57,7 +58,7 @@ export default function Hero() {
                   >
                     <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                   </svg>
-                  <p className="font-bold text-dark text-sm">100+ Projects</p>
+                  <p className="font-bold text-sm" style={{ color: '#1C2856' }}>100+ Projects</p>
                   <p className="text-gray-600 text-xs">Delivered</p>
                 </div>
 
@@ -90,7 +91,7 @@ export default function Hero() {
                     <circle cx="12" cy="12" r="10" />
                     <path d="M12 6v6l4 2" />
                   </svg>
-                  <p className="font-bold text-dark text-sm">15 Days to</p>
+                  <p className="font-bold text-sm" style={{ color: '#1C2856' }}>15 Days to</p>
                   <p className="text-gray-600 text-xs">On-board</p>
                 </div>
 
@@ -105,7 +106,7 @@ export default function Hero() {
                   >
                     <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
-                  <p className="font-bold text-dark text-sm">10+ Industries</p>
+                  <p className="font-bold text-sm" style={{ color: '#1C2856' }}>10+ Industries</p>
                   <p className="text-gray-600 text-xs">Served</p>
                 </div>
               </div>

@@ -14,7 +14,7 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-primary hover:bg-primary-dark text-dark rounded-full px-8 py-6 text-base font-semibold">
+          <Button className="bg-primary hover:bg-[#E76A32] rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32', color: '#1C2856' }}>
             Book a Free Strategy Call →
           </Button>
           <Button
