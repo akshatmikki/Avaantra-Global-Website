@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+"use client";
 import ScrollToTop from "@/components/scroll-to-top"
 import { Button } from "@/components/ui/button"
 import { Quote } from "lucide-react"
@@ -7,7 +6,6 @@ import { Quote } from "lucide-react"
 export default function GenerativeAISolutionsPage() {
   return (
     <>
-      <Navigation />
       <section className="relative bg-gradient-to-br from-dark via-gray-900 to-dark text-light py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div
@@ -67,7 +65,6 @@ export default function GenerativeAISolutionsPage() {
           </div>
         </div>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   )
