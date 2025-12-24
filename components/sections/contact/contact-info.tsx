@@ -18,8 +18,8 @@ export default function ContactInfo() {
           </div>
           <div>
             <h3 className="font-semibold text-dark mb-1">Email</h3>
-            <a href="mailto:contact@avaantraglobal.com" className="text-gray-600 hover:text-primary transition-colors">
-              contact@avaantraglobal.com
+            <a href="mailto:sales@avaantraglobal.com" className="text-gray-600 hover:text-primary transition-colors">
+              sales@avaantraglobal.com
             </a>
           </div>
         </div>
@@ -30,8 +30,8 @@ export default function ContactInfo() {
           </div>
           <div>
             <h3 className="font-semibold text-dark mb-1">Phone</h3>
-            <a href="tel:+1234567890" className="text-gray-600 hover:text-primary transition-colors">
-              +1 (234) 567-890
+            <a href="tel:+91 98114 67244" className="text-gray-600 hover:text-primary transition-colors">
+              +91 98114 67244
             </a>
           </div>
         </div>
@@ -43,11 +43,11 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-dark mb-1">Headquarters</h3>
             <p className="text-gray-600">
-              123 Business District
+              Plot No H-64, Ground Floor
               <br />
-              Tech Hub, Innovation City
+              Ufirm Business Park, Sector 63
               <br />
-              State 12345, Country
+             Noida 201301, India
             </p>
           </div>
         </div>

@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+// import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/sections/hire/dedicated-teams/hero"
 import { ProblemSection } from "@/components/sections/hire/dedicated-teams/problem"
 import { TeamTypes } from "@/components/sections/hire/dedicated-teams/team-types"
@@ -20,7 +19,7 @@ export const metadata = {
 export default function DedicatedTeamsPage() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <main>
         <HeroSection />
         <ProblemSection />
@@ -33,7 +32,6 @@ export default function DedicatedTeamsPage() {
         <FAQ />
         <FinalCTA />
       </main>
-      <Footer />
     </>
   )
 }

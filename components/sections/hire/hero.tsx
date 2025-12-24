@@ -29,7 +29,7 @@ export function HireHero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button className="bg-primary hover:bg-orange-600 text-white rounded-full px-8 py-6 text-base font-semibold">
+              <Button className="bg-primary hover:bg-[#E76A32] text-white rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32' }}>
                 Book a Free Hiring Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

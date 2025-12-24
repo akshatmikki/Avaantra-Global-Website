@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+// import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/sections/hire/virtual-cto/hero"
 import { ProblemSection } from "@/components/sections/hire/virtual-cto/problem"
 import { WhatCTODoes } from "@/components/sections/hire/virtual-cto/what-cto-does"
@@ -20,7 +19,7 @@ export const metadata = {
 export default function VirtualCTOPage() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <main>
         <HeroSection />
         <ProblemSection />
@@ -33,7 +32,6 @@ export default function VirtualCTOPage() {
         <FAQ />
         <FinalCTA />
       </main>
-      <Footer />
     </>
   )
 }

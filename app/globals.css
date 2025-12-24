@@ -4,45 +4,45 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color palette for Avaantra Global brand - Orange primary and dark navy */
+  /* Updated color palette for Avaantra Global brand - Orange primary #E76A32 and dark navy #1C2856 */
   --background: oklch(0.98 0 0);
-  --foreground: oklch(0.15 0 0);
+  --foreground: #1C2856;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
+  --card-foreground: #1C2856;
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.58 0.22 29);
+  --popover-foreground: #1C2856;
+  --primary: #E76A32;
   --primary-foreground: oklch(1 0 0);
-  --primary-dark: oklch(0.5 0.2 29);
-  --secondary: oklch(0.07 0 0);
+  --primary-dark: #d45a22;
+  --secondary: #1C2856;
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.92 0 0);
   --muted-foreground: oklch(0.5 0 0);
-  --accent: oklch(0.58 0.22 29);
+  --accent: #E76A32;
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0 0);
   --input: oklch(0.92 0 0);
-  --ring: oklch(0.58 0.22 29);
-  --chart-1: oklch(0.58 0.22 29);
-  --chart-2: oklch(0.07 0 0);
+  --ring: #E76A32;
+  --chart-1: #E76A32;
+  --chart-2: #1C2856;
   --chart-3: oklch(0.92 0 0);
   --chart-4: oklch(0.5 0 0);
   --chart-5: oklch(0.7 0 0);
   --radius: 0.625rem;
   --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.58 0.22 29);
+  --sidebar-foreground: #1C2856;
+  --sidebar-primary: #E76A32;
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.58 0.22 29);
+  --sidebar-accent: #E76A32;
   --sidebar-accent-foreground: oklch(1 0 0);
   --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: oklch(0.58 0.22 29);
+  --sidebar-ring: #E76A32;
   /* Custom tokens for Avaantra */
   --light: oklch(0.98 0 0);
-  --dark: oklch(0.07 0 0);
-  --dark-secondary: oklch(0.12 0 0);
+  --dark: #1C2856;
+  --dark-secondary: #1C2856;
   --gray-50: oklch(0.98 0 0);
   --gray-100: oklch(0.96 0 0);
   --gray-200: oklch(0.93 0 0);
@@ -141,6 +141,31 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Custom color utilities */
+  .text-dark {
+    color: #1C2856 !important;
+  }
+  
+  .hover\:text-primary:hover {
+    color: #E76A32 !important;
+  }
+  
+  .bg-primary {
+    background-color: #E76A32 !important;
+  }
+  
+  .hover\:bg-primary-dark:hover {
+    background-color: #E76A32 !important;
+  }
+  
+  .text-primary {
+    color: #E76A32 !important;
+  }
+  
+  .border-dark {
+    border-color: #1C2856 !important;
+  }
 }
 
 /* Adding custom animations for smooth interactions */
@@ -229,5 +254,11 @@
   .btn-ripple:hover::before {
     width: 300px;
     height: 300px;
+  }
+
+  /* Override Next.js portal positioning */
+  nextjs-portal {
+    left: unset !important;
+    top: unset !important;
   }
 }

@@ -14,7 +14,7 @@ export function FinalCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary-dark text-light rounded-full px-8 group">
+            <Button size="lg" className="bg-primary hover:bg-[#E76A32] text-light rounded-full px-8 group" style={{ backgroundColor: '#E76A32' }}>
               Book a Consultation
               <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>

@@ -1,7 +1,7 @@
-import { Navigation } from "@/components/navigation"
+// import { Navigation } from "@/components/navigation"
 import {SoftwareEngineeringHero} from "@/components/sections/services/software-engineering/hero"
 import { ServiceOverview } from "@/components/sections/services/software-engineering/service-overview"
-import { Footer } from "@/components/footer"
+// import { Footer } from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import Benefits from "./Benefits"
 import WhyAvaantra from "./WhyAvaantra"
@@ -17,7 +17,6 @@ import FAQ from "./FAQ"
 export default function SoftwareEngineeringPage() {
   return (
     <>
-      <Navigation />
       <SoftwareEngineeringHero />
       <ServiceOverview />
       <Benefits />
@@ -30,7 +29,6 @@ export default function SoftwareEngineeringPage() {
       <Security />
       <FAQ />
       {/* <FinalCTA /> */}
-      <Footer />
       <ScrollToTop />
     </>
   )
