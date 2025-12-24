@@ -2,11 +2,20 @@
 
 import type React from "react"
 
+import { toast } from "sonner"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
+
+declare global {
+  interface Window {
+    grecaptcha: {
+      execute: (siteKey: string, options: { action: string }) => Promise<string>
+    }
+  }
+}
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,10 +27,44 @@ export default function ContactForm() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Add form submission logic here
+    setLoading(true)
+
+    try {
+      const token = await window.grecaptcha.execute(
+        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+        { action: "submit" }
+      )
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, token }),
+      })
+
+      const data = await res.json()
+
+      if (data.success) {
+        toast.success("Message sent successfully!")
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          service: "",
+          message: "",
+        })
+      } else {
+        toast.error(data.error || "Submission failed")
+      }
+    } catch {
+      toast.error("Something went wrong")
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -80,7 +123,7 @@ export default function ContactForm() {
 
         <div>
           <Label htmlFor="service">Service Interested In *</Label>
-          <select
+          <select title="service"
             id="service"
             name="service"
             required
@@ -110,8 +153,8 @@ export default function ContactForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full" size="lg">
-          Send Message
+        <Button type="submit" className="w-full" disabled={loading}>
+          {loading ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </div>

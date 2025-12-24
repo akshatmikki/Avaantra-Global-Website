@@ -1,5 +1,4 @@
 // import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/sections/hire/dedicated-teams/hero"
 import { ProblemSection } from "@/components/sections/hire/dedicated-teams/problem"
 import { TeamTypes } from "@/components/sections/hire/dedicated-teams/team-types"
@@ -33,7 +32,6 @@ export default function DedicatedTeamsPage() {
         <FAQ />
         <FinalCTA />
       </main>
-      <Footer />
     </>
   )
 }

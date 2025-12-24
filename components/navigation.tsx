@@ -3,6 +3,7 @@
 import { useState, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 import { ChevronDown, Menu, X, Search, Globe, Users, ClipboardList, AlignJustify, Send, Monitor, Briefcase, Car, Zap, CircleDot, Server, Settings, Search as SearchIcon, BarChart3, UserCheck, Clock, Globe as GlobeIcon, Target, Users as UsersIcon, Quote, Type, Maximize2, MonitorSpeaker, Fingerprint, Rocket, FileText, Layers, TrendingUp, Code, Shield, Building2, ShoppingCart, Heart, GraduationCap, Factory, Home, Sparkles, Mail, PenTool, HardHat, Brain, Terminal, Fish, Lightbulb, Link2, SquareStack, Flag, Cloud, Smartphone, Database, RefreshCw, Phone, MapPin, Mail as MailIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -10,6 +11,12 @@ const Navigation = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const [isLangOpen, setIsLangOpen] = useState(false)
+  const { i18n } = useTranslation()
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
 
   const servicesMenu = {
     softwareEngineering: [
@@ -208,9 +215,8 @@ const Navigation = () => {
           <div onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={() => handleMouseLeave("services")}>
             <button
               onClick={() => handleDropdownClick("services")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "services" ? "text-primary" : "text-dark hover:text-primary"
-              }`}
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "services" ? "text-primary" : "text-dark hover:text-primary"
+                }`}
             >
               Services{" "}
               <ChevronDown
@@ -224,9 +230,8 @@ const Navigation = () => {
           <div onMouseEnter={() => handleMouseEnter("solutions")} onMouseLeave={() => handleMouseLeave("solutions")}>
             <button
               onClick={() => handleDropdownClick("solutions")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "solutions" ? "text-primary" : "text-dark hover:text-primary"
-              }`}
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "solutions" ? "text-primary" : "text-dark hover:text-primary"
+                }`}
             >
               Solutions{" "}
               <ChevronDown
@@ -240,9 +245,8 @@ const Navigation = () => {
           <div onMouseEnter={() => handleMouseEnter("industries")} onMouseLeave={() => handleMouseLeave("industries")}>
             <button
               onClick={() => handleDropdownClick("industries")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "industries" ? "text-primary" : "text-dark hover:text-primary"
-              }`}
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "industries" ? "text-primary" : "text-dark hover:text-primary"
+                }`}
             >
               Industries{" "}
               <ChevronDown
@@ -256,9 +260,8 @@ const Navigation = () => {
           <div onMouseEnter={() => handleMouseEnter("hire")} onMouseLeave={() => handleMouseLeave("hire")}>
             <button
               onClick={() => handleDropdownClick("hire")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "hire" ? "text-primary" : "text-dark hover:text-primary"
-              }`}
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "hire" ? "text-primary" : "text-dark hover:text-primary"
+                }`}
             >
               Hire{" "}
               <ChevronDown
@@ -274,12 +277,52 @@ const Navigation = () => {
 
         {/* Right Side Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+          <button title="search" className="p-2 hover:bg-gray-100 rounded-full transition-colors">
             <Search size={18} className="text-gray-600" />
           </button>
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-            <Globe size={18} className="text-gray-600" />
-          </button>
+         <div className="relative">
+  <button
+    onClick={() => setIsLangOpen(!isLangOpen)}
+    className="p-2 hover:bg-gray-100 rounded-full transition-colors flex items-center gap-1"
+    aria-label="Change language"
+  >
+    <Globe size={18} className="text-gray-600" />
+  </button>
+
+  {isLangOpen && (
+    <div className="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+      <button
+        onClick={() => {
+          changeLanguage("en")
+          setIsLangOpen(false)
+        }}
+        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+      >
+        🇺🇸 English
+      </button>
+
+      <button
+        onClick={() => {
+          changeLanguage("hi")
+          setIsLangOpen(false)
+        }}
+        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+      >
+        🇮🇳 हिंदी
+      </button>
+
+      <button
+        onClick={() => {
+          changeLanguage("fr")
+          setIsLangOpen(false)
+        }}
+        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+      >
+        🇫🇷 Français
+      </button>
+    </div>
+  )}
+</div>
           <Button className="bg-primary hover:bg-[#E76A32] text-light rounded-full px-6" style={{ backgroundColor: '#E76A32' }}>
             Get Free Consultation →
           </Button>
@@ -293,9 +336,9 @@ const Navigation = () => {
 
       {/* Services Full-Screen Dropdown */}
       {activeDropdown === "services" && (
-        <div 
+        <div
           className="hidden md:block absolute left-0 right-0 top-full bg-white border-b border-gray-200 shadow-xl z-50"
-          onMouseEnter={() => handleMouseEnter("services")} 
+          onMouseEnter={() => handleMouseEnter("services")}
           onMouseLeave={() => handleMouseLeave("services")}
         >
           <div className="container mx-auto px-4 md:px-8 py-6">
@@ -404,9 +447,9 @@ const Navigation = () => {
 
       {/* Solutions Full-Screen Dropdown */}
       {activeDropdown === "solutions" && (
-        <div 
+        <div
           className="hidden md:block absolute left-0 right-0 top-full bg-white border-b border-gray-200 shadow-xl z-50"
-          onMouseEnter={() => handleMouseEnter("solutions")} 
+          onMouseEnter={() => handleMouseEnter("solutions")}
           onMouseLeave={() => handleMouseLeave("solutions")}
         >
           <div className="container mx-auto px-4 md:px-8 py-6">
@@ -493,9 +536,9 @@ const Navigation = () => {
 
       {/* Industries Full-Screen Dropdown */}
       {activeDropdown === "industries" && (
-        <div 
+        <div
           className="hidden md:block absolute left-0 right-0 top-full bg-white border-b border-gray-200 shadow-xl z-50"
-          onMouseEnter={() => handleMouseEnter("industries")} 
+          onMouseEnter={() => handleMouseEnter("industries")}
           onMouseLeave={() => handleMouseLeave("industries")}
         >
           <div className="container mx-auto px-4 md:px-8 py-6">
@@ -527,9 +570,9 @@ const Navigation = () => {
 
       {/* Hire Full-Screen Dropdown */}
       {activeDropdown === "hire" && (
-        <div 
+        <div
           className="hidden md:block absolute left-0 right-0 top-full bg-white border-b border-gray-200 shadow-xl z-50"
-          onMouseEnter={() => handleMouseEnter("hire")} 
+          onMouseEnter={() => handleMouseEnter("hire")}
           onMouseLeave={() => handleMouseLeave("hire")}
         >
           <div className="container mx-auto px-4 md:px-8 py-6">

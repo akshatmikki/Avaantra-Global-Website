@@ -1,5 +1,4 @@
 // import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/sections/hire/virtual-cto/hero"
 import { ProblemSection } from "@/components/sections/hire/virtual-cto/problem"
 import { WhatCTODoes } from "@/components/sections/hire/virtual-cto/what-cto-does"
@@ -33,7 +32,6 @@ export default function VirtualCTOPage() {
         <FAQ />
         <FinalCTA />
       </main>
-      <Footer />
     </>
   )
 }
