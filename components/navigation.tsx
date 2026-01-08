@@ -30,7 +30,9 @@ const Navigation = () => {
       { title: "Product Engineering Overview", link: "/services/product-engineering", icon: Briefcase },
       { title: "Product Roadmap & Discovery", link: "/services/product-roadmap-discovery", icon: Car },
       { title: "MVP Development", link: "/services/mvp-development", icon: Zap },
+      { title: "SaaS Product Development", link: "/services/saas-product-development", icon: Building2 },
       { title: "Product Architecture & CTO-as-a-Service", link: "/services/product-architecture-cto", icon: CircleDot },
+      { title: "UI/UX Design Services", link: "/services/ui-ux-design-services", icon: PenTool },
     ],
     digitalMarketing: [
       { title: "Digital Marketing Services", link: "/services/digital-marketing", icon: Server },

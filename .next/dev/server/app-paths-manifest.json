@@ -1,7 +1,17 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/about/page": "app/about/page.js",
-  "/api/contact/route": "app/api/contact/route.js",
-  "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/services/dedicated-teams/page": "app/services/dedicated-teams/page.js",
+  "/services/digital-marketing/page": "app/services/digital-marketing/page.js",
+  "/services/drive-revenue-engineering-growth/page": "app/services/drive-revenue-engineering-growth/page.js",
+  "/services/full-stack-development/page": "app/services/full-stack-development/page.js",
+  "/services/it-digital-consulting/page": "app/services/it-digital-consulting/page.js",
+  "/services/mvp-development/page": "app/services/mvp-development/page.js",
+  "/services/product-architecture-cto/page": "app/services/product-architecture-cto/page.js",
+  "/services/product-engineering/page": "app/services/product-engineering/page.js",
+  "/services/product-roadmap-discovery/page": "app/services/product-roadmap-discovery/page.js",
+  "/services/saas-marketing-services/page": "app/services/saas-marketing-services/page.js",
+  "/services/saas-product-development/page": "app/services/saas-product-development/page.js",
+  "/services/staff-augmentation/page": "app/services/staff-augmentation/page.js",
+  "/services/ui-ux-design-services/page": "app/services/ui-ux-design-services/page.js"
 }
