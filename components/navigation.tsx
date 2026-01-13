@@ -268,7 +268,7 @@ const Navigation = () => {
       {
         title: "DevOps & Automation",
         link: "/services/software-engineering#devops",
-        icon: Settings,
+        icon: Users,
       },
       {
         title: "Fast MVP Launch",
