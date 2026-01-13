@@ -227,7 +227,7 @@ const Navigation = () => {
 
   const solutionsMenu = {
     forAgencies: [
-      { title: "Agency Solutions Hub", link: "/for-agencies", icon: Users },
+      //{ title: "Agency Solutions Hub", link: "/for-agencies", icon: Users },
       {
         title: "White Label Marketing",
         link: "/for-agencies#white-label-marketing",
@@ -253,13 +253,18 @@ const Navigation = () => {
         link: "/for-agencies#scale-engineering",
         icon: UserCheck,
       },
+      {
+        title: "AI & Automation Services for Agencies",
+        link: "/for-agencies#scale-engineering",
+        icon: Users,
+      },
     ],
     accelerateDelivery: [
-      {
-        title: "Product Delivery Overview",
-        link: "/solutions/product-development",
-        icon: Briefcase,
-      },
+      // {
+      //   title: "Product Delivery Overview",
+      //   link: "/solutions/product-development",
+      //   icon: Briefcase,
+      // },
       {
         title: "DevOps & Automation",
         link: "/services/software-engineering#devops",
@@ -276,8 +281,30 @@ const Navigation = () => {
         icon: Link2,
       },
     ],
+    LaunchAndGrow: [
+      // {
+      //   title: "Launch and Grow SaaS GTM",
+      //   link: "/solutions/launch-grow-saas-gtm",
+      //   icon: TrendingUp,
+      // },
+      {
+        title: "SaaS Growth Strategy",
+        link: "/for-Launch&Grow/SaaSGrowth",
+        icon: TrendingUp,
+      },
+      {
+        title: "Conversion Optimization",
+        link: "/for-Launch&Grow/Conversion",
+        icon: Zap,
+      },
+      {
+        title: "Customer Retention Programs",
+        link: "/for-Launch&Grow/CustomerRetentions",
+        icon: Settings,
+      },
+    ],
     startups: [
-      { title: "For Startups Hub", link: "/for-startups", icon: Rocket },
+      // { title: "For Startups Hub", link: "/for-startups", icon: Rocket },
       {
         title: "MVP Development & Validation",
         link: "/services/mvp-development",
@@ -945,7 +972,7 @@ const Navigation = () => {
           onMouseLeave={() => handleMouseLeave("solutions")}
         >
           <div className="container mx-auto px-4 md:px-8 py-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {/* FOR AGENCIES Column */}
               <div>
                 <h3 className="text-primary font-bold text-sm uppercase mb-4">
@@ -980,6 +1007,33 @@ const Navigation = () => {
                 </h3>
                 <ul className="space-y-3">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
+                    const Icon = item.icon;
+                    return (
+                      <li key={idx}>
+                        <Link
+                          href={item.link}
+                          className="flex items-center gap-2 text-sm text-gray-700 hover:text-primary transition-colors group cursor-pointer"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          <Icon
+                            size={16}
+                            className="text-gray-400 group-hover:text-primary transition-colors"
+                          />
+                          <span>{item.title}</span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
+              {/* Launch and GROW SAAS GTM Column */}
+              <div>
+                <h3 className="text-primary font-bold text-sm uppercase mb-4">
+                  LAUNCH AND GROW SAAS GTM
+                </h3>
+                <ul className="space-y-3">
+                  {solutionsMenu.LaunchAndGrow.map((item, idx) => {
                     const Icon = item.icon;
                     return (
                       <li key={idx}>

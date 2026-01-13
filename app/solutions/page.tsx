@@ -1,7 +1,15 @@
-import ScrollToTop from "@/components/scroll-to-top"
-import Link from "next/link"
-import { ArrowRight, CheckCircle, Zap, Rocket, Tag, Target, TrendingUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import ScrollToTop from "@/components/scroll-to-top";
+import Link from "next/link";
+import {
+  ArrowRight,
+  CheckCircle,
+  Zap,
+  Rocket,
+  Tag,
+  Target,
+  TrendingUp,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function SolutionsPage() {
   return (
@@ -21,11 +29,15 @@ export default function SolutionsPage() {
                 Accelerate Your Growth with Predictable, Scalable Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 text-pretty">
-                Whether you're an agency struggling to scale, a SaaS founder trying to grow MRR, or a startup building
-                your first MVP, Avaantra Global helps you move faster with less stress.
+                Whether you're an agency struggling to scale, a SaaS founder
+                trying to grow MRR, or a startup building your first MVP,
+                Avaantra Global helps you move faster with less stress.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-primary hover:bg-primary-dark text-light rounded-full px-8">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary-dark text-light rounded-full px-8"
+                >
                   Book a Free Growth Consultation
                 </Button>
                 <Button
@@ -44,10 +56,13 @@ export default function SolutionsPage() {
         <section className="py-16 md:py-24 bg-light">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Why Choose Avaantra Global Solutions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Why Choose Avaantra Global Solutions
+              </h2>
               <p className="text-lg text-gray-600">
-                We built Avaantra Global to help ambitious companies grow without breaking. Today's growth challenges
-                don't come from lack of opportunity—they come from complexity.
+                We built Avaantra Global to help ambitious companies grow
+                without breaking. Today's growth challenges don't come from lack
+                of opportunity—they come from complexity.
               </p>
             </div>
 
@@ -57,7 +72,10 @@ export default function SolutionsPage() {
                   <Zap className="text-primary" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-3">Scale</h3>
-                <p className="text-gray-600">Without hiring or burnout. Get instant capacity when you need it.</p>
+                <p className="text-gray-600">
+                  Without hiring or burnout. Get instant capacity when you need
+                  it.
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-primary transition-all hover:shadow-lg">
@@ -65,15 +83,22 @@ export default function SolutionsPage() {
                   <Rocket className="text-blue-500" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-3">Speed</h3>
-                <p className="text-gray-600">Get products and campaigns to market faster with agile delivery.</p>
+                <p className="text-gray-600">
+                  Get products and campaigns to market faster with agile
+                  delivery.
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-primary transition-all hover:shadow-lg">
                 <div className="w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center mb-6">
                   <TrendingUp className="text-green-500" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-dark mb-3">Sustainability</h3>
-                <p className="text-gray-600">Build systems that compound over time for long-term growth.</p>
+                <h3 className="text-xl font-bold text-dark mb-3">
+                  Sustainability
+                </h3>
+                <p className="text-gray-600">
+                  Build systems that compound over time for long-term growth.
+                </p>
               </div>
             </div>
           </div>
@@ -83,10 +108,13 @@ export default function SolutionsPage() {
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-dark mb-4">Our Core Solution Framework</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-dark mb-4">
+                Our Core Solution Framework
+              </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Every business we work with faces 3 universal needs: Scale, Speed, and Sustainability. That's why our
-                solutions are designed across four proven pillars.
+                Every business we work with faces 3 universal needs: Scale,
+                Speed, and Sustainability. That's why our solutions are designed
+                across four proven pillars.
               </p>
             </div>
 
@@ -98,7 +126,9 @@ export default function SolutionsPage() {
                     <Tag size={32} />
                     <h3 className="text-2xl font-bold">For Agencies</h3>
                   </div>
-                  <p className="text-lg mb-6 text-purple-100">Scale delivery without hiring. Deliver without chaos.</p>
+                  <p className="text-lg mb-6 text-purple-100">
+                    Scale delivery without hiring. Deliver without chaos.
+                  </p>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2 text-sm">
                       <CheckCircle size={16} />
@@ -124,9 +154,13 @@ export default function SolutionsPage() {
                 <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-10 rounded-3xl text-light h-full hover:scale-[1.02] transition-all shadow-xl">
                   <div className="flex items-center gap-3 mb-4">
                     <Zap size={32} />
-                    <h3 className="text-2xl font-bold">Accelerate Product Development</h3>
+                    <h3 className="text-2xl font-bold">
+                      Accelerate Product Development
+                    </h3>
                   </div>
-                  <p className="text-lg mb-6 text-blue-100">Build & launch products faster without the hiring risk.</p>
+                  <p className="text-lg mb-6 text-blue-100">
+                    Build & launch products faster without the hiring risk.
+                  </p>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2 text-sm">
                       <CheckCircle size={16} />
@@ -152,7 +186,9 @@ export default function SolutionsPage() {
                 <div className="bg-gradient-to-br from-green-600 to-green-800 p-10 rounded-3xl text-light h-full hover:scale-[1.02] transition-all shadow-xl">
                   <div className="flex items-center gap-3 mb-4">
                     <Rocket size={32} />
-                    <h3 className="text-2xl font-bold">Launch & Grow SaaS GTM</h3>
+                    <h3 className="text-2xl font-bold">
+                      Launch & Grow SaaS GTM
+                    </h3>
                   </div>
                   <p className="text-lg mb-6 text-green-100">
                     Drive predictable user & revenue growth for SaaS products.
@@ -184,7 +220,9 @@ export default function SolutionsPage() {
                     <Target size={32} />
                     <h3 className="text-2xl font-bold">For Startups</h3>
                   </div>
-                  <p className="text-lg mb-6 text-orange-100">From idea to investor—faster and smarter.</p>
+                  <p className="text-lg mb-6 text-orange-100">
+                    From idea to investor—faster and smarter.
+                  </p>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2 text-sm">
                       <CheckCircle size={16} />
@@ -212,21 +250,41 @@ export default function SolutionsPage() {
         <section className="py-16 md:py-24 bg-light">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Why Businesses Choose Avaantra Global</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Why Businesses Choose Avaantra Global
+              </h2>
               <p className="text-lg text-gray-600">
-                Because we think like founders, not vendors. We understand your pain—managing delivery, growth, and
-                talent at the same time.
+                Because we think like founders, not vendors. We understand your
+                pain—managing delivery, growth, and talent at the same time.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
-                { title: "Hybrid AI + Human Teams", desc: "Faster, accurate, cost-effective delivery" },
-                { title: "Transparent Communication", desc: "Your tools, your dashboards, full visibility" },
-                { title: "Sprint-Based Execution", desc: "Measurable results every 2 weeks" },
-                { title: "Predictable Pricing", desc: "No billing surprises, clear SLAs" },
-                { title: "End-to-End Growth Partner", desc: "From code to customer acquisition" },
-                { title: "Peace of Mind", desc: "Predictable results you can count on" },
+                {
+                  title: "Hybrid AI + Human Teams",
+                  desc: "Faster, accurate, cost-effective delivery",
+                },
+                {
+                  title: "Transparent Communication",
+                  desc: "Your tools, your dashboards, full visibility",
+                },
+                {
+                  title: "Sprint-Based Execution",
+                  desc: "Measurable results every 2 weeks",
+                },
+                {
+                  title: "Predictable Pricing",
+                  desc: "No billing surprises, clear SLAs",
+                },
+                {
+                  title: "End-to-End Growth Partner",
+                  desc: "From code to customer acquisition",
+                },
+                {
+                  title: "Peace of Mind",
+                  desc: "Predictable results you can count on",
+                },
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -247,9 +305,12 @@ export default function SolutionsPage() {
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">The Avaantra Growth Process</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                The Avaantra Growth Process
+              </h2>
               <p className="text-lg text-gray-600">
-                Our process stays consistent across all solutions—it's how we guarantee speed and quality.
+                Our process stays consistent across all solutions—it's how we
+                guarantee speed and quality.
               </p>
             </div>
 
@@ -265,16 +326,30 @@ export default function SolutionsPage() {
                   title: "Custom Solution Blueprint",
                   desc: "We design a plan—team, tools, sprints, and deliverables",
                 },
-                { step: "3", title: "Pilot Sprint or MVP Phase", desc: "We start small, build fast, and show results" },
-                { step: "4", title: "Scale Seamlessly", desc: "Add pods, channels, or projects as demand grows" },
-                { step: "5", title: "Continuous Improvement", desc: "Monthly reviews, dashboards, and optimizations" },
+                {
+                  step: "3",
+                  title: "Pilot Sprint or MVP Phase",
+                  desc: "We start small, build fast, and show results",
+                },
+                {
+                  step: "4",
+                  title: "Scale Seamlessly",
+                  desc: "Add pods, channels, or projects as demand grows",
+                },
+                {
+                  step: "5",
+                  title: "Continuous Improvement",
+                  desc: "Monthly reviews, dashboards, and optimizations",
+                },
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-6 mb-8 items-start">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary text-light rounded-full flex items-center justify-center font-bold text-lg">
                     {item.step}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-dark mb-2">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-dark mb-2">
+                      {item.title}
+                    </h3>
                     <p className="text-gray-600">{item.desc}</p>
                   </div>
                 </div>
@@ -287,35 +362,199 @@ export default function SolutionsPage() {
         <section className="py-16 md:py-24 bg-light">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">What Our Clients Say</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                What Our Clients Say
+              </h2>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <div className="bg-white p-8 rounded-2xl border border-gray-200">
                 <div className="mb-4">⭐⭐⭐⭐⭐</div>
                 <p className="text-gray-700 mb-4 italic">
-                  "Avaantra helped us double our delivery capacity without hiring a single person. We now say yes to
-                  every client."
+                  "Avaantra helped us double our delivery capacity without
+                  hiring a single person. We now say yes to every client."
                 </p>
-                <p className="font-semibold text-dark">Co-Founder, Marketing Agency (UK)</p>
+                <p className="font-semibold text-dark">
+                  Co-Founder, Marketing Agency (UK)
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl border border-gray-200">
                 <div className="mb-4">⭐⭐⭐⭐⭐</div>
                 <p className="text-gray-700 mb-4 italic">
-                  "They took our SaaS GTM from scattered to systematic. We finally have predictable MRR."
+                  "They took our SaaS GTM from scattered to systematic. We
+                  finally have predictable MRR."
                 </p>
-                <p className="font-semibold text-dark">Founder, B2B SaaS Platform (Canada)</p>
+                <p className="font-semibold text-dark">
+                  Founder, B2B SaaS Platform (Canada)
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl border border-gray-200">
                 <div className="mb-4">⭐⭐⭐⭐⭐</div>
                 <p className="text-gray-700 mb-4 italic">
-                  "We went from idea to funded MVP in 6 weeks. Their team understood everything—product, tech, and
-                  growth."
+                  "We went from idea to funded MVP in 6 weeks. Their team
+                  understood everything—product, tech, and growth."
                 </p>
-                <p className="font-semibold text-dark">Startup Founder (India)</p>
+                <p className="font-semibold text-dark">
+                  Startup Founder (India)
+                </p>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* Case Study Snapshot Highlights */}
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Case Study Snapshot Highlights
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Real outcomes. Real businesses. No fluffy promises.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {[
+                {
+                  client: "Marketing Agency",
+                  challenge: "Overflowing projects",
+                  solution: "White-label pods + automation",
+                  result: "3X delivery, 0 missed deadlines",
+                },
+                {
+                  client: "SaaS Company",
+                  challenge: "Poor trial conversions",
+                  solution: "Automation + CRO + Retention",
+                  result: "2.3X conversions, 25% less churn",
+                },
+                {
+                  client: "Startup",
+                  challenge: "MVP delays",
+                  solution: "Fast-track MVP + GTM plan",
+                  result: "Live in 6 weeks, raised seed funding",
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-primary transition-all"
+                >
+                  <h3 className="text-xl font-bold text-dark mb-4">
+                    {item.client}
+                  </h3>
+
+                  <ul className="space-y-3 text-gray-600 text-sm">
+                    <li>
+                      <span className="font-semibold text-dark">
+                        Challenge:
+                      </span>{" "}
+                      {item.challenge}
+                    </li>
+                    <li>
+                      <span className="font-semibold text-dark">Solution:</span>{" "}
+                      {item.solution}
+                    </li>
+                    <li>
+                      <span className="font-semibold text-dark">Result:</span>{" "}
+                      {item.result}
+                    </li>
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        {/* FAQs */}
+        <section className="py-16 md:py-24 bg-light">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-3xl mx-auto text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600">
+                Straight answers to the questions everyone asks.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  q: "Are your solutions customizable?",
+                  a: "Yes. Each solution is tailored to your business goals and team structure.",
+                },
+                {
+                  q: "Can you work with my existing team?",
+                  a: "Of course. We integrate directly with your tools, workflows, and people.",
+                },
+                {
+                  q: "What industries do you serve?",
+                  a: "SaaS, FinTech, HealthTech, EdTech, Agencies, and B2B service providers.",
+                },
+                {
+                  q: "Is this affordable for startups or small agencies?",
+                  a: "Yes. Engagements scale based on your stage: MVP, Growth, or Scale.",
+                },
+                {
+                  q: "Do you offer ongoing support?",
+                  a: "Yes. Most clients stay with us on long-term partnership retainers.",
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white p-6 rounded-xl border border-gray-200"
+                >
+                  <h3 className="font-semibold text-dark mb-2">{item.q}</h3>
+                  <p className="text-gray-600 text-sm">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        {/* Growth Journey */}
+        <section className="py-20 md:py-28 bg-gradient-to-br from-dark via-gray-900 to-dark text-light">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                Your Growth Journey Starts Here
+              </h2>
+              <p className="text-xl text-gray-300">
+                No matter your stage, we have a system that fits.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold mb-3">Agencies</h3>
+                <p className="text-gray-300">
+                  Scale delivery without hiring. Say yes to more clients.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold mb-3">SaaS Founders</h3>
+                <p className="text-gray-300">
+                  Grow predictably with automation and conversion systems.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold mb-3">Startups</h3>
+                <p className="text-gray-300">
+                  Launch fast, validate early, and attract funding.
+                </p>
+              </div>
+            </div>
+
+            <div className="max-w-3xl mx-auto text-center mt-16 text-gray-300">
+              <p className="text-lg">
+                You bring the vision. We bring the velocity, systems, and
+                accountability.
+                <br />
+                <span className="font-semibold text-light">
+                  Together, we build predictable growth.
+                </span>
+              </p>
             </div>
           </div>
         </section>
@@ -323,13 +562,18 @@ export default function SolutionsPage() {
         {/* Final CTA */}
         <section className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary-dark text-light">
           <div className="container mx-auto px-4 md:px-8 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">Ready to Scale Smarter?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
+              Ready to Scale Smarter?
+            </h2>
             <p className="text-xl text-light/90 mb-8 max-w-2xl mx-auto">
-              You bring the vision. We bring the velocity, systems, and accountability. Together, we build predictable
-              growth.
+              You bring the vision. We bring the velocity, systems, and
+              accountability. Together, we build predictable growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-light text-primary hover:bg-gray-100 rounded-full px-8">
+              <Button
+                size="lg"
+                className="bg-light text-primary hover:bg-gray-100 rounded-full px-8"
+              >
                 Book a Free Consultation
               </Button>
               <Button
@@ -344,5 +588,5 @@ export default function SolutionsPage() {
         </section>
       </main>
     </>
-  )
+  );
 }

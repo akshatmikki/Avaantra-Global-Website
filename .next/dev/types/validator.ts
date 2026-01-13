@@ -65,6 +65,33 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/for-Launch&Grow/Conversion/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-Launch&Grow/Conversion">> = Specific
+  const handler = {} as typeof import("../../../app/for-Launch&Grow/Conversion/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/for-Launch&Grow/CustomerRetentions/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-Launch&Grow/CustomerRetentions">> = Specific
+  const handler = {} as typeof import("../../../app/for-Launch&Grow/CustomerRetentions/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/for-Launch&Grow/SaaSGrowth/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-Launch&Grow/SaaSGrowth">> = Specific
+  const handler = {} as typeof import("../../../app/for-Launch&Grow/SaaSGrowth/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/for-agencies/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/for-agencies">> = Specific

@@ -35,7 +35,7 @@ export default function IndustriesPage() {
         "Lending tools",
         "Compliance-ready",
       ],
-      link: "/industries/fintech",
+      link: "/for-industries/Fintech",
       color: "from-green-500 to-green-700",
     },
     {
