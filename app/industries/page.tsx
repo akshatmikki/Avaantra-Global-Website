@@ -49,7 +49,7 @@ export default function IndustriesPage() {
         "Global scaling",
         "B2B platforms",
       ],
-      link: "/industries/saas",
+      link: "/for-industries/SaaS-&-B2B",
       color: "from-blue-500 to-blue-700",
     },
     {
@@ -63,7 +63,7 @@ export default function IndustriesPage() {
         "Telehealth",
         "Health apps",
       ],
-      link: "/industries/healthtech",
+      link: "/for-industries/HealthTech",
       color: "from-red-500 to-red-700",
     },
     {
@@ -77,7 +77,7 @@ export default function IndustriesPage() {
         "AI recommendations",
         "Omnichannel",
       ],
-      link: "/industries/retail",
+      link: "/for-industries/Retail-&-eCommerce",
       color: "from-purple-500 to-purple-700",
     },
     {
@@ -91,7 +91,7 @@ export default function IndustriesPage() {
         "Assessment tools",
         "Virtual classrooms",
       ],
-      link: "/industries/edtech",
+      link: "/for-industries/Edtech-&-eLearning",
       color: "from-orange-500 to-orange-700",
     },
     {
@@ -105,7 +105,7 @@ export default function IndustriesPage() {
         "Management tools",
         "Smart buildings",
       ],
-      link: "/industries/proptech",
+      link: "/for-industries/PropTech-(Real-Estate)",
       color: "from-teal-500 to-teal-700",
     },
     {
@@ -119,7 +119,7 @@ export default function IndustriesPage() {
         "Smart dashboards",
         "Supply chain",
       ],
-      link: "/industries/manufacturing",
+      link: "/for-industries/Manufacturing-&-Industry-4.0",
       color: "from-gray-600 to-gray-800",
     },
     {
@@ -133,7 +133,7 @@ export default function IndustriesPage() {
         "Warehouse management",
         "Planning tools",
       ],
-      link: "/industries/logistics",
+      link: "/for-industries/Logistics-&-Supply-Chain",
       color: "from-indigo-500 to-indigo-700",
     },
     {
@@ -147,7 +147,7 @@ export default function IndustriesPage() {
         "Ad platforms",
         "AI insights",
       ],
-      link: "/industries/adtech-martech-software-development",
+      link: "/for-industries/Martech-&-AdTech",
       color: "from-pink-500 to-pink-700",
     },
     {
@@ -161,7 +161,7 @@ export default function IndustriesPage() {
         "Content management",
         "Media analytics",
       ],
-      link: "/industries/media-entertainment-software-development",
+      link: "/for-industries/Media-&-Entertainment",
       color: "from-yellow-500 to-yellow-700",
     },
     {
@@ -175,7 +175,7 @@ export default function IndustriesPage() {
         "ML platforms",
         "Predictive analytics",
       ],
-      link: "/industries/ai-data-platform-development",
+      link: "/for-industries/AI-&-Data-Platforms",
       color: "from-cyan-500 to-cyan-700",
     },
     {
@@ -189,7 +189,7 @@ export default function IndustriesPage() {
         "SaaS builds",
         "AI features",
       ],
-      link: "/industries/startup-saas-ai-solutions",
+      link: "/for-industries/Startups-&-Tech-Innovators",
       color: "from-fuchsia-500 to-fuchsia-700",
     },
     {
@@ -203,7 +203,7 @@ export default function IndustriesPage() {
         "Customer experience platforms",
         "Travel analytics & automation",
       ],
-      link: "/industries/travel-hospitality-software-development",
+      link: "/for-industries/Travel",
       color: "from-sky-500 to-sky-700",
     },
   ];
@@ -279,51 +279,43 @@ export default function IndustriesPage() {
         </div>
       </section>
 
-      {/* Industries Grid */}
+      {/* Industries We Serve – Compact */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
               Industries We Serve
             </h2>
             <p className="text-lg text-gray-600">
-              Based on your ICP industries
+              Industry-focused solutions built for scale, security, and growth.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {industries.map((industry, index) => (
-              <div
+              <a
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group"
+                href={industry.link}
+                className="group bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md hover:border-primary/40 transition flex flex-col justify-between"
               >
-                <div
-                  className={`bg-gradient-to-r ${industry.color} p-8 text-white`}
-                >
-                  <industry.icon className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">{industry.title}</h3>
-                  <p className="text-white/90">{industry.description}</p>
+                <div className="flex items-start gap-3">
+                  <industry.icon className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-dark mb-1 group-hover:text-primary transition">
+                      {industry.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {industry.description}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="p-6">
-                  <h4 className="font-semibold text-dark mb-3">
-                    Key Solutions:
-                  </h4>
-                  <ul className="space-y-2 mb-6">
-                    {industry.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">✓</span>
-                        <span className="text-gray-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button className="w-full group-hover:bg-primary-dark transition-colors">
-                    Explore {industry.title} Solutions
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                <div className="mt-4 flex items-center justify-end text-sm text-primary font-medium opacity-70 group-hover:opacity-100 transition">
+                  <span className="mr-1">Explore</span>
+                  <span className="transform group-hover:translate-x-1 transition">
+                    →
+                  </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
