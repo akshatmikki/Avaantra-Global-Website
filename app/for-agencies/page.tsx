@@ -1,214 +1,268 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Tag, CheckCircle, Briefcase } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Tag, CheckCircle, Briefcase } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "For Agencies | Scale Your Agency Without Hiring Risk",
   description:
     "Avaantra Global helps digital, creative, and software agencies scale delivery without hiring risk — through white-label marketing, white-label development, dedicated teams, and flexible partnership programs.",
-}
+};
 
 export default function ForAgenciesPage() {
-  const solutions = [
-    {
-      title: "White Label Marketing Services",
-      description: "Give your agency senior marketing talent without expanding your internal team.",
-      features: ["SEO & technical SEO", "PPC & paid media", "Content marketing", "Marketing automation"],
-      outcome: "Sell more services, deliver faster, improve retention",
-      link: "/for-agencies/white-label-marketing",
-      icon: "📊",
-    },
-    {
-      title: "White Label Software Development",
-      description: "For creative, design, or marketing agencies who need dependable engineering.",
-      features: ["Custom websites", "SaaS products", "Mobile apps", "AI-enabled apps"],
-      outcome: "Expand into software without expanding payroll",
-      link: "/for-agencies/white-label-development",
-      icon: "💻",
-    },
-    {
-      title: "Dedicated Teams for Agencies",
-      description: "Your own remote delivery department that works exactly like your in-house team.",
-      features: ["Dedicated developers", "Designers", "QA specialists", "Project managers"],
-      outcome: "Consistent delivery, no burnout, happy clients",
-      link: "/for-agencies/dedicated-teams",
-      icon: "👥",
-    },
-    {
-      title: "Agency Partnership Program",
-      description: "Long-term partnership model for agencies looking to scale capacity sustainably.",
-      features: ["Priority talent access", "Better pricing tiers", "Co-branded case studies", "Deal registration"],
-      outcome: "Sustainable growth with strategic partnership benefits",
-      link: "/for-agencies/partnership-program",
-      icon: "🤝",
-    },
-    {
-      title: "Scale Engineering Without Hiring Risk",
-      description: "Get senior full-stack engineers within 7–15 days who integrate instantly.",
-      features: ["Sudden project spikes", "Enterprise projects", "Tight deadlines", "Developer shortages"],
-      outcome: "Immediate capacity expansion with zero hiring overhead",
-      link: "/for-agencies/scale-engineering",
-      icon: "⚡",
-    },
-    {
-      title: "AI & Automation for Agencies",
-      description: "Use AI automation to speed up campaigns and build AI tools for clients.",
-      features: ["Campaign execution", "Content production", "Lead scoring", "Analytics automation"],
-      outcome: "Increased margins by reducing manual work",
-      link: "/for-agencies/ai-automation",
-      icon: "🤖",
-    },
-  ]
-
   return (
     <main className="min-h-screen bg-light">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 animate-pulse" />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="flex items-center justify-center gap-2 mb-6 animate-fade-in">
-            <Tag className="w-6 h-6 text-purple-200 animate-bounce" />
-            <span className="text-purple-200 font-semibold uppercase tracking-wider text-sm">For Agencies</span>
+      <section className="relative bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white py-14 md:py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-black/60" />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 relative z-10 text-center">
+          <div className="inline-block bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium mb-4">
+            🏷️ FOR AGENCIES
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center text-balance animate-slide-up">
-            Scale Your Agency With Predictable Delivery — Without Hiring Full-Time Teams
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-5 leading-tight">
+            Grow Your Agency Without Growing Your Overhead
           </h1>
-          <p className="text-lg md:text-xl text-purple-100 max-w-4xl mx-auto text-center mb-10 text-pretty animate-slide-up delay-100">
-            From white-label marketing to full-stack development pods, Avaantra Global gives your agency the capacity,
-            talent, and systems you need to grow — without adding overhead, risk, or complexity.
+
+          <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto mb-8">
+            You built your agency with hard work and hustle. But now, growth
+            feels stuck — too many client requests, not enough hands,
+            unpredictable workloads, and rising costs.
+            <br />
+            <br />
+            Avaantra Global helps agencies scale confidently with white-label
+            marketing, software development, and managed agile pods — all
+            delivered under your brand.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up delay-200">
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="bg-white text-black hover:bg-gray-100 rounded-full px-8"
             >
-              Become a White-Label Partner
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+              Book Your Free Growth Call
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
+
             <Button
               size="lg"
               variant="outline"
-              className="bg-white/10 border-white/20 text-white hover:bg-white/20 transform hover:scale-105 transition-all duration-300"
+              className="border-white text-white hover:bg-white/10 rounded-full px-8 bg-transparent"
             >
-              Build Your Dedicated Team
+              Explore White-Label Solutions
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Why Agencies Choose Section */}
+      {/* The Real Problem */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Why Agencies Choose Avaantra Global</h2>
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              The Real Problem You’re Facing
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Agencies grow fast — until delivery hits a wall. You get more clients, more retainers, more campaigns...
-              but not enough hands to deliver reliably.
+              Let’s face it — growing an agency is hard. You know how to sell.
+              You know how to deliver. But growth breaks things.
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 md:p-12 mb-12 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold text-dark mb-4">The Problem:</h3>
-                <ul className="space-y-3">
-                  {[
-                    "Hiring is slow",
-                    "Freelancers are unpredictable",
-                    "Full-time teams are expensive",
-                    "Margins get squeezed",
-                    "Client deadlines suffer",
-                  ].map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-2 transform hover:translate-x-2 transition-transform duration-300"
-                    >
-                      <span className="text-red-500 mt-1">✗</span>
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-dark mb-4">The Solution:</h3>
-                <ul className="space-y-3">
-                  {[
-                    "White-label delivery you can trust",
-                    "Dedicated engineering, design & marketing pods",
-                    "Predictable outcomes, timelines & pricing",
-                    "Zero hiring risk, zero overhead",
-                    "Scale up or down anytime",
-                  ].map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-2 transform hover:translate-x-2 transition-transform duration-300"
-                    >
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="grid md:grid-cols-2 gap-8 bg-gray-50 rounded-2xl p-8 md:p-12">
+            <ul className="space-y-4 text-gray-700">
+              {[
+                "Too many client requests, too few experts",
+                "Great talent is expensive and hard to retain",
+                "Your team burns out juggling deadlines",
+                "Projects run late and margins shrink",
+                "One bad hire can wipe out profits",
+              ].map((item, idx) => (
+                <li key={idx} className="flex gap-3">
+                  <span className="text-red-500">✗</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="bg-white rounded-xl p-6 shadow">
+              <p className="text-gray-700 mb-4">
+                You don’t have a talent problem.
+                <br />
+                <strong>You have a scalability problem.</strong>
+              </p>
+
+              <p className="font-semibold text-dark">
+                And that’s exactly what Avaantra Global solves.
+              </p>
             </div>
-          </div>
-
-          <div className="text-center bg-purple-600 text-white rounded-2xl p-8 hover:bg-purple-700 transition-all duration-300 hover:shadow-2xl">
-            <p className="text-2xl font-bold">
-              "You focus on selling, strategy, and client relationships. We quietly power your execution engine."
-            </p>
           </div>
         </div>
       </section>
-
-      {/* Agency Services Grid */}
+      {/* Our Promise */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Agency Services We Offer</h2>
-            <p className="text-lg text-gray-600">Below is a simple overview. Each service links to a detailed page.</p>
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              Predictable Growth Without Growing Headcount
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We give you instant access to world-class marketing, development,
+              and growth teams — all working quietly behind your brand.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {solutions.map((solution, index) => (
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {[
+              "2–3X delivery capacity in 90 days",
+              "Dedicated pods or white-label teams",
+              "100% white-labeled reports & communication",
+              "NDA-protected confidentiality",
+              "Predictable pricing & performance dashboards",
+            ].map((item, idx) => (
               <div
-                key={index}
-                className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border border-gray-200 hover:border-purple-500 transform hover:-translate-y-2 hover:scale-[1.02] group"
+                key={idx}
+                className="bg-white rounded-xl p-6 shadow-sm text-center"
               >
-                <div className="text-4xl mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
-                  {solution.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-dark mb-3 group-hover:text-purple-600 transition-colors duration-300">
-                  {solution.title}
+                <CheckCircle className="w-7 h-7 text-green-500 mx-auto mb-3" />
+                <p className="font-semibold text-dark">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-gray-700 font-semibold max-w-3xl mx-auto">
+            We don’t just deliver tasks.
+            <br />
+            We help you deliver outcomes — faster, better, and profitably.
+          </p>
+        </div>
+      </section>
+
+      {/* Solutions Tailored for Agencies */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              Solutions Tailored for Agencies
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Avaantra Global is built for agency owners who want to grow faster
+              without losing control, margins, or credibility.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "White Label Marketing Services",
+                desc: "Execution under your brand while you manage clients.",
+                points: [
+                  "SEO, ads, content & automation",
+                  "Branded dashboards",
+                  "Dedicated managers",
+                  "AI ROI tracking",
+                ],
+                outcome: "Deliver more, retain clients, grow MRR.",
+                cta: "Explore White Label Marketing",
+                link: "/solutions/For-Agencies/White-Label-Marketing",
+              },
+              {
+                title: "White Label Software Development",
+                desc: "Offer software without managing engineers.",
+                points: [
+                  "Web & mobile apps",
+                  "SaaS & API integrations",
+                  "AI & automation builds",
+                  "UI/UX & QA",
+                ],
+                outcome: "Expand services without expanding payroll.",
+                cta: "Start a White-Label Project",
+                link: "/solutions/For-Agencies/White-Label-Software-Development",
+              },
+              {
+                title: "Dedicated Teams for Agencies",
+                desc: "Full-time experts working only on your projects.",
+                points: [
+                  "SEO & content teams",
+                  "Performance marketers",
+                  "Developers & QA",
+                  "Growth pods",
+                ],
+                outcome: "Consistent delivery, zero burnout.",
+                cta: "Hire a Dedicated Team",
+                link: "/solutions/For-Agencies/Dedicated-Teams-for-Agencies",
+              },
+              {
+                title: "Scale Engineering Without Hiring Risk",
+                desc: "Cross-functional teams, fully managed by Avaantra.",
+                points: [
+                  "Sudden project spikes",
+                  "Enterprise projects",
+                  "Tight deadlines",
+                  "Developer shortages",
+                ],
+                outcome: "Immediate capacity without hiring overhead.",
+                cta: "Explore Scale Engineering",
+                link: "/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk",
+              },
+              {
+                title: "Agency Partnership Program",
+                desc: "Long-term collaboration for serious agencies.",
+                points: [
+                  "Revenue sharing",
+                  "Co-marketing campaigns",
+                  "AI tools access",
+                  "Priority onboarding",
+                ],
+                outcome: "New revenue streams & scale.",
+                cta: "Explore Partnership Program",
+                link: "/solutions/For-Agencies/Agency-Partnership-Program",
+              },
+              {
+                title: "AI & Automation for Agencies",
+                desc: "Use AI to deliver faster and increase margins.",
+                points: [
+                  "AI content & ad automation",
+                  "Lead scoring & CRM automation",
+                  "Analytics & reporting bots",
+                  "Custom AI tools for clients",
+                ],
+                outcome: "Higher margins with less manual work.",
+                cta: "Explore AI & Automation",
+                link: "/solutions/For-Agencies/AI-&-Automation",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all h-full"
+              >
+                <h3 className="text-xl font-bold text-dark mb-2">
+                  {item.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{solution.description}</p>
 
-                <div className="mb-4">
-                  <h4 className="font-semibold text-dark mb-2 text-sm">We Offer:</h4>
-                  <ul className="space-y-1">
-                    {solution.features.map((feature, fIdx) => (
-                      <li
-                        key={fIdx}
-                        className="text-sm text-gray-600 flex items-start gap-2 transform hover:translate-x-1 transition-transform duration-200"
-                      >
-                        <span className="text-purple-600 mt-1">•</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-sm text-gray-600 mb-3">{item.desc}</p>
 
-                <div className="bg-purple-50 rounded-lg p-3 mb-4 group-hover:bg-purple-100 transition-colors duration-300">
-                  <p className="text-sm font-semibold text-purple-900">Outcome: {solution.outcome}</p>
-                </div>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700 mb-3">
+                  {item.points.map((point, i) => (
+                    <li key={i} className="flex gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
 
-                <Link href={solution.link}>
-                  <Button
-                    className="w-full group/btn bg-transparent transform hover:scale-105 transition-all duration-300"
-                    variant="outline"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-2 transition-transform duration-300" />
-                  </Button>
+                <p className="text-sm font-semibold text-dark mb-3">
+                  Outcome: {item.outcome}
+                </p>
+
+                <Link
+                  href={item.link}
+                  className="inline-flex items-center text-sm font-semibold text-primary hover:underline"
+                >
+                  {item.cta}
+                  <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </div>
             ))}
@@ -216,98 +270,256 @@ export default function ForAgenciesPage() {
         </div>
       </section>
 
-      {/* Why We're Perfect Partner */}
+      {/* Why Agencies Trust Avaantra */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              Why Agencies Trust Avaantra Global
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We’ve been where you are. Our founders bring 20+ years of
+              real-world marketing and technology experience — not theory.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-6 mb-16">
+            {[
+              "Hybrid AI + Human Delivery",
+              "100% White-Label Guarantee",
+              "Predictable Pricing",
+              "Real-Time Reporting",
+              "Transparent Communication",
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-xl p-6 text-center shadow-sm"
+              >
+                <CheckCircle className="w-7 h-7 text-green-500 mx-auto mb-3" />
+                <p className="font-semibold text-dark">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Process */}
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow">
+            <h3 className="text-2xl font-bold text-dark mb-8 text-center">
+              Our Simple, Zero-Risk Process
+            </h3>
+
+            <div className="grid md:grid-cols-5 gap-6 text-center">
+              {[
+                "Discovery & Alignment",
+                "Pilot Setup",
+                "Delivery & Review",
+                "Scale Seamlessly",
+                "Continuous Optimization",
+              ].map((step, idx) => (
+                <div key={idx}>
+                  <div className="text-3xl font-bold text-primary mb-2">
+                    {idx + 1}
+                  </div>
+                  <p className="font-medium text-dark">{step}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-center mt-8 font-semibold text-gray-700">
+              Outcome: Zero-risk start. Predictable scaling.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Engagement Models */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-              Why Avaantra Is the Perfect White-Label Partner
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              Engagement Models
+            </h2>
+            <p className="text-lg text-gray-600">
+              Choose what fits your agency’s delivery style and growth stage.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Project-Based",
+                bestFor: "One-time, fixed-scope work",
+                how: "Pay per project",
+                outcome: "Quick delivery, no commitment",
+              },
+              {
+                title: "Dedicated Team",
+                bestFor: "Long-term, single-service delivery",
+                how: "You manage the team",
+                outcome: "Predictable, reliable output",
+              },
+              {
+                title: "Managed Agile Pods",
+                bestFor: "Cross-functional & fast-paced delivery",
+                how: "Avaantra manages everything",
+                outcome: "2–3X faster delivery, zero management",
+              },
+              {
+                title: "White-Label Retainer",
+                bestFor: "Continuous white-label support",
+                how: "Fully managed by Avaantra",
+                outcome: "Predictable monthly output",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="border rounded-2xl p-6 hover:shadow-xl transition-all"
+              >
+                <h3 className="text-xl font-bold mb-4 text-dark">
+                  {item.title}
+                </h3>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li>
+                    <strong>Best For:</strong> {item.bestFor}
+                  </li>
+                  <li>
+                    <strong>How It Works:</strong> {item.how}
+                  </li>
+                  <li>
+                    <strong>Outcome:</strong> {item.outcome}
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center mt-10 font-semibold text-gray-700">
+            All models include NDA protection, branded reports, and flexible
+            scaling.
+          </p>
+        </div>
+      </section>
+      {/* Testimonials */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+              What Agencies Say
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: "🏆", title: "22+ Years Industry Experience", desc: "Deep engineering + marketing expertise" },
-              { icon: "👨‍💼", title: "Senior Talent Only", desc: "No juniors. No training needed" },
-              { icon: "🔒", title: "NDA & Full Confidentiality", desc: "Clients never know we exist" },
-              { icon: "💰", title: "Predictable Pricing & SLAs", desc: "Clear costs, clear outcomes" },
-              { icon: "🌍", title: "Global Talent", desc: "US, UK, EU & Middle East friendly" },
-              { icon: "⭐", title: "95% Retention Rate", desc: "Agencies stay because delivery works" },
+              {
+                quote:
+                  "Avaantra helped us grow our client base by 40% in 3 months — every client thought it was our in-house team.",
+                by: "Agency Founder, UK",
+              },
+              {
+                quote:
+                  "We used their Agile Pod for a SaaS project. Delivery was on time, communication was seamless, and the client renewed for a year.",
+                by: "Digital Director, Singapore",
+              },
+              {
+                quote:
+                  "They feel like part of our agency. We now say yes to projects we used to turn down.",
+                by: "Agency Partner, Canada",
+              },
             ].map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-50 p-6 rounded-xl hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
-              >
-                <div className="text-3xl mb-3 transform group-hover:scale-125 group-hover:rotate-6 transition-transform duration-300">
-                  {item.icon}
-                </div>
-                <h3 className="font-bold text-dark mb-2 group-hover:text-purple-600 transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
+              <div key={idx} className="bg-white rounded-xl p-6 shadow">
+                <p className="italic text-gray-700 mb-4">“{item.quote}”</p>
+                <p className="font-semibold text-dark">{item.by}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Process Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-purple-900 text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Process for Agencies</h2>
-            <p className="text-lg text-purple-100">Simple & Frictionless</p>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-4">
-            {[
-              { step: "1", title: "Partnership Kickoff", desc: "Understand your services & workflows" },
-              { step: "2", title: "Resource Allocation", desc: "Assign developers, marketers, designers" },
-              { step: "3", title: "Tool Integration", desc: "We use your Slack, JIRA, etc." },
-              { step: "4", title: "White-Label Delivery", desc: "Execute under your branding" },
-              { step: "5", title: "Reporting & Optimization", desc: "Weekly standups, monthly reviews" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl group"
-              >
-                <div className="text-3xl font-bold text-purple-300 mb-3 transform group-hover:scale-125 transition-transform duration-300">
-                  {item.step}
-                </div>
-                <h3 className="font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-purple-100">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Supported */}
+      {/* Case Study */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Industries We Support Through Agencies</h2>
-            <p className="text-lg text-gray-600">
-              Many agencies serve multiple industries. Avaantra helps you deliver across all of them.
-            </p>
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+              Case Study: 3X Delivery Capacity in 90 Days
+            </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-gray-50 rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8">
+            <div>
+              <p className="font-bold mb-2">Client</p>
+              <p className="text-gray-600 mb-4">
+                Mid-size Marketing Agency (USA)
+              </p>
+
+              <p className="font-bold mb-2">Problem</p>
+              <p className="text-gray-600 mb-4">
+                Overflowing projects, missed deadlines, limited internal staff.
+              </p>
+
+              <p className="font-bold mb-2">Solution</p>
+              <p className="text-gray-600">
+                One dedicated SEO team + one Managed Agile Pod (design +
+                development).
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow">
+              <p className="font-bold text-green-600 mb-4">Results</p>
+              <ul className="space-y-3 font-semibold">
+                <li className="flex gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  Delivery capacity tripled
+                </li>
+                <li className="flex gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  95% client satisfaction
+                </li>
+                <li className="flex gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  Zero hiring during scaling
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* FAQs */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+              FAQs — We Answer Before You Ask
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
             {[
-              "SaaS & B2B",
-              "FinTech",
-              "HealthTech",
-              "Retail & eCommerce",
-              "Real Estate",
-              "EdTech",
-              "Manufacturing",
-              "Media & Entertainment",
-            ].map((industry, idx) => (
-              <div
-                key={idx}
-                className="bg-purple-50 rounded-lg p-4 text-center hover:bg-purple-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
-              >
-                <p className="font-semibold text-purple-900">{industry}</p>
+              {
+                q: "Will my clients know I’m using Avaantra?",
+                a: "No. Everything is fully white-labeled — reports, communication, even email.",
+              },
+              {
+                q: "What if I’m not satisfied?",
+                a: "We start with a small pilot. If you’re unhappy, you don’t pay.",
+              },
+              {
+                q: "Can you work in our time zone?",
+                a: "Yes — we operate across US, UK, and APAC hours.",
+              },
+              {
+                q: "Do I need a long-term contract?",
+                a: "No. Month-to-month options are available.",
+              },
+              {
+                q: "How do we collaborate daily?",
+                a: "Slack, Asana, ClickUp, or Jira — we use your tools.",
+              },
+              {
+                q: "How quickly can we start?",
+                a: "Usually within 5–7 business days post-onboarding.",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white rounded-xl p-6">
+                <h3 className="font-semibold text-dark mb-2">{item.q}</h3>
+                <p className="text-gray-600">{item.a}</p>
               </div>
             ))}
           </div>
@@ -315,33 +527,24 @@ export default function ForAgenciesPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <Briefcase className="w-16 h-16 mx-auto mb-6 animate-bounce" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build Your Agency's Growth Engine</h2>
-          <p className="text-lg text-purple-100 mb-8 max-w-2xl mx-auto">
-            Avaantra Global becomes your silent execution partner — helping you deliver more, deliver faster, and
-            deliver with confidence.
+      <section className="py-20 px-4 bg-black text-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Scale Smart. Deliver More. Stay Lean.
+          </h2>
+
+          <p className="text-gray-300 mb-8">
+            You get the control of your team, the efficiency of automation, the
+            intelligence of AI, and the accountability of a real partner.
+            <br />
+            We work behind the curtain — you take the credit.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              variant="secondary"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-            >
-              Start Your Agency Partnership
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/10 border-white/20 text-white hover:bg-white/20 transform hover:scale-105 transition-all duration-300"
-            >
-              Build a Dedicated Team
-            </Button>
-          </div>
+
+          <Button size="lg" className="bg-white text-black hover:bg-gray-200">
+            Book a Free Growth Call
+          </Button>
         </div>
       </section>
     </main>
-  )
+  );
 }

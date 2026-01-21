@@ -229,34 +229,34 @@ const Navigation = () => {
     forAgencies: [
       //{ title: "Agency Solutions Hub", link: "/for-agencies", icon: Users },
       {
-        title: "White Label Marketing",
-        link: "/for-agencies#white-label-marketing",
+        title: "White Label Marketing Services",
+        link: "/solutions/For-Agencies/White-Label-Marketing",
         icon: Send,
       },
       {
         title: "White Label Software Development",
-        link: "/for-agencies#white-label-dev",
+        link: "/solutions/For-Agencies/White-Label-Software-Development",
         icon: AlignJustify,
       },
       {
         title: "Dedicated Teams for Agencies",
-        link: "/services/dedicated-teams",
+        link: "/solutions/For-Agencies/Dedicated-Teams-for-Agencies",
         icon: ClipboardList,
       },
       {
         title: "Agency Partnership Program",
-        link: "/for-agencies#partnership",
-        icon: FileText,
+        link: "/solutions/For-Agencies/Agency-Partnership-Program",
+        icon: Users,
       },
       {
         title: "Scale Engineering Without Hiring Risk",
-        link: "/for-agencies#scale-engineering",
+        link: "/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk",
         icon: UserCheck,
       },
       {
         title: "AI & Automation Services for Agencies",
-        link: "/for-agencies#scale-engineering",
-        icon: Users,
+        link: "/solutions/For-Agencies/AI-&-Automation",
+        icon: Zap,
       },
     ],
     accelerateDelivery: [
@@ -267,17 +267,17 @@ const Navigation = () => {
       // },
       {
         title: "DevOps & Automation",
-        link: "/services/software-engineering#devops",
+        link: "/solutions/Accelerate-Product-Delivery/DevOps-&-Automation",
         icon: Users,
       },
       {
         title: "Fast MVP Launch",
-        link: "/services/mvp-development",
+        link: "/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch",
         icon: Zap,
       },
       {
         title: "Dedicated Engineering Teams",
-        link: "/services/dedicated-teams",
+        link: "/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams",
         icon: Link2,
       },
     ],
@@ -289,17 +289,17 @@ const Navigation = () => {
       // },
       {
         title: "SaaS Growth Strategy",
-        link: "/for-Launch&Grow/SaaSGrowth",
+        link: "/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy",
         icon: TrendingUp,
       },
       {
         title: "Conversion Optimization",
-        link: "/for-Launch&Grow/Conversion",
+        link: "/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization",
         icon: Zap,
       },
       {
         title: "Customer Retention Programs",
-        link: "/for-Launch&Grow/CustomerRetentions",
+        link: "/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs",
         icon: Settings,
       },
     ],
@@ -307,29 +307,29 @@ const Navigation = () => {
       // { title: "For Startups Hub", link: "/for-startups", icon: Rocket },
       {
         title: "MVP Development & Validation",
-        link: "/services/mvp-development",
+        link: "/solutions/Startups/MVP-Development-&-Validation",
         icon: Sparkles,
       },
       {
         title: "Go-To-Market Strategy",
-        link: "/solutions/saas-gtm",
+        link: "/solutions/Startups/Go-To-Market-Strategy",
         icon: Target,
       },
       {
         title: "Product Scaling & Growth Marketing",
-        link: "/services/drive-revenue-engineering-growth",
+        link: "/solutions/Startups/Product-Scaling-&-Growth-Marketing",
         icon: TrendingUp,
       },
       {
         title: "Funding Readiness & Tech Acceleration",
-        link: "/for-startups#funding",
+        link: "/solutions/Startups/Funding-Readiness-&-Tech-Acceleration",
         icon: FileText,
       },
     ],
   };
 
   const industriesMenu = [
-    { title: "SaaS & B2B Tech", link: "/for-industries/Saas", icon: Building2 },
+    { title: "SaaS & B2B Tech", link: "/for-industries/Saas-&-B2B", icon: Building2 },
     {
       title: "FinTech & Payments",
       link: "/for-industries/Fintech",
@@ -337,48 +337,48 @@ const Navigation = () => {
     },
     {
       title: "HealthTech & MedTech",
-      link: "/for-industries/Health",
+      link: "/for-industries/HealthTech",
       icon: HeartPulse,
     },
     {
       title: "Retail & E-commerce",
-      link: "/for-industries/Retail",
+      link: "/for-industries/Retail-&-eCommerce",
       icon: ShoppingBag,
     },
     {
       title: "PropTech / Real Estate",
-      link: "/for-industries/Proptech",
+      link: "/for-industries/Proptech-(Real-Estate)",
       icon: Home,
     },
     {
       title: "Manufacturing & Industry 4.0",
-      link: "/for-industries/Manufacture",
+      link: "/for-industries/Manufacturing-&-Industry-4.0",
       icon: Factory,
     },
     {
       title: "Logistics & Supply Chain",
-      link: "/for-industries/Logistics",
+      link: "/for-industries/Logistics-&-Supply-Chain",
       icon: Truck,
     },
     {
       title: "MarTech & AdTech",
-      link: "/for-industries/Martech",
+      link: "/for-industries/Martech-&-AdTech",
       icon: Megaphone,
     },
     {
       title: "Media & Entertainment",
-      link: "/for-industries/Media",
+      link: "/for-industries/Media-&-Entertainment",
       icon: Film,
     },
     {
       title: "EdTech & eLearning",
-      link: "/for-industries/Edtech",
+      link: "/for-industries/Edtech-&-eLearning",
       icon: GraduationCap,
     },
-    { title: "AI & Data Platforms", link: "/for-industries/AI", icon: Brain },
+    { title: "AI & Data Platforms", link: "/for-industries/AI-&-Data-Platforms", icon: Brain },
     {
       title: "Startups & Tech Innovators",
-      link: "/for-industries/Startups",
+      link: "/for-industries/Startups-&-Tech-Innovators",
       icon: Rocket,
     },
     {
@@ -975,9 +975,16 @@ const Navigation = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {/* FOR AGENCIES Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  FOR AGENCIES
-                </h3>
+                <Link
+                  href="/solutions/For-Agencies"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    FOR AGENCIES
+                  </h3>
+                </Link>
+
                 <ul className="space-y-3">
                   {solutionsMenu.forAgencies.map((item, idx) => {
                     const Icon = item.icon;
@@ -1002,9 +1009,15 @@ const Navigation = () => {
 
               {/* ACCELERATE PRODUCT DELIVERY Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  ACCELERATE PRODUCT DELIVERY
-                </h3>
+                <Link
+                  href="/solutions/Accelerate-Product-Delivery"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    ACCELERATE PRODUCT DELIVERY
+                  </h3>
+                </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
                     const Icon = item.icon;
@@ -1029,9 +1042,15 @@ const Navigation = () => {
 
               {/* Launch and GROW SAAS GTM Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  LAUNCH AND GROW SAAS GTM
-                </h3>
+                <Link
+                  href="/solutions/Launch-&-Grow-SaaS-GTM"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    LAUNCH AND GROW SAAS GTM
+                  </h3>
+                </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.LaunchAndGrow.map((item, idx) => {
                     const Icon = item.icon;
@@ -1056,9 +1075,15 @@ const Navigation = () => {
 
               {/* STARTUPS Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  STARTUPS
-                </h3>
+                <Link
+                  href="/solutions/Startups"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    STARTUPS
+                  </h3>
+                </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.startups.map((item, idx) => {
                     const Icon = item.icon;
@@ -1391,9 +1416,16 @@ const Navigation = () => {
             </summary>
             <div className="pl-4 mt-2 space-y-4">
               <div>
-                <h4 className="text-primary font-bold text-xs uppercase mb-2">
-                  FOR AGENCIES
-                </h4>
+                <Link
+                  href="/solutions/For-Agencies"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    FOR AGENCIES
+                  </h4>
+                </Link>
+
                 <div className="space-y-2">
                   {solutionsMenu.forAgencies.map((item, idx) => {
                     const Icon = item.icon;
@@ -1412,9 +1444,15 @@ const Navigation = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-primary font-bold text-xs uppercase mb-2">
-                  ACCELERATE PRODUCT DELIVERY
-                </h4>
+                <Link
+                  href="/solutions/Accelerate-Product-Delivery"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    ACCELERATE PRODUCT DELIVERY
+                  </h4>
+                </Link>
                 <div className="space-y-2">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
                     const Icon = item.icon;
@@ -1433,9 +1471,42 @@ const Navigation = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-primary font-bold text-xs uppercase mb-2">
-                  STARTUPS
-                </h4>
+                <Link
+                  href="/solutions/Launch-&-Grow-SaaS-GTM"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    LAUNCH AND GROW SAAS GTM
+                  </h4>
+                </Link>
+                <div className="space-y-2">
+                  {solutionsMenu.LaunchAndGrow.map((item, idx) => {
+                    const Icon = item.icon;
+                    return (
+                      <Link
+                        key={idx}
+                        href={item.link}
+                        className="flex items-center gap-2 py-1 text-sm text-gray-600 hover:text-primary cursor-pointer"
+                        onClick={() => setIsMobileOpen(false)}
+                      >
+                        <Icon size={14} />
+                        <span>{item.title}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                <Link
+                  href="/solutions/Startups"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-block mb-4"
+                >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                    STARTUPS
+                  </h4>
+                </Link>
                 <div className="space-y-2">
                   {solutionsMenu.startups.map((item, idx) => {
                     const Icon = item.icon;
