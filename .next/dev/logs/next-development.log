@@ -1,558 +1,108 @@
-[00:00:41.834] Server  LOG     ✓ Ready in 28.4s
-[00:13:31.820] Server  LOG     ○ Compiling /solutions/For-Agencies/White-Label-Marketing ...
-[00:13:46.950] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:13:49.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:49.502] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:13:49.503] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:13:49.503] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:13:49.504] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/For-Agencies/White-Label-Marketing","route":"/solutions/For-Agencies/White-Label-Marketing"}
-[00:13:49.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974268429}
-[00:13:57.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:57.492] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:13:57.699] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:13:57.699] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:13:57.699] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:13:57.699] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974276699}
-[00:14:01.279] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:14:01.279] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974280283}
-[00:14:07.813] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Software-Development","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974286803}
-[00:14:15.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Dedicated-Teams-for-Agencies","o":"http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974294029}
-[00:14:20.248] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Agency-Partnership-Program color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Agency-Partnership-Program","o":"http://localhost:3000/solutions/For-Agencies/Agency-Partnership-Program","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974299248}
-[00:14:34.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:34.527] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:14:34.527] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:14:34.527] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:14:34.527] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/For-Agencies/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","route":"/solutions/For-Agencies/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk"}
-[00:14:34.527] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","o":"http://localhost:3000/solutions/For-Agencies/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974313523}
-[00:14:53.539] Server  LOG     ✓ Compiled in 697ms
-[00:15:07.128] Server  LOG     ✓ Compiled in 705ms
-[00:15:09.794] Server  LOG     ✓ Compiled in 899ms
-[00:15:17.613] Server  LOG     ✓ Compiled in 757ms
-[00:15:21.132] Server  LOG     ✓ Compiled in 397ms
-[00:15:38.806] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:15:38.857] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:15:38.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974377537}
-[00:15:41.552] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974380540}
-[00:15:44.665] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Agency-Partnership-Program color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Agency-Partnership-Program","o":"http://localhost:3000/solutions/For-Agencies/Agency-Partnership-Program","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974383667}
-[00:15:47.679] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","o":"http://localhost:3000/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974386677}
-[00:15:52.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/AI-&-Automation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/AI-&-Automation","o":"http://localhost:3000/solutions/For-Agencies/AI-&-Automation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974391065}
-[00:18:15.670] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-agencies color: rgb(120, 120, 120) color: inherit {"dp":"/for-agencies","o":"http://localhost:3000/for-agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974534674}
-[00:21:26.676] Server  LOG     ✓ Compiled in 914ms
-[00:21:34.966] Server  LOG     ✓ Compiled in 343ms
-[00:21:45.044] Server  LOG     ✓ Compiled in 326ms
-[00:21:48.947] Server  LOG     ✓ Compiled in 329ms
-[00:24:18.820] Server  LOG     ✓ Compiled in 838ms
-[00:24:19.868] Server  LOG     ✓ Compiled in 271ms
-[00:24:22.039] Server  LOG     ✓ Compiled in 439ms
-[00:24:23.281] Server  LOG     ✓ Compiled in 324ms
-[00:24:24.989] Server  LOG     ✓ Compiled in 335ms
-[00:24:26.489] Server  LOG     ✓ Compiled in 311ms
-[00:24:28.267] Server  LOG     ✓ Compiled in 514ms
-[00:24:43.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:43.788] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:24:43.788] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:24:43.788] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:24:43.788] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/agencies/white-label-marketing","route":"/agencies/white-label-marketing"}
-[00:24:43.788] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agencies/white-label-marketing color: rgb(120, 120, 120) color: inherit {"dp":"/agencies/white-label-marketing","o":"http://localhost:3000/agencies/white-label-marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974922786}
-[00:24:55.279] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:24:55.279] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974934278}
-[00:25:00.731] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974939726}
-[00:25:06.252] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974945250}
-[00:25:12.975] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974951981}
-[00:25:34.472] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-agencies color: rgb(120, 120, 120) color: inherit {"dp":"/for-agencies","o":"http://localhost:3000/for-agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768974973476}
-[00:26:24.616] Server  LOG     ✓ Compiled in 337ms
-[00:26:26.481] Server  LOG     ✓ Compiled in 603ms
-[00:27:17.128] Server  LOG     ✓ Compiled in 469ms
-[00:27:19.019] Server  LOG     ✓ Compiled in 786ms
-[00:27:20.014] Server  LOG     ✓ Compiled in 575ms
-[00:27:23.176] Server  LOG     ✓ Compiled in 601ms
-[00:28:45.702] Server  LOG     ✓ Compiled in 347ms
-[00:28:48.709] Server  LOG     ✓ Compiled in 481ms
-[00:28:50.691] Server  LOG     ✓ Compiled in 356ms
-[00:30:20.425] Server  LOG     ✓ Compiled in 323ms
-[00:32:31.927] Server  LOG     ✓ Compiled in 353ms
-[00:32:33.188] Server  LOG     ✓ Compiled in 355ms
-[00:32:39.527] Server  LOG     ✓ Compiled in 322ms
-[00:33:15.721] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","o":"http://localhost:3000/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768975434721}
-[00:33:22.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-agencies color: rgb(120, 120, 120) color: inherit {"dp":"/for-agencies","o":"http://localhost:3000/for-agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768975441615}
-[00:33:48.748] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768975467755}
-[00:36:28.862] Browser ERROR   ./app/for-agencies/page.tsx:13:3
-Parsing ecmascript source code failed
-  11 | export default function ForAgenciesPage() {
-  12 |   
-> 13 |   ];
-     |   ^
-  14 |
-  15 |   return (
-  16 |     <main className="min-h-screen bg-light">
-
-Expression expected
-[00:36:31.208] Server  LOG     ✓ Compiled in 413ms
-[00:36:34.398] Server  LOG     ✓ Compiled in 460ms
-[00:36:42.349] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Fintech color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Fintech","o":"http://localhost:3000/for-industries/Fintech","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768975641354}
-[00:36:45.166] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-agencies color: rgb(120, 120, 120) color: inherit {"dp":"/for-agencies","o":"http://localhost:3000/for-agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768975644171}
-[00:39:39.460] Server  LOG     ✓ Finished filesystem cache database compaction in 10.0s
-[00:43:10.861] Server  LOG     ✓ Compiled in 632ms
-[00:43:15.803] Server  LOG     ✓ Compiled in 414ms
-[00:43:17.320] Server  LOG     ✓ Compiled in 428ms
-[00:44:19.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976098441}
-[00:44:52.079] Server  LOG     ✓ Compiled in 388ms
-[00:45:23.845] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976162850}
-[00:45:34.468] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976173460}
-[00:46:04.374] Server  LOG     ✓ Compiled in 868ms
-[00:47:41.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976300445}
-[00:47:45.683] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976304688}
-[00:49:59.255] Server  LOG     ✓ Compiled in 371ms
-[00:50:17.421] Server  LOG     ✓ Compiled in 409ms
-[00:50:34.167] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976473165}
-[00:52:53.743] Server  LOG     ✓ Finished filesystem cache database compaction in 11.2s
-[00:58:25.719] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:58:27.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:27.993] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:58:27.993] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:58:27.993] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:58:27.993] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[00:58:27.993] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976947001}
-[00:58:57.325] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:58:57.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:59.860] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:58:59.861] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:58:59.861] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:58:59.861] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[00:58:59.861] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976977146}
-[00:59:04.414] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:59:05.076] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:05.865] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:59:05.865] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:59:05.865] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:05.865] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[00:59:05.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768976984369}
-[00:59:28.741] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:59:29.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:29.860] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:59:29.860] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:59:29.860] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:29.860] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[00:59:29.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977008817}
-[00:59:34.111] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:59:34.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:35.870] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:59:35.870] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:59:35.870] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:35.870] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[00:59:35.870] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977013982}
-[01:00:04.796] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:00:05.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:05.869] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:00:05.869] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:00:05.869] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:00:05.869] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[01:00:05.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977044630}
-[01:00:12.788] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:00:13.657] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:14.864] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:00:14.864] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:00:14.864] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:00:14.864] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[01:00:14.864] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977052901}
-[01:01:43.033] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:01:44.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:44.870] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:01:44.870] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:01:44.870] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:01:44.870] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[01:01:44.870] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977143343}
-[01:03:13.181] Server  LOG     ✓ Compiled in 732ms
-[01:03:14.981] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:03:16.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:16.863] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:03:16.863] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:03:16.863] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:03:16.863] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[01:03:16.863] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977235867}
-[01:03:28.012] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:03:28.823] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:29.875] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:03:29.875] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:03:29.875] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:03:29.875] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-Launch&Grow/SaaSGrowth","route":"/for-Launch&Grow/SaaSGrowth"}
-[01:03:29.875] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-Launch&Grow/SaaSGrowth color: rgb(120, 120, 120) color: inherit {"dp":"/for-Launch&Grow/SaaSGrowth","o":"http://localhost:3000/for-Launch&Grow/SaaSGrowth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977248381}
-[01:04:58.315] Server  LOG     ✓ Compiled in 468ms
-[01:05:02.008] Server  LOG     ✓ Compiled in 843ms
-[01:05:14.452] Server  LOG     ✓ Compiled in 743ms
-[01:05:15.518] Server  LOG     ✓ Compiled in 454ms
-[01:05:18.151] Server  LOG     ✓ Compiled in 614ms
-[01:05:19.887] Server  LOG     ✓ Compiled in 424ms
-[01:08:15.384] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:08:17.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:08:18.010] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:08:18.386] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:08:18.683] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:08:18.683] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:08:18.683] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977537688}
-[01:08:29.011] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:08:29.053] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:08:29.053] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977547671}
-[01:08:46.780] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977565774}
-[01:08:50.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977569792}
-[01:08:58.998] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977577998}
-[01:09:09.798] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977588798}
-[01:09:13.454] Server  LOG     ✓ Finished filesystem cache database compaction in 11.1s
-[01:09:23.670] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977602675}
-[01:11:26.508] Server  LOG     ✓ Compiled in 369ms
-[01:11:30.603] Server  LOG     ✓ Compiled in 417ms
-[01:11:32.168] Server  LOG     ✓ Compiled in 609ms
-[01:11:40.589] Server  LOG     ✓ Compiled in 476ms
-[01:11:59.751] Server  LOG     ✓ Compiled in 388ms
-[01:12:06.224] Server  LOG     ✓ Compiled in 532ms
-[01:12:11.313] Server  LOG     ✓ Compiled in 303ms
-[01:12:21.928] Server  LOG     ✓ Compiled in 332ms
-[01:13:45.592] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/Customer-Retention-Programs","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977864597}
-[01:14:23.617] Server  LOG     ○ Compiling /solutions ...
-[01:14:27.951] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768977906953}
-[01:15:56.727] Server  LOG     ✓ Compiled in 492ms
-[01:16:45.885] Server  LOG     ✓ Compiled in 703ms
-[01:17:02.301] Server  LOG     ✓ Compiled in 270ms
-[01:17:09.403] Server  LOG     ✓ Compiled in 446ms
-[01:17:12.542] Server  LOG     ✓ Compiled in 423ms
-[01:17:40.587] Server  LOG     ✓ Compiled in 522ms
-[01:17:45.323] Server  LOG     ✓ Compiled in 246ms
-[01:17:50.645] Server  LOG     ✓ Compiled in 583ms
-[01:17:52.903] Server  LOG     ✓ Compiled in 263ms
-[01:17:59.411] Server  LOG     ✓ Compiled in 275ms
-[01:18:12.681] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978131685}
-[01:18:16.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978135010}
-[01:18:20.106] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978139112}
-[01:18:27.885] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978146891}
-[01:18:30.976] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978149980}
-[01:18:35.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978154391}
-[01:18:38.122] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978157126}
-[01:18:40.200] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978159206}
-[01:18:42.351] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978161353}
-[01:19:01.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Go-To-Market-Strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Go-To-Market-Strategy","o":"http://localhost:3000/solutions/Go-To-Market-Strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978180444}
-[01:20:30.552] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:20:31.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:20:31.871] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:20:32.871] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:20:32.871] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:20:32.871] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Go-To-Market-Strategy","route":"/solutions/Go-To-Market-Strategy"}
-[01:20:32.871] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Go-To-Market-Strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Go-To-Market-Strategy","o":"http://localhost:3000/solutions/Go-To-Market-Strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978271128}
-[01:23:34.927] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:23:34.927] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978453919}
-[01:23:38.513] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978457514}
-[01:23:46.533] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:23:46.826] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:23:46.826] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:23:46.826] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:23:46.826] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/MVP-Development-&-Validation","route":"/solutions/MVP-Development-&-Validation"}
-[01:23:46.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/MVP-Development-&-Validation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/MVP-Development-&-Validation","o":"http://localhost:3000/solutions/MVP-Development-&-Validation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978465833}
-[01:23:51.112] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:23:51.387] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:23:51.387] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:23:51.387] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:23:51.387] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Go-To-Market-Strategy","route":"/solutions/Go-To-Market-Strategy"}
-[01:23:51.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Go-To-Market-Strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Go-To-Market-Strategy","o":"http://localhost:3000/solutions/Go-To-Market-Strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978470382}
-[01:23:54.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:23:54.684] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:23:54.684] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:23:54.684] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:23:54.684] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Product-Scaling-&-Growth-Marketing","route":"/solutions/Product-Scaling-&-Growth-Marketing"}
-[01:23:54.684] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Product-Scaling-&-Growth-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Product-Scaling-&-Growth-Marketing","o":"http://localhost:3000/solutions/Product-Scaling-&-Growth-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978473684}
-[01:23:57.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:23:57.982] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:23:57.982] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:23:57.982] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:23:57.982] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Funding-Readiness-&-Tech-Acceleration","route":"/solutions/Funding-Readiness-&-Tech-Acceleration"}
-[01:23:57.982] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Funding-Readiness-&-Tech-Acceleration color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Funding-Readiness-&-Tech-Acceleration","o":"http://localhost:3000/solutions/Funding-Readiness-&-Tech-Acceleration","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978476990}
-[01:24:05.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:05.662] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:24:05.869] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:24:05.869] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:24:05.869] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:24:05.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978484872}
-[01:24:11.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:11.578] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:24:11.578] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:24:11.578] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:24:11.579] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/MVP-Development-&-Validation","route":"/solutions/MVP-Development-&-Validation"}
-[01:24:11.579] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/MVP-Development-&-Validation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/MVP-Development-&-Validation","o":"http://localhost:3000/solutions/MVP-Development-&-Validation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978490583}
-[01:24:39.512] Server  LOG     ✓ Compiled in 511ms
-[01:24:44.037] Server  LOG     ✓ Compiled in 402ms
-[01:24:45.920] Server  LOG     ✓ Compiled in 387ms
-[01:24:49.172] Server  LOG     ✓ Compiled in 541ms
-[01:24:54.516] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:24:56.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:56.248] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:24:56.558] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:24:56.558] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:24:56.558] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:24:56.558] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978535563}
-[01:25:04.331] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:25:04.405] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:25:04.405] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/MVP-Development-&-Validation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/MVP-Development-&-Validation","o":"http://localhost:3000/solutions/Startups/MVP-Development-&-Validation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978543000}
-[01:25:13.854] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Go-To-Market-Strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Go-To-Market-Strategy","o":"http://localhost:3000/solutions/Startups/Go-To-Market-Strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978552855}
-[01:25:19.176] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Product-Scaling-&-Growth-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Product-Scaling-&-Growth-Marketing","o":"http://localhost:3000/solutions/Startups/Product-Scaling-&-Growth-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978558143}
-[01:25:25.874] Server  LOG     ○ Compiling /solutions/Startups/Funding-Readiness-&-Tech-Acceleration ...
-[01:25:27.523] Server  LOG     ✓ Finished filesystem cache database compaction in 20.2s
-[01:25:29.349] Server  LOG     ✓ Finished writing to filesystem cache in 13.9s
-[01:25:30.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","o":"http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978569538}
-[01:26:29.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978628712}
-[01:26:47.143] Server  LOG     ✓ Compiled in 780ms
-[01:26:47.957] Server  ERROR   ⨯ ReferenceError: l is not defined
-[01:26:48.764] Server  LOG     ✓ Compiled in 530ms
-[01:26:48.765] Browser ERROR   uncaughtError: ReferenceError: l is not defined
-[01:26:49.085] Server  ERROR   ⨯ ReferenceError: link is not defined
-[01:26:49.316] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:26:50.321] Server  LOG     ✓ Compiled in 618ms
-[01:26:51.731] Server  LOG     ✓ Compiled in 692ms
-[01:26:56.190] Server  LOG     ✓ Compiled in 1478ms
-[01:26:57.229] Server  LOG     ✓ Compiled in 651ms
-[01:27:05.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:27:06.868] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:27:06.869] Browser ERROR   uncaughtError: ReferenceError: link is not defined
-[01:27:16.248] Server  LOG     ✓ Compiled in 408ms
-[01:27:17.515] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:27:18.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:27:19.329] Server  LOG     ✓ Compiled in 13ms
-[01:27:20.153] Server  LOG     ✓ Compiled in 550ms
-[01:27:20.253] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:27:20.917] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
-[01:27:21.882] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:27:21.882] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:27:21.882] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Startups","route":"/solutions/Startups"}
-[01:27:21.882] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978680647}
-[01:27:23.243] Server  LOG     ✓ Compiled in 405ms
-[01:27:52.866] Browser ERROR   ./app/solutions/Startups/page.tsx:187:13
-Parsing ecmascript source code failed
-  185 |               },
-  186 |               \\
-> 187 |             ].map((item, idx) => (
-      |             ^
-  188 |               <div
-  189 |                 key={idx}
-  190 |                 className="bg-white rounded-xl p-6 shadow hover:shadow-xl transition-all"
-
-Expected '</', got ']'
-[01:28:22.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:28:22.896] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:28:23.119] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:28:23.119] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:28:23.119] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:28:23.119] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978742125}
-[01:28:28.577] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:28:28.577] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978747581}
-[01:30:07.952] Server  LOG     ✓ Compiled in 304ms
-[01:31:48.010] Server  LOG     ✓ Compiled in 1017ms
-[01:31:51.423] Server  LOG     ✓ Compiled in 1132ms
-[01:32:03.498] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/MVP-Development-&-Validation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/MVP-Development-&-Validation","o":"http://localhost:3000/solutions/Startups/MVP-Development-&-Validation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978962395}
-[01:32:08.822] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978967822}
-[01:32:18.239] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Go-To-Market-Strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Go-To-Market-Strategy","o":"http://localhost:3000/solutions/Startups/Go-To-Market-Strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978977237}
-[01:32:23.466] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978982468}
-[01:32:33.475] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Product-Scaling-&-Growth-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Product-Scaling-&-Growth-Marketing","o":"http://localhost:3000/solutions/Startups/Product-Scaling-&-Growth-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768978992480}
-[01:32:48.450] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979007451}
-[01:32:57.733] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","o":"http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979016732}
-[01:33:08.638] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979027639}
-[01:33:18.930] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979037934}
-[01:33:25.225] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups","o":"http://localhost:3000/solutions/Startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979044222}
-[01:34:52.303] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","o":"http://localhost:3000/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979131299}
-[01:36:29.556] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Logistics color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Logistics","o":"http://localhost:3000/for-industries/Logistics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979228547}
-[01:36:44.216] Server  LOG     ✓ Finished filesystem cache database compaction in 12.9s
-[01:37:50.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:50.262] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:37:50.368] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:37:50.483] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:37:50.483] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/startups","route":"/solutions/startups"}
-[01:37:50.483] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/startups color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/startups","o":"http://localhost:3000/solutions/startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979309478}
-[01:38:31.689] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:38:32.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:38:32.632] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:38:32.880] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:38:32.880] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:38:32.880] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Logistics","route":"/for-industries/Logistics"}
-[01:38:32.880] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Logistics color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Logistics","o":"http://localhost:3000/for-industries/Logistics","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979351884}
-[01:39:23.461] Server  LOG     ✓ Compiled in 664ms
-[01:39:25.473] Server  LOG     ✓ Compiled in 430ms
-[01:39:31.375] Server  LOG     ✓ Compiled in 1005ms
-[01:39:35.177] Server  LOG     ✓ Compiled in 1027ms
-[01:39:39.481] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:39:39.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979418459}
-[01:39:41.308] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:40:45.843] Server  LOG     ✓ Compiled in 452ms
-[01:40:53.169] Server  LOG     ✓ Compiled in 603ms
-[01:40:56.301] Server  LOG     ✓ Compiled in 545ms
-[01:41:04.763] Server  LOG     ✓ Compiled in 505ms
-[01:41:07.995] Server  LOG     ✓ Compiled in 454ms
-[01:41:11.992] Server  LOG     ✓ Compiled in 445ms
-[01:41:17.467] Server  LOG     ✓ Compiled in 368ms
-[01:41:23.342] Server  LOG     ✓ Compiled in 393ms
-[01:41:27.842] Server  LOG     ✓ Compiled in 357ms
-[01:41:30.076] Server  LOG     ✓ Compiled in 333ms
-[01:41:32.369] Server  LOG     ✓ Compiled in 684ms
-[01:43:23.347] Server  LOG     ✓ Compiled in 1074ms
-[01:43:24.270] Server  LOG     ✓ Compiled in 811ms
-[01:43:29.672] Server  LOG     ✓ Compiled in 955ms
-[01:43:35.823] Server  LOG     ✓ Compiled in 676ms
-[01:43:49.745] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979668749}
-[01:43:56.339] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768979675327}
-[01:46:10.458] Server  LOG     ✓ Compiled in 892ms
-[01:46:37.877] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:46:45.486] Server  LOG     ✓ Compiled in 1063ms
-[01:46:48.748] Server  LOG     ✓ Compiled in 1985ms
-[01:46:52.105] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:46:56.553] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-[01:47:04.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:05.930] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:47:10.079] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:47:10.621] Server  LOG     ✓ Compiled in 2.3s
-[01:47:28.795] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:47:30.629] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-[01:47:39.505] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:40.873] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:47:40.873] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:49:12.871] Browser ERROR   ./components/sections/for-startups/startup-solutions.tsx:60:5
-Parsing ecmascript source code failed
-  58 | 	"origin": "extHost1"
-  59 | }]
-> 60 |     },
-     |     ^
-  61 |     {
-  62 |       icon: TrendingUp,
-  63 |       title: "Product Scaling & Growth Marketing",
-
-Expected a semicolon
-
-Import trace:
-  Server Component:
-    ./components/sections/for-startups/startup-solutions.tsx
-    ./app/for-startups/page.tsx
-[01:49:13.136] Server  LOG     ✓ Compiled in 514ms
-[01:49:14.132] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:49:14.721] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-[01:49:16.338] Server  LOG     ✓ Compiled in 1226ms
-[01:49:17.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:49:17.895] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:49:17.895] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:49:21.593] Server  LOG     ✓ Compiled in 696ms
-[01:49:22.795] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:49:23.150] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-[01:49:24.370] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:49:24.871] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:49:24.871] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:49:27.356] Server  LOG     ✓ Compiled in 613ms
-[01:49:28.420] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:49:28.912] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-[01:49:29.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:49:30.321] Server  LOG     ✓ Compiled in 126ms
-[01:49:30.929] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:49:30.929] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:49:37.522] Server  LOG     ✓ Compiled in 1371ms
-[01:49:40.353] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:49:43.187] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:49:47.140] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:49:50.665] Server  LOG     ✓ Compiled in 941ms
-[01:50:17.390] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:50:17.390] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:50:17.390] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:50:17.390] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-startups","route":"/for-startups"}
-[01:50:17.390] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980027043}
-[01:50:58.519] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:50:58.519] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980097520}
-[01:51:03.190] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980102175}
-[01:51:22.418] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/MVP-Development-&-Validation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/MVP-Development-&-Validation","o":"http://localhost:3000/solutions/Startups/MVP-Development-&-Validation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980121424}
-[01:51:29.813] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980128802}
-[01:51:35.341] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","o":"http://localhost:3000/solutions/Startups/Funding-Readiness-&-Tech-Acceleration","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980134337}
-[01:51:40.993] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-startups color: rgb(120, 120, 120) color: inherit {"dp":"/for-startups","o":"http://localhost:3000/for-startups","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980139981}
-[01:52:16.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980175408}
-[01:54:16.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980295677}
-[01:54:46.093] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:54:46.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:54:47.862] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:54:47.862] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:54:47.862] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:54:47.862] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/industries","route":"/industries"}
-[01:54:47.862] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980326389}
-[01:55:02.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:55:02.570] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:55:02.570] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:55:02.570] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:55:02.570] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/industries","route":"/industries"}
-[01:55:02.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980341566}
-[01:55:11.799] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[01:55:12.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:55:13.871] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[01:55:13.871] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:55:13.871] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:55:13.871] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/industries","route":"/industries"}
-[01:55:13.871] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980352255}
-[01:55:26.484] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:55:26.484] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/hire/virtual-cto color: rgb(120, 120, 120) color: inherit {"dp":"/hire/virtual-cto","o":"http://localhost:3000/hire/virtual-cto","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980365479}
-[01:55:28.213] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768980367218}
-[02:04:10.737] Server  LOG     ✓ Finished filesystem cache database compaction in 25.4s
-[02:08:57.996] Server  LOG     ✓ Finished filesystem cache database compaction in 23.9s
-[02:09:04.750] Server  LOG     ✓ Compiled in 769ms
-[02:09:06.038] Server  LOG     ✓ Compiled in 616ms
-[02:09:11.827] Server  LOG     ✓ Compiled in 469ms
-[02:09:13.290] Server  LOG     ✓ Compiled in 397ms
-[02:09:21.532] Server  LOG     ✓ Compiled in 873ms
-[02:09:23.819] Server  LOG     ✓ Compiled in 707ms
-[02:09:25.370] Server  LOG     ✓ Compiled in 475ms
-[02:09:36.830] Server  LOG     ✓ Compiled in 526ms
-[02:09:41.980] Server  LOG     ✓ Compiled in 338ms
-[02:09:46.483] Server  LOG     ✓ Compiled in 513ms
-[02:09:50.501] Server  LOG     ✓ Compiled in 565ms
-[02:09:55.513] Server  LOG     ✓ Compiled in 336ms
-[02:10:00.697] Server  LOG     ✓ Compiled in 417ms
-[02:10:03.908] Server  LOG     ✓ Compiled in 714ms
-[02:10:11.169] Server  LOG     ✓ Compiled in 499ms
-[02:10:15.271] Server  LOG     ✓ Compiled in 366ms
-[02:10:19.160] Server  LOG     ✓ Compiled in 410ms
-[02:10:22.220] Server  LOG     ✓ Compiled in 738ms
-[02:10:24.148] Server  LOG     ✓ Compiled in 348ms
-[02:10:59.102] Server  LOG     ✓ Compiled in 302ms
-[02:11:08.621] Server  LOG     ✓ Compiled in 700ms
-[02:11:09.502] Server  LOG     ✓ Compiled in 388ms
-[02:11:16.703] Server  LOG     ○ Compiling /for-industries/Saas-&-B2B ...
-[02:11:18.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981317920}
-[02:11:31.423] Server  LOG     ✓ Finished writing to filesystem cache in 10.6s
-[02:11:34.872] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Retail-&-eCommerce color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Retail-&-eCommerce","o":"http://localhost:3000/for-industries/Retail-&-eCommerce","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981333876}
-[02:11:40.900] Server  LOG     ○ Compiling /for-industries/Logistics-&-Supply-Chain ...
-[02:11:47.117] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Logistics-&-Supply-Chain color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Logistics-&-Supply-Chain","o":"http://localhost:3000/for-industries/Logistics-&-Supply-Chain","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981346117}
-[02:12:17.756] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Edtech-&-eLearning color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Edtech-&-eLearning","o":"http://localhost:3000/for-industries/Edtech-&-eLearning","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981376757}
-[02:12:25.810] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/AI-&-Data-Platforms color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/AI-&-Data-Platforms","o":"http://localhost:3000/for-industries/AI-&-Data-Platforms","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981384814}
-[02:12:40.642] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Startups-&-Tech-Innovators color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Startups-&-Tech-Innovators","o":"http://localhost:3000/for-industries/Startups-&-Tech-Innovators","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981399643}
-[02:12:55.634] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Travel color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Travel","o":"http://localhost:3000/for-industries/Travel","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981414638}
-[02:13:42.059] Server  LOG     ✓ Compiled in 317ms
-[02:13:46.482] Server  LOG     ✓ Compiled in 336ms
-[02:13:55.967] Server  LOG     ✓ Compiled in 241ms
-[02:13:57.410] Server  LOG     ✓ Compiled in 505ms
-[02:14:01.563] Server  LOG     ✓ Compiled in 495ms
-[02:14:05.090] Server  LOG     ✓ Compiled in 438ms
-[02:14:08.456] Server  LOG     ✓ Compiled in 372ms
-[02:14:14.026] Server  LOG     ✓ Compiled in 906ms
-[02:14:17.280] Server  LOG     ✓ Compiled in 825ms
-[02:14:20.782] Server  LOG     ✓ Compiled in 413ms
-[02:14:28.709] Server  LOG     ✓ Compiled in 781ms
-[02:14:33.275] Server  LOG     ✓ Compiled in 366ms
-[02:14:50.754] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981529759}
-[02:14:58.211] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[02:14:59.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:14:59.451] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[02:14:59.451] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:14:59.451] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:14:59.451] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/AI-&-Data-Platforms","route":"/for-industries/AI-&-Data-Platforms"}
-[02:14:59.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/AI-&-Data-Platforms color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/AI-&-Data-Platforms","o":"http://localhost:3000/for-industries/AI-&-Data-Platforms","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981538449}
-[02:15:02.866] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[02:15:02.956] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[02:15:02.956] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981541064}
-[02:15:06.191] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:15:06.524] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[02:15:06.524] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:15:06.524] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:15:06.524] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Edtech-&-eLearning","route":"/for-industries/Edtech-&-eLearning"}
-[02:15:06.524] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Edtech-&-eLearning color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Edtech-&-eLearning","o":"http://localhost:3000/for-industries/Edtech-&-eLearning","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768981545522}
+[00:00:52.067] Server  LOG     ✓ Ready in 40.8s
+[00:00:55.638] Server  LOG     ○ Compiling /solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams ...
+[00:01:15.186] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[00:01:42.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:44.605] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[00:01:44.695] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","route":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams"}
+[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769056698411}
+[00:04:41.587] Server  LOG     ✓ Compiled in 5.9s
+[00:06:56.889] Server  LOG     ✓ Compiled in 776ms
+[00:07:10.124] Server  LOG     ✓ Compiled in 515ms
+[00:08:52.856] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:08:52.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769057126423}
+[00:46:49.881] Server  LOG     ✓ Compiled in 435ms
+[00:46:51.464] Server  LOG     ✓ Compiled in 355ms
+[00:47:55.592] Server  LOG     ✓ Compiled in 411ms
+[00:49:03.988] Server  LOG     ✓ Compiled in 204ms
+[00:49:06.777] Server  LOG     ✓ Compiled in 278ms
+[00:51:47.034] Server  LOG     ✓ Compiled in 212ms
+[02:17:39.822] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[02:17:41.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:17:41.503] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[02:17:41.758] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/For-Agencies","route":"/solutions/For-Agencies"}
+[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769064855283}
+[02:19:02.065] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:19:02.065] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769064935591}
+[02:20:46.419] Server  LOG     ✓ Compiled in 337ms
+[02:21:25.780] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Software-Development","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065079302}
+[02:22:48.141] Server  LOG     ✓ Compiled in 406ms
+[02:30:30.103] Server  LOG     ✓ Compiled in 482ms
+[02:30:45.408] Server  LOG     ✓ Compiled in 372ms
+[02:31:14.316] Server  LOG     ✓ Compiled in 398ms
+[02:31:38.760] Server  LOG     ✓ Compiled in 627ms
+[02:32:13.606] Server  LOG     ✓ Compiled in 754ms
+[02:32:45.642] Server  LOG     ✓ Compiled in 629ms
+[02:33:15.098] Server  LOG     ✓ Compiled in 425ms
+[02:34:07.439] Server  LOG     ✓ Compiled in 358ms
+[02:34:27.599] Server  LOG     ✓ Compiled in 577ms
+[02:34:48.162] Server  LOG     ✓ Compiled in 547ms
+[02:35:47.016] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065940492}
+[02:36:05.992] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065959516}
+[02:36:17.381] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065970904}
+[02:36:26.595] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065980121}
+[02:36:34.732] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065988232}
+[02:36:44.149] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065997671}
+[02:36:53.643] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Software-Development","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066007164}
+[02:43:28.038] Server  LOG     ✓ Compiled in 255ms
+[02:45:33.797] Server  LOG     ✓ Compiled in 306ms
+[02:46:27.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Dedicated-Teams-for-Agencies","o":"http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066580666}
+[02:46:29.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066583489}
+[02:46:40.241] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Dedicated-Teams-for-Agencies","o":"http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066593764}
+[02:47:58.827] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066672354}
+[02:48:06.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066680379}
+[02:51:00.078] Server  LOG     ✓ Compiled in 207ms
+[02:55:41.122] Server  LOG     ✓ Compiled in 524ms
+[03:00:57.367] Server  LOG     ✓ Compiled in 551ms
+[03:01:08.428] Server  LOG     ✓ Compiled in 240ms
+[03:01:26.401] Server  LOG     ✓ Compiled in 254ms
+[03:01:55.188] Server  LOG     ✓ Compiled in 228ms
+[03:02:30.180] Server  LOG     ✓ Compiled in 377ms
+[03:02:43.709] Server  LOG     ✓ Compiled in 491ms
+[03:03:05.450] Server  LOG     ✓ Compiled in 471ms
+[03:03:16.651] Server  LOG     ✓ Compiled in 514ms
+[03:03:34.309] Server  LOG     ✓ Compiled in 630ms
+[03:03:47.919] Server  LOG     ✓ Compiled in 848ms
+[03:04:00.848] Server  LOG     ✓ Compiled in 1111ms
+[03:04:16.115] Server  LOG     ✓ Compiled in 917ms
+[03:04:33.764] Server  LOG     ✓ Compiled in 627ms
+[03:04:51.784] Server  LOG     ✓ Compiled in 862ms
+[03:05:10.138] Server  LOG     ✓ Compiled in 568ms
+[03:05:20.996] Server  LOG     ✓ Compiled in 527ms
+[03:05:40.887] Server  LOG     ✓ Compiled in 449ms
+[03:05:48.748] Server  LOG     ✓ Compiled in 673ms
+[03:06:00.091] Server  LOG     ✓ Compiled in 533ms
+[03:10:17.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Retail-&-eCommerce color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Retail-&-eCommerce","o":"http://localhost:3000/for-industries/Retail-&-eCommerce","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068011453}
+[03:14:34.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068268024}
+[03:15:08.404] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[03:15:08.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:15:09.295] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[03:15:09.416] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
+[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068302945}
+[03:17:01.542] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[03:17:02.126] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:17:02.536] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[03:17:02.536] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:17:02.536] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:17:02.536] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
+[03:17:02.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068416066}
+[03:17:47.173] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[03:17:47.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:17:47.919] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[03:17:47.919] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
+[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068461448}
+[03:19:02.535] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:19:02.536] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068536053}
+[03:19:20.264] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068553791}
+[03:20:17.899] Server  LOG     ✓ Compiled in 272ms
+[03:20:28.877] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Retail-&-eCommerce color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Retail-&-eCommerce","o":"http://localhost:3000/for-industries/Retail-&-eCommerce","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068622406}
+[03:31:09.285] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Martech-&-AdTech color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Martech-&-AdTech","o":"http://localhost:3000/for-industries/Martech-&-AdTech","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769069262804}
+[03:31:46.637] Server  LOG     ✓ Compiled in 804ms
+[05:15:39.641] Server  LOG     ✓ Compiled in 350ms

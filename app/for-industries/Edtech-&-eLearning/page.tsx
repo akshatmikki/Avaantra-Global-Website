@@ -116,6 +116,7 @@ export default function EdTechPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for EdTech Development"
+        subheading="We combine education domain understanding, data-driven insights, and engineering excellence to deliver digital learning ecosystems that scale."
         features={[
           {
             title: "Deep EdTech Expertise",
@@ -264,19 +265,53 @@ export default function EdTechPage() {
         faqs={[
           {
             question: "Do you build both web and mobile eLearning platforms?",
-            answer: "Yes. We build responsive web systems and native mobile apps.",
+            answer:
+              "Yes, we design responsive web-based systems and native mobile apps.",
           },
           {
-            question: "Can you integrate existing LMS platforms?",
-            answer: "Absolutely. We support Moodle, Blackboard, TalentLMS, and custom APIs.",
+            question: "Can you integrate existing LMS with our platform?",
+            answer:
+              "Absolutely — we support Moodle, Blackboard, TalentLMS, and custom APIs.",
           },
           {
             question: "Do you create AI-based learning paths?",
-            answer: "Yes. We implement adaptive algorithms for dynamic content delivery.",
+            answer:
+              "Yes — we implement adaptive algorithms that adjust content dynamically.",
           },
           {
             question: "Are your systems FERPA and GDPR compliant?",
-            answer: "Yes. Every product follows global data protection standards.",
+            answer:
+              "Yes — every product we build follows these global data protection standards.",
+          },
+          {
+            question: "Can you support white-label solutions for EdTech startups?",
+            answer:
+              "Yes, we offer full white-label LMS and eLearning systems.",
+          },
+          {
+            question: "Do you include gamification features?",
+            answer:
+              "Yes, we use points, badges, leaderboards, and quizzes to boost engagement.",
+          },
+          {
+            question: "How long does it take to develop an MVP?",
+            answer:
+              "Usually 12–14 weeks for MVP; 20–24 weeks for a full platform.",
+          },
+          {
+            question: "Can we include real-time classes in our app?",
+            answer:
+              "Yes — we build video conferencing modules with chat, notes, and attendance.",
+          },
+          {
+            question: "Do you provide analytics dashboards?",
+            answer:
+              "Yes — with Power BI, Google Data Studio, or fully custom dashboards.",
+          },
+          {
+            question: "Do you handle content creation too?",
+            answer:
+              "We focus on platform development but partner with content studios if needed.",
           },
         ]}
       />

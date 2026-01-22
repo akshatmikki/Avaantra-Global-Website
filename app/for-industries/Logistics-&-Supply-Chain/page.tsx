@@ -114,6 +114,7 @@ export default function LogisticsSupplyChainPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for Logistics & Supply Chain Solutions"
+        subheading="We combine engineering precision with operational intelligence — empowering logistics businesses to move smarter, faster, and more profitably."
         features={[
           {
             title: "Industry 4.0 Expertise",
@@ -260,20 +261,54 @@ export default function LogisticsSupplyChainPage() {
         title="Frequently Asked Questions"
         faqs={[
           {
-            question: "Do you build logistics platforms from scratch?",
-            answer: "Yes. We design and develop full-featured logistics and transport systems.",
+            question: "Do you build logistics management platforms from scratch?",
+            answer:
+              "Yes — we design and develop full-featured logistics and transport systems tailored to your operations.",
           },
           {
-            question: "Can you integrate with ERP or TMS systems?",
-            answer: "Absolutely. We integrate SAP, Oracle, Microsoft Dynamics, and more.",
+            question: "Can you integrate with existing ERP or TMS?",
+            answer:
+              "Absolutely — we integrate SAP, Oracle, and Microsoft Dynamics seamlessly.",
           },
           {
-            question: "Do you support IoT-based tracking?",
-            answer: "Yes. We deploy IoT devices for vehicle, shipment, and asset monitoring.",
+            question: "Do you offer IoT-based tracking systems?",
+            answer:
+              "Yes — we deploy IoT devices for vehicle, shipment, and asset monitoring.",
           },
           {
-            question: "How long does delivery take?",
-            answer: "10–14 weeks for MVP; 20–24 weeks for full-scale systems.",
+            question: "How can AI help optimize logistics?",
+            answer:
+              "AI predicts demand, optimizes routes, and reduces idle time for better ROI.",
+          },
+          {
+            question: "Do you support cold chain or temperature-sensitive logistics?",
+            answer:
+              "Yes — with IoT-enabled sensors and predictive monitoring.",
+          },
+          {
+            question: "Can you automate warehouse operations?",
+            answer:
+              "Yes — through robotic process automation (RPA) and WMS solutions.",
+          },
+          {
+            question: "Are your solutions scalable across multiple countries?",
+            answer:
+              "Yes — our cloud-native design ensures scalability and localization support.",
+          },
+          {
+            question: "How secure are your logistics solutions?",
+            answer:
+              "We follow ISO and GDPR standards with encryption and blockchain verification.",
+          },
+          {
+            question: "Do you support predictive analytics for inventory?",
+            answer:
+              "Yes — our AI models forecast demand, shortages, and replenishment needs.",
+          },
+          {
+            question: "What’s your typical delivery timeline?",
+            answer:
+              "MVP in 10–14 weeks; full systems in 20–24 weeks based on complexity.",
           },
         ]}
       />

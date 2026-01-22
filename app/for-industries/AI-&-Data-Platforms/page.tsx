@@ -114,6 +114,7 @@ export default function AIDataPlatformsPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for AI & Data Platforms"
+        subheading="We unite data scientists, software engineers, and business strategists to create systems that are as intelligent as they are impactful."
         features={[
           {
             title: "End-to-End AI Delivery",
@@ -260,27 +261,57 @@ export default function AIDataPlatformsPage() {
       <FAQGrid
         title="Frequently Asked Questions"
         faqs={[
-          {
-            question: "Do you build custom AI models?",
-            answer:
-              "Yes. We build models from scratch or fine-tune pre-trained models for faster deployment.",
-          },
-          {
-            question: "Can you handle end-to-end AI implementation?",
-            answer:
-              "Absolutely. From data engineering and modeling to deployment and MLOps.",
-          },
-          {
-            question: "Which industries do you serve?",
-            answer:
-              "FinTech, SaaS, Healthcare, Manufacturing, Retail, and EdTech.",
-          },
-          {
-            question: "Do you offer post-deployment optimization?",
-            answer:
-              "Yes. Continuous monitoring, retraining, and performance audits are included.",
-          },
-        ]}
+  {
+    question: "Do you build custom AI models or use pre-trained frameworks?",
+    answer:
+      "We do both — building models from scratch or fine-tuning existing models for faster deployment.",
+  },
+  {
+    question: "Can you handle end-to-end AI implementation?",
+    answer:
+      "Yes — from data engineering and model development to deployment and MLOps setup.",
+  },
+  {
+    question: "What industries do you serve for AI solutions?",
+    answer:
+      "FinTech, SaaS, Healthcare, Manufacturing, Retail, and EdTech.",
+  },
+  {
+    question: "Do you offer AI consulting?",
+    answer:
+      "Yes — we design strategy roadmaps, proof of concepts, and scalable AI architectures.",
+  },
+  {
+    question: "Can you help us migrate data from legacy systems?",
+    answer:
+      "Absolutely — we specialize in cloud migration and data modernization.",
+  },
+  {
+    question: "Do you build AI-powered SaaS products?",
+    answer:
+      "Yes — we integrate AI and automation into SaaS and enterprise applications.",
+  },
+  {
+    question: "What’s your typical delivery timeline?",
+    answer:
+      "12–16 weeks for MVP; 20–24 weeks for enterprise-grade AI deployments.",
+  },
+  {
+    question: "How do you ensure data privacy?",
+    answer:
+      "We use encryption, strict access controls, and full GDPR and ISO compliance.",
+  },
+  {
+    question: "Do you offer post-deployment optimization?",
+    answer:
+      "Yes — including continuous monitoring, model retraining, and performance audits.",
+  },
+  {
+    question: "Can you integrate AI with existing CRMs or ERPs?",
+    answer:
+      "Yes — we integrate with Salesforce, SAP, Oracle, and other enterprise platforms.",
+  },
+]}
       />
 
       {/* FINAL CTA */}

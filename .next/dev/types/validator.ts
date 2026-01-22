@@ -92,6 +92,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/for-industries/Education-&-EdTech-Software-Development-Solutions/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-industries/Education-&-EdTech-Software-Development-Solutions">> = Specific
+  const handler = {} as typeof import("../../../app/for-industries/Education-&-EdTech-Software-Development-Solutions/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/for-industries/Fintech/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/for-industries/Fintech">> = Specific

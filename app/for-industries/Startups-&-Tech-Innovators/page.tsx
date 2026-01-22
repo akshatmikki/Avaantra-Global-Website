@@ -38,12 +38,12 @@ export default function AISaaSStartupsPage() {
       {/* WHY STARTUP INNOVATION */}
       <InfoSection
         title="Why AI & SaaS Innovation Matters Now"
-        description="The SaaS and AI revolution is reshaping every industry, but startups face intense pressure to move fast, validate ideas, and prove traction with limited resources."
+        description="The SaaS and AI revolution is reshaping every industry — from productivity and marketing to healthcare and fintech. But startups face a tough road. That’s where Avaantra Global steps in, not just as a vendor, but as a technology co-founder helping founders turn innovation into traction."
         points={[
-          "Limited engineering bandwidth and tech resources",
-          "Difficulty finding product-market fit",
+          "Limited tech bandwidth and engineering resources",
+          "Difficulty finding the right product–market fit",
           "Complex architecture and scalability challenges",
-          "High burn rates and investor pressure for fast MVPs",
+          "High burn rates and pressure to deliver investor-ready MVPs fast",
         ]}
         quote="We don’t just build your product — we build your momentum."
       />
@@ -51,45 +51,46 @@ export default function AISaaSStartupsPage() {
       {/* SERVICES */}
       <ServiceGrid
         title="Our SaaS & AI Startup Development Services"
+        subheading="We help SaaS founders and AI innovators build the right product, the right way — from early idea validation to post-launch scaling."
         services={[
           {
             title: "MVP Development",
-            description: "Investor-ready MVPs in 8–12 weeks",
+            description: "Launch investor-ready MVPs in 8–12 weeks with core functionality",
             value: "Faster validation, lower risk",
           },
           {
             title: "Product Discovery & Roadmapping",
-            description: "Features, flows, and positioning",
+            description: "Identify features, user flows, and market positioning",
             value: "Data-backed product blueprint",
           },
           {
             title: "Full-Stack Product Engineering",
-            description: "Frontend, backend, and cloud",
-            value: "Reliable, scalable SaaS product",
+            description: "Frontend, backend, and cloud architecture built for scale",
+            value: "Reliable and performant product",
           },
           {
             title: "AI Integration & Automation",
-            description: "ML, NLP, predictive intelligence",
-            value: "Built-in differentiation",
+            description: "Add ML, NLP, or predictive capabilities to your SaaS",
+            value: "Differentiation through intelligence",
           },
           {
             title: "CTO-as-a-Service",
-            description: "Architecture and tech leadership",
-            value: "Senior guidance without full-time cost",
+            description: "Strategic leadership for architecture and tech decisions",
+            value: "Expert guidance without full-time cost",
           },
           {
             title: "DevOps & Cloud Infrastructure",
-            description: "CI/CD, monitoring, autoscaling",
-            value: "Zero-downtime reliability",
+            description: "Continuous delivery, CI/CD, and automated scaling",
+            value: "Resilient infrastructure, zero downtime",
           },
           {
             title: "UI/UX Design & Product Branding",
-            description: "Conversion-focused user experiences",
-            value: "Higher adoption & retention",
+            description: "Design human-centered, conversion-optimized interfaces",
+            value: "Higher adoption and engagement",
           },
           {
             title: "GTM Enablement & Analytics",
-            description: "Funnels, tracking, growth metrics",
+            description: "Integrate tracking, funnels, and marketing automation",
             value: "Measurable growth from day one",
           },
         ]}
@@ -100,33 +101,63 @@ export default function AISaaSStartupsPage() {
       <IconCardGrid
         title="Solutions We Build for Innovators"
         items={[
-          { title: "SaaS Platforms (B2B / B2C)", icon: Layers },
-          { title: "AI SaaS Products", icon: Brain },
-          { title: "Data Platforms", icon: BarChart3 },
-          { title: "Automation Tools", icon: Workflow },
-          { title: "Generative AI Applications", icon: Cpu },
-          { title: "Developer Platforms (APIs & SDKs)", icon: Cloud },
-          { title: "Low-Code / No-Code Solutions", icon: Palette },
+          {
+            title: "SaaS Platforms (B2B / B2C)",
+            description: "Productivity, marketing, HR, and finance tools",
+            icon: Layers,
+          },
+          {
+            title: "AI SaaS Products",
+            description: "Chatbots, analytics, automation, personalization engines",
+            icon: Brain,
+          },
+          {
+            title: "Data Platforms",
+            description: "BI dashboards, reporting, and data integration layers",
+            icon: BarChart3,
+          },
+          {
+            title: "Automation Tools",
+            description: "RPA and workflow optimization for startups",
+            icon: Workflow,
+          },
+          {
+            title: "Generative AI Applications",
+            description: "Content creation, recommendation, summarization systems",
+            icon: Cpu,
+          },
+          {
+            title: "Developer Platforms (APIs & SDKs)",
+            description: "Cloud APIs and developer ecosystems",
+            icon: Cloud,
+          },
+          {
+            title: "Low-Code / No-Code Solutions",
+            description: "Rapid prototyping and MVP validation",
+            icon: Palette,
+          },
         ]}
+        footerQuote="Every SaaS success starts with a clear product vision — and world-class execution."
       />
 
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for SaaS & AI Development"
+        subheading="We’ve helped dozens of startups go from zero to funding, from MVP to product-market fit, and from pilot users to global scale."
         features={[
           {
             title: "Startup-Focused DNA",
-            description: "Lean, fast, founder-first delivery",
+            description: "Lean, fast, founder-first delivery model",
             icon: Rocket,
           },
           {
             title: "AI & SaaS Expertise",
-            description: "20+ years in intelligent systems",
+            description: "20+ years in full-stack and intelligent systems",
             icon: Brain,
           },
           {
             title: "End-to-End Engineering",
-            description: "Strategy, UX, build, DevOps, GTM",
+            description: "Strategy, UX, build, DevOps, GTM support",
             icon: Layers,
           },
           {
@@ -136,12 +167,12 @@ export default function AISaaSStartupsPage() {
           },
           {
             title: "Investor-Ready Products",
-            description: "Built for funding and real users",
+            description: "Built for growth, funding and real users",
             icon: BarChart3,
           },
           {
             title: "Security & Privacy",
-            description: "SOC 2, ISO 27001, GDPR",
+            description: "SOC 2, ISO 27001, GDPR standards",
             icon: Lock,
           },
         ]}
@@ -154,23 +185,28 @@ export default function AISaaSStartupsPage() {
         steps={[
           {
             title: "Discovery & Strategy",
-            description: "Define vision, audience, and KPIs",
+            description:
+              "Define product vision, target audience, and KPIs, resulting in a clear product roadmap and MVP plan.",
           },
           {
             title: "UX/UI Design",
-            description: "Wireframes and interactive prototypes",
+            description:
+              "Create wireframes and user journeys, delivering interactive design prototypes for validation.",
           },
           {
             title: "Development & AI Integration",
-            description: "Full-stack build with intelligence",
+            description:
+              "Full-stack development combined with AI model implementation to produce a working MVP or alpha product.",
           },
           {
             title: "Testing & Optimization",
-            description: "QA, A/B testing, feedback loops",
+            description:
+              "Rigorous QA, A/B testing, and user feedback loops to deliver a market-ready product.",
           },
           {
             title: "Launch & Growth Enablement",
-            description: "Deployment, analytics, GTM tracking",
+            description:
+              "Production deployment with analytics, GTM tracking, and growth tooling for a scalable SaaS platform.",
           },
         ]}
         duration="8–12 weeks for MVP; 20–24 weeks for full launch"
@@ -197,15 +233,18 @@ export default function AISaaSStartupsPage() {
         cases={[
           {
             title: "SaaS CRM Startup (US)",
-            result: "$1.2M seed funding secured in 2 months",
+            result:
+              "Built a full-stack CRM MVP with custom analytics to meet a 10-week investor deadline, helping the startup secure $1.2M in seed funding within 2 months of launch.",
           },
           {
             title: "AI Productivity Tool (India)",
-            result: "60% task completion improvement",
+            result:
+              "Implemented an NLP-based assistant with OpenAI integration, improving task completion by 60% and increasing user retention by 35%.",
           },
           {
             title: "Data Analytics Platform (UK)",
-            result: "10× faster reporting; 40% infra cost reduction",
+            result:
+              "Designed a serverless AWS data lake with Power BI integration, enabling 10× faster reporting and reducing infrastructure costs by 40%.",
           },
         ]}
       />
@@ -260,24 +299,54 @@ export default function AISaaSStartupsPage() {
         title="Frequently Asked Questions"
         faqs={[
           {
-            question: "How fast can you build an MVP?",
+            question: "How fast can you build an MVP for our startup?",
             answer:
-              "Typically 8–12 weeks, depending on scope and integrations.",
+              "We typically deliver MVPs in 8–12 weeks, depending on scope and integrations.",
           },
           {
             question: "Can you help refine our product idea?",
             answer:
-              "Yes. Discovery workshops define scope, roadmap, and GTM strategy.",
+              "Yes — our discovery workshops help define MVP scope, roadmap, and go-to-market strategy.",
           },
           {
             question: "Do you provide CTO-as-a-Service?",
             answer:
-              "Yes. We offer interim CTO leadership for early-stage startups.",
+              "Yes — we offer interim CTO services for startups that need technical direction and leadership.",
           },
           {
-            question: "Are our ideas and IP protected?",
+            question: "Can you integrate AI models into existing SaaS products?",
             answer:
-              "Absolutely. NDA, IP transfer, and secure storage are standard.",
+              "Absolutely — from OpenAI APIs to custom machine learning model deployment.",
+          },
+          {
+            question: "Do you offer funding or investor readiness support?",
+            answer:
+              "Yes — we help with investor decks, product demos, and pitch-ready technical collateral.",
+          },
+          {
+            question: "Do you support multi-tenant SaaS architecture?",
+            answer:
+              "Yes — all our SaaS systems are designed for scalability and multi-tenancy.",
+          },
+          {
+            question: "Do you provide post-launch product maintenance?",
+            answer:
+              "Yes — ongoing support, analytics, performance optimization, and feature evolution are included.",
+          },
+          {
+            question: "Are our ideas and data protected?",
+            answer:
+              "Yes — strict NDAs, IP transfer agreements, and secure data storage are standard for all projects.",
+          },
+          {
+            question: "Do you work with global startups?",
+            answer:
+              "Yes — we work with startups across the US, UK, EU, MENA, and APAC regions.",
+          },
+          {
+            question: "Can you integrate billing, payments, or CRM systems?",
+            answer:
+              "Yes — we integrate Stripe, Razorpay, HubSpot, Salesforce, and other major platforms.",
           },
         ]}
       />

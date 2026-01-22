@@ -256,19 +256,53 @@ export default function HealthTechPage() {
         faqs={[
           {
             question: "Do you build HIPAA-compliant applications?",
-            answer: "Yes. Every HealthTech solution follows HIPAA, HL7, and GDPR standards.",
+            answer:
+              "Yes — every HealthTech solution we build follows HIPAA, HL7, and GDPR standards.",
           },
           {
             question: "Can you integrate with existing hospital systems?",
-            answer: "Absolutely. We integrate with Epic, Cerner, and other major EHRs.",
+            answer:
+              "Absolutely. We integrate with Epic, Cerner, and other major EHR platforms.",
           },
           {
             question: "Do you handle AI diagnostics?",
-            answer: "Yes. We build ML models for radiology, pathology, and predictive health.",
+            answer:
+              "Yes — we’ve built machine learning models for radiology, pathology, and predictive health.",
+          },
+          {
+            question: "What makes Avaantra different from typical healthcare developers?",
+            answer:
+              "We combine compliance precision with AI-driven innovation and patient-first UX.",
+          },
+          {
+            question: "Do you support post-launch updates?",
+            answer:
+              "Yes. We offer 24/7 maintenance, updates, and compliance monitoring.",
+          },
+          {
+            question: "How do you ensure patient data security?",
+            answer:
+              "Through encrypted pipelines, secure cloud, and zero data exposure protocols.",
+          },
+          {
+            question: "Can you develop wearable integrations?",
+            answer:
+              "Yes — we build IoT-enabled platforms for devices and health sensors.",
           },
           {
             question: "How fast can we launch an MVP?",
-            answer: "In as little as 10–12 weeks with security validation.",
+            answer:
+              "In as little as 10–12 weeks with essential features and security validation.",
+          },
+          {
+            question: "Do you work with startups and hospitals alike?",
+            answer:
+              "Yes — we serve both HealthTech startups and established healthcare providers.",
+          },
+          {
+            question: "Can you provide documentation for compliance audits?",
+            answer:
+              "Yes — we deliver technical and security documentation required for audit clearance.",
           },
         ]}
       />

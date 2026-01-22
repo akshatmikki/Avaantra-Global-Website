@@ -115,6 +115,7 @@ export default function TravelHospitalityPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for TravelTech Development"
+        subheading="We bring together travel domain expertise, data intelligence, and engineering excellence to create smart, scalable, and customer-first platforms."
         features={[
           {
             title: "Comprehensive TravelTech Expertise",
@@ -261,20 +262,54 @@ export default function TravelHospitalityPage() {
         title="Frequently Asked Questions"
         faqs={[
           {
-            question: "Do you build booking engines from scratch?",
-            answer: "Yes. We develop fully customized booking and travel management platforms.",
+            question: "Do you build booking engines and travel portals from scratch?",
+            answer:
+              "Yes — we develop fully customized booking and travel management systems.",
           },
           {
-            question: "Can you integrate GDS and travel APIs?",
-            answer: "Absolutely. We integrate Amadeus, Sabre, Skyscanner, Expedia, and more.",
+            question: "Can you integrate GDS or third-party travel APIs?",
+            answer:
+              "Absolutely — we integrate Amadeus, Sabre, Skyscanner, Expedia, and more.",
           },
           {
             question: "Do you offer AI-based personalization?",
-            answer: "Yes. Our platforms recommend destinations, hotels, and upgrades dynamically.",
+            answer:
+              "Yes — our solutions recommend destinations, hotels, and upgrades dynamically.",
           },
           {
-            question: "How long does it take to launch?",
-            answer: "12–16 weeks for MVP; 20–24 weeks for enterprise platforms.",
+            question: "How secure are your payment systems?",
+            answer:
+              "We comply with PCI-DSS and ISO standards to ensure secure transactions.",
+          },
+          {
+            question: "Can you build mobile apps for travel and hospitality?",
+            answer:
+              "Yes — we deliver Android and iOS apps for travelers and hotel management teams.",
+          },
+          {
+            question: "Do you develop property management or HMS systems?",
+            answer:
+              "Yes — we build complete hotel management and operations platforms.",
+          },
+          {
+            question: "Do you support white-label OTA platforms?",
+            answer:
+              "Yes — ideal for agencies and startups entering the travel tech market.",
+          },
+          {
+            question: "Can you connect analytics dashboards?",
+            answer:
+              "Yes — we provide real-time performance, occupancy, and revenue analytics dashboards.",
+          },
+          {
+            question: "How long does it take to launch a travel MVP?",
+            answer:
+              "Typically 12–16 weeks for MVP; 20–24 weeks for enterprise builds.",
+          },
+          {
+            question: "Do you help with post-launch maintenance?",
+            answer:
+              "Yes — we provide 24/7 monitoring, security updates, and system optimization.",
           },
         ]}
       />

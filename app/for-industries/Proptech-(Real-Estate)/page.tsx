@@ -53,6 +53,7 @@ export default function PropTechPage() {
       {/* SERVICES */}
       <ServiceGrid
         title="Our PropTech Software Development Services"
+        subheading="We deliver digital platforms that empower real estate organizations to manage, market, and monetize more effectively."
         services={[
           {
             title: "Property Listing & Marketplace Development",
@@ -115,6 +116,7 @@ export default function PropTechPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for PropTech Development"
+        subheading="We merge real estate intelligence with digital excellence — delivering software that drives transparency, speed, and scalability."
         features={[
           {
             title: "PropTech Domain Expertise",
@@ -260,23 +262,57 @@ export default function PropTechPage() {
       <FAQGrid
         title="Frequently Asked Questions"
         faqs={[
-          {
-            question: "Do you build real estate marketplaces from scratch?",
-            answer: "Yes. We develop scalable listing platforms with advanced search and monetization.",
-          },
-          {
-            question: "Can you integrate AR/VR into property platforms?",
-            answer: "Absolutely. We build 3D tours, virtual staging, and immersive experiences.",
-          },
-          {
-            question: "Do you support blockchain and tokenization?",
-            answer: "Yes. We build smart contracts and tokenized ownership platforms.",
-          },
-          {
-            question: "How long does it take to build a PropTech MVP?",
-            answer: "8–12 weeks for MVP; 18–24 weeks for full-scale platforms.",
-          },
-        ]}
+  {
+    question: "Do you build real estate marketplaces from scratch?",
+    answer:
+      "Yes — we develop scalable listing platforms with search, filters, and monetization options.",
+  },
+  {
+    question: "Can you integrate AR/VR into property websites or apps?",
+    answer:
+      "Absolutely — we build 3D property tours and virtual staging experiences.",
+  },
+  {
+    question: "Do you create CRMs for real estate agents and brokers?",
+    answer:
+      "Yes — we offer custom CRM platforms with automation, analytics, and integrations.",
+  },
+  {
+    question: "Do you support blockchain or tokenization in real estate?",
+    answer:
+      "Yes — we develop blockchain-based ownership and smart contract solutions.",
+  },
+  {
+    question: "How long does it take to build a real estate platform?",
+    answer:
+      "8–12 weeks for MVP; 18–24 weeks for a full product with integrations.",
+  },
+  {
+    question: "Can you integrate with mortgage or finance APIs?",
+    answer:
+      "Yes — we integrate with payment gateways, loan, and insurance APIs.",
+  },
+  {
+    question: "Are your solutions scalable for global listings?",
+    answer:
+      "Yes — our cloud architecture supports high traffic and multi-region operations.",
+  },
+  {
+    question: "Do you provide AI features like property recommendations?",
+    answer:
+      "Yes — we develop machine learning models for personalized property discovery.",
+  },
+  {
+    question: "What compliance standards do you follow?",
+    answer:
+      "GDPR, ISO 27001, and blockchain-based audit transparency.",
+  },
+  {
+    question: "Can you modernize our legacy real estate systems?",
+    answer:
+      "Yes — we re-engineer and migrate legacy portals to cloud-native platforms.",
+  },
+]}
       />
 
       {/* FINAL CTA */}

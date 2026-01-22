@@ -229,18 +229,18 @@ export default function RetailEcommercePage() {
 
       {/* BENEFITS */}
       <SplitListSection
-        title="Benefits of Partnering with Avaantra Global"
-        left={[
-          "Omnichannel integration across all touchpoints",
-          "CRO-optimized storefronts & checkouts",
-          "AI-driven growth insights",
-        ]}
-        right={[
-          "PCI-DSS & GDPR compliant commerce",
-          "Scalable architecture for global expansion",
-        ]}
-        quote="We make commerce frictionless, intelligent, and conversion-ready."
-      />
+  title="Benefits of Partnering with Avaantra Global"
+  left={[
+    "Omnichannel integration across all sales and touchpoints",
+    "CRO-optimized storefronts and checkouts for higher conversions",
+    "AI-driven, data-backed growth insights built into dashboards",
+  ]}
+  right={[
+    "PCI-DSS & GDPR compliant secure commerce",
+    "Scalable architecture ready for traffic surges and global expansion",
+  ]}
+  quote="We make commerce frictionless, intelligent, and conversion-ready."
+/>
 
       {/* COMPLIANCE */}
       <ComplianceList
@@ -260,23 +260,57 @@ export default function RetailEcommercePage() {
       <FAQGrid
         title="Frequently Asked Questions"
         faqs={[
-          {
-            question: "Do you build both B2C and B2B eCommerce solutions?",
-            answer: "Yes. We build both consumer-facing and enterprise commerce platforms.",
-          },
-          {
-            question: "Can you migrate our existing store?",
-            answer: "Absolutely. We handle platform migrations with zero downtime.",
-          },
-          {
-            question: "Do you integrate POS or ERP systems?",
-            answer: "Yes. We integrate SAP, Oracle, Microsoft Dynamics, and more.",
-          },
-          {
-            question: "How fast can we launch?",
-            answer: "8–12 weeks for MVP; 16–20 weeks for enterprise builds.",
-          },
-        ]}
+  {
+    question: "Do you build both B2C and B2B eCommerce solutions?",
+    answer:
+      "Yes — we build both B2C storefronts and B2B commerce systems with multi-tier pricing and role-based access.",
+  },
+  {
+    question: "Can you migrate our existing store to a new platform?",
+    answer:
+      "Absolutely. We specialize in platform migration with zero downtime.",
+  },
+  {
+    question: "Do you integrate with POS or ERP systems?",
+    answer:
+      "Yes — we connect with SAP, Oracle, Microsoft Dynamics, and more.",
+  },
+  {
+    question: "Do you build mobile commerce apps?",
+    answer:
+      "Yes — we deliver responsive mobile-first and native retail apps.",
+  },
+  {
+    question: "How long does it take to launch an eCommerce store?",
+    answer:
+      "8–12 weeks for MVP; 16–20 weeks for enterprise-level builds.",
+  },
+  {
+    question: "Can you integrate AI features?",
+    answer:
+      "Yes — we add personalization, product recommendation, and predictive analytics.",
+  },
+  {
+    question: "Do you offer performance optimization?",
+    answer:
+      "Yes — speed optimization, SEO setup, and CRO audits are included.",
+  },
+  {
+    question: "Are your solutions PCI-DSS compliant?",
+    answer:
+      "Always. All transactions are encrypted and compliant with major payment standards.",
+  },
+  {
+    question: "Do you work with D2C brands?",
+    answer:
+      "Yes — we help D2C businesses build, automate, and scale globally.",
+  },
+  {
+    question: "Can you manage our post-launch marketing?",
+    answer:
+      "Yes — our digital marketing team handles SEO, CRO, and performance marketing for retail brands.",
+  },
+]}
       />
 
       {/* FINAL CTA */}
