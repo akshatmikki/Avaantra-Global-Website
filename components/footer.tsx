@@ -63,11 +63,11 @@ export default function Footer() {
           <FooterColumn
             title="Solutions"
             links={[
-              ["For Agencies", "/for-agencies"],
-              ["For SaaS GTM", "/solutions/Launch-&-Grow-SaaS-GTM"],
-              ["For Startups", "/for-startups"],
-              // ["Healthcare", "/solutions/healthcare"],
-              ["For Product Delivery", "/solutions/Accelerate-Product-Delivery"],
+              ["For Agencies", "/solutions/ForAgencies"],
+              ["SaaS GTM", "/solutions/Launch-&-Grow-SaaS-GTM"],
+              ["Startups", "/solutions/for-startups"],
+              ["Healthcare", "/solutions/healthcare"],
+              ["Accelerate Product Delivery", "/solutions/Accelerate-Product-Delivery"],
             ]}
           />
 
