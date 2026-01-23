@@ -1,16 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/for-industries/Martech-&-AdTech/page": "app/for-industries/Martech-&-AdTech/page.js",
-  "/for-industries/Retail-&-eCommerce/page": "app/for-industries/Retail-&-eCommerce/page.js",
-  "/for-industries/Saas-&-B2B/page": "app/for-industries/Saas-&-B2B/page.js",
-  "/industries/page": "app/industries/page.js",
-  "/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams/page": "app/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams/page.js",
-  "/solutions/Accelerate-Product-Delivery/DevOps-&-Automation/page": "app/solutions/Accelerate-Product-Delivery/DevOps-&-Automation/page.js",
-  "/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch/page": "app/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch/page.js",
-  "/solutions/Accelerate-Product-Delivery/page": "app/solutions/Accelerate-Product-Delivery/page.js",
-  "/solutions/For-Agencies/Dedicated-Teams-for-Agencies/page": "app/solutions/For-Agencies/Dedicated-Teams-for-Agencies/page.js",
+  "/page": "app/page.js",
   "/solutions/For-Agencies/White-Label-Marketing/page": "app/solutions/For-Agencies/White-Label-Marketing/page.js",
-  "/solutions/For-Agencies/White-Label-Software-Development/page": "app/solutions/For-Agencies/White-Label-Software-Development/page.js",
-  "/solutions/For-Agencies/page": "app/solutions/For-Agencies/page.js",
-  "/solutions/page": "app/solutions/page.js"
+  "/solutions/For-Agencies/page": "app/solutions/For-Agencies/page.js"
 }

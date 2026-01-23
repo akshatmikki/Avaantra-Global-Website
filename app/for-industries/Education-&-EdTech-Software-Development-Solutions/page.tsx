@@ -27,7 +27,7 @@ import {
     Sparkles,
 } from "lucide-react"
 
-export default function EdTechPage() {
+export default function EducationEdTechPage() {
     return (
         <>
             {/* HERO */}
@@ -228,7 +228,7 @@ export default function EdTechPage() {
                 title="Technology Stack"
                 items={[
                     "Frontend: React, Angular, Vue, Flutter",
-                    "Backend: Node.js, .NET Core, Java Spring, Python Django",
+                    "Backend: Node.js, .NET Core, Python Django",
                     "Databases: PostgreSQL, MongoDB, MySQL",
                     "Cloud Platforms: AWS, Azure, Google Cloud",
                     "Education Standards: SCORM, xAPI, LTI",
@@ -243,16 +243,16 @@ export default function EdTechPage() {
                 title="Use Cases & Case Studies"
                 cases={[
                     {
-                        title: "Corporate Training Platform (Europe)",
-                        result: "47% faster onboarding; 60% increase in completion rates",
-                    },
-                    {
                         title: "EdTech Startup (India)",
-                        result: "35% improvement in learner scores; $1.2M seed raised",
+                        result: "2.5× increase in engagement; 40% improvement in completion rates",
                     },
                     {
-                        title: "K–12 Learning App (US)",
-                        result: "Daily active usage grew 2.5× in 3 months",
+                        title: "University (UK)",
+                        result: "30% cost savings; improved student retention",
+                    },
+                    {
+                        title: "Corporate Training Company (US)",
+                        result: "50% faster course delivery; 3× employee adoption",
                     },
                 ]}
             />
@@ -261,44 +261,44 @@ export default function EdTechPage() {
             <SplitListSection
                 title="Key Challenges We Solve"
                 left={[
-                    "Fragmented learning ecosystems",
-                    "Low learner engagement & retention",
-                    "Data security & compliance risks",
+                    "🎯 Low learner engagement and retention",
+                    "💻 Outdated learning management systems",
+                    "📉 Lack of real-time analytics for performance",
                 ]}
                 right={[
-                    "Limited personalization in content delivery",
-                    "Lack of gamification & motivation",
-                    "Integration challenges with legacy systems",
+                    "🧠 Generic, non-personalized learning paths",
+                    "🏫 Complex administration across departments",
+                    "🔒 Compliance and data security concerns",
                 ]}
             />
-
             {/* BENEFITS */}
             <SplitListSection
-                title="Benefits of Partnering with Avaantra"
+                title="Benefits of Partnering with Avaantra Global"
                 left={[
-                    "Faster time-to-learn — MVPs in 10–12 weeks",
-                    "AI-driven personalized learning paths",
-                    "Fully secure FERPA/GDPR-ready platforms",
+                    "🚀 Faster go-to-market — MVPs launched in 12–14 weeks",
+                    "🧠 AI-driven personalized learning paths",
+                    "📈 Data analytics & performance insights",
                 ]}
                 right={[
-                    "Gamified engagement mechanics",
-                    "Analytics-backed learning insights",
+                    "💡 Scalable cloud infrastructure for global growth",
+                    "🔒 Fully compliant — SCORM, GDPR, ISO & FERPA ready",
+                    "💬 Gamified engagement & real-time interactivity",
                 ]}
-                quote="We turn learning into a measurable, scalable business advantage."
+                quote="We don’t digitize education — we humanize technology for learning."
             />
 
             {/* COMPLIANCE */}
             <ComplianceList
                 title="Compliance & Security Framework"
                 left={[
-                    "GDPR, FERPA, ISO 27001 standards",
-                    "Encrypted cloud infrastructure",
-                    "Multi-factor authentication",
+                    "🔒 GDPR, FERPA & ISO 27001 certified",
+                    "🔐 Encrypted data transmission & secure cloud hosting",
+                    "🧑‍💼 Role-based access controls",
                 ]}
                 right={[
-                    "Role-based access controls",
-                    "SCORM/xAPI compliant data exchange",
-                    "Regular security audits",
+                    "📘 SCORM, xAPI & LTI standard compatibility",
+                    "🛡️ AI & data ethics policy adherence",
+                    "🔍 Regular security audits & monitoring",
                 ]}
             />
 
@@ -307,66 +307,72 @@ export default function EdTechPage() {
                 title="Frequently Asked Questions"
                 faqs={[
                     {
+                        question: "Do you build custom LMS solutions?",
+                        answer:
+                            "Yes — we create fully custom LMS platforms or enhance and modernize existing systems.",
+                    },
+                    {
                         question: "Do you build both web and mobile eLearning platforms?",
                         answer:
-                            "Yes, we design responsive web-based systems and native mobile apps.",
+                            "Yes — we design responsive web platforms and native or cross-platform mobile apps.",
                     },
                     {
-                        question: "Can you integrate existing LMS with our platform?",
+                        question: "Can you integrate existing LMS platforms?",
                         answer:
-                            "Absolutely — we support Moodle, Blackboard, TalentLMS, and custom APIs.",
+                            "Absolutely — we integrate with Moodle, Blackboard, TalentLMS, and custom APIs.",
                     },
                     {
-                        question: "Do you create AI-based learning paths?",
+                        question: "Are your EdTech platforms compliant with SCORM and xAPI?",
                         answer:
-                            "Yes — we implement adaptive algorithms that adjust content dynamically.",
+                            "Yes — all platforms are compatible with global standards like SCORM, xAPI, and LTI.",
                     },
                     {
-                        question: "Are your systems FERPA and GDPR compliant?",
+                        question: "Do you build video-based virtual classrooms?",
                         answer:
-                            "Yes — every product we build follows these global data protection standards.",
+                            "Yes — with live classes, chat, recordings, attendance tracking, and breakout rooms.",
                     },
                     {
-                        question: "Can you support white-label solutions for EdTech startups?",
+                        question: "Can you integrate AI for adaptive learning?",
                         answer:
-                            "Yes, we offer full white-label LMS and eLearning systems.",
-                    },
-                    {
-                        question: "Do you include gamification features?",
-                        answer:
-                            "Yes, we use points, badges, leaderboards, and quizzes to boost engagement.",
-                    },
-                    {
-                        question: "How long does it take to develop an MVP?",
-                        answer:
-                            "Usually 12–14 weeks for MVP; 20–24 weeks for a full platform.",
-                    },
-                    {
-                        question: "Can we include real-time classes in our app?",
-                        answer:
-                            "Yes — we build video conferencing modules with chat, notes, and attendance.",
+                            "Absolutely — we build AI-driven personalization, adaptive learning paths, and analytics.",
                     },
                     {
                         question: "Do you provide analytics dashboards?",
                         answer:
-                            "Yes — with Power BI, Google Data Studio, or fully custom dashboards.",
+                            "Yes — using Power BI, Google Data Studio, or fully custom real-time dashboards.",
                     },
                     {
-                        question: "Do you handle content creation too?",
+                        question: "Can you integrate payment gateways for online courses?",
                         answer:
-                            "We focus on platform development but partner with content studios if needed.",
+                            "Yes — we support subscriptions, one-time payments, and global payment gateways.",
+                    },
+                    {
+                        question: "Do you offer white-label LMS solutions?",
+                        answer:
+                            "Yes — fully customizable, white-label-ready LMS platforms for startups and agencies.",
+                    },
+                    {
+                        question: "How long does it take to build a learning platform?",
+                        answer:
+                            "Typically 12–16 weeks for an MVP, depending on scope and integrations.",
+                    },
+                    {
+                        question: "Do you offer maintenance and scaling support?",
+                        answer:
+                            "Yes — including 24/7 monitoring, updates, performance optimization, and scaling.",
                     },
                 ]}
             />
 
             {/* FINAL CTA */}
             <FinalCTA
-                title="Let’s Build an EdTech Platform That Inspires the Next Generation"
-                subtitle="Partner with Avaantra Global to create engaging, compliant, and intelligent learning systems that make education accessible and measurable."
+                title="Let’s Transform Education for the Next Generation"
+                subtitle="Partner with Avaantra Global to build modern, data-driven EdTech platforms that make learning accessible, engaging, and measurable."
                 primaryCTA="Start Your EdTech Project"
-                secondaryCTA="Download EdTech Case Study Deck"
-                trustText="FERPA Compliant • ISO 27001 Certified • 150+ EdTech Projects • Global Delivery"
+                secondaryCTA="Download EdTech Solutions Deck"
+                trustText="SCORM & xAPI Compliant • ISO 27001 Certified • 22+ Years Expertise • 200+ Global Projects"
             />
+
         </>
     )
 }

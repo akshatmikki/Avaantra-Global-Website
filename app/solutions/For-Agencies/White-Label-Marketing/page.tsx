@@ -19,31 +19,31 @@ export const metadata = {
 export default function WhiteLabelMarketingPage() {
   const services = [
     {
-      icon: <TrendingUp className="w-8 h-8 text-purple-600" />,
+      icon: <TrendingUp className="w-8 h-8 text-orange-600" />,
       title: "SEO (Search Engine Optimization)",
       desc: "Technical SEO, content strategy, authority building, and analytics.",
       outcome: "Predictable rankings and long-term traffic growth",
     },
     {
-      icon: <Target className="w-8 h-8 text-purple-600" />,
+      icon: <Target className="w-8 h-8 text-orange-600" />,
       title: "PPC & Paid Advertising",
       desc: "Google, Meta, LinkedIn ads with constant testing and optimization.",
       outcome: "Lower CPL and higher ROI with transparent reporting",
     },
     {
-      icon: <Layers className="w-8 h-8 text-purple-600" />,
+      icon: <Layers className="w-8 h-8 text-orange-600" />,
       title: "Social Media Marketing",
       desc: "Strategy, creatives, scheduling, and paid social campaigns.",
       outcome: "Consistent engagement and brand presence",
     },
     {
-      icon: <Rocket className="w-8 h-8 text-purple-600" />,
+      icon: <Rocket className="w-8 h-8 text-orange-600" />,
       title: "Content Marketing",
       desc: "Blogs, emails, lead magnets, case studies, and PR content.",
       outcome: "Authority building and 2–3X organic conversions",
     },
     {
-      icon: <Briefcase className="w-8 h-8 text-purple-600" />,
+      icon: <Briefcase className="w-8 h-8 text-orange-600" />,
       title: "Marketing Automation",
       desc: "CRM workflows, lead scoring, funnels, and dashboards.",
       outcome: "Always-on lead nurturing and scalable delivery",
@@ -59,7 +59,7 @@ export default function WhiteLabelMarketingPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Deliver More Marketing Projects — Without Hiring or Stress
           </h1>
-          <p className="text-lg md:text-xl text-purple-100 max-w-4xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-orange-100 max-w-4xl mx-auto mb-10">
             Scale your agency confidently. Our expert team delivers SEO, Paid
             Ads, Content, and Automation under your brand — so you grow without
             overhead.
@@ -712,7 +712,7 @@ export default function WhiteLabelMarketingPage() {
             <p className="text-xl font-semibold text-white mt-6">
               This isn’t outsourcing.
               <br />
-              It’s empowering your agency to grow <span className="text-purple-400">sustainably</span>.
+              It’s empowering your agency to grow <span className="text-orange-400">sustainably</span>.
             </p>
           </div>
         </div>
@@ -723,7 +723,7 @@ export default function WhiteLabelMarketingPage() {
             Ready to Deliver More and Stress Less?
           </h2>
 
-          <p className="text-lg text-purple-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-orange-100 mb-10 max-w-2xl mx-auto">
             Focus on strategy and relationships.
             <br />
             We’ll handle delivery — reliably, invisibly, and under your brand.

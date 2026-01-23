@@ -70,6 +70,8 @@ import {
   Phone,
   MapPin,
   Mail as MailIcon,
+  BookOpen,
+
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -386,6 +388,16 @@ const Navigation = () => {
       link: "/for-industries/Travel",
       icon: Plane,
     },
+    {
+      title: "Education & EdTech Software Development",
+      link: "/for-industries/Education-&-EdTech-Software-Development",
+      icon: BookOpen
+    },
+    {
+      title: "HealthTech Software Development Solutions",
+      link: "/for-industries/HealthTech-Software-Development-Solutions",
+      icon: HeartPulse
+    }
   ];
 
   const hireMenu = {
@@ -673,18 +685,16 @@ const Navigation = () => {
           >
             <button
               onClick={() => handleDropdownClick("services")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "services"
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "services"
                   ? "text-primary"
                   : "text-dark hover:text-primary"
-              }`}
+                }`}
             >
               Services{" "}
               <ChevronDown
                 size={16}
-                className={`transition-transform ${
-                  activeDropdown === "services" ? "rotate-180" : ""
-                }`}
+                className={`transition-transform ${activeDropdown === "services" ? "rotate-180" : ""
+                  }`}
               />
             </button>
           </div>
@@ -696,18 +706,16 @@ const Navigation = () => {
           >
             <button
               onClick={() => handleDropdownClick("solutions")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "solutions"
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "solutions"
                   ? "text-primary"
                   : "text-dark hover:text-primary"
-              }`}
+                }`}
             >
               Solutions{" "}
               <ChevronDown
                 size={16}
-                className={`transition-transform ${
-                  activeDropdown === "solutions" ? "rotate-180" : ""
-                }`}
+                className={`transition-transform ${activeDropdown === "solutions" ? "rotate-180" : ""
+                  }`}
               />
             </button>
           </div>
@@ -719,18 +727,16 @@ const Navigation = () => {
           >
             <button
               onClick={() => handleDropdownClick("industries")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "industries"
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "industries"
                   ? "text-primary"
                   : "text-dark hover:text-primary"
-              }`}
+                }`}
             >
               Industries{" "}
               <ChevronDown
                 size={16}
-                className={`transition-transform ${
-                  activeDropdown === "industries" ? "rotate-180" : ""
-                }`}
+                className={`transition-transform ${activeDropdown === "industries" ? "rotate-180" : ""
+                  }`}
               />
             </button>
           </div>
@@ -742,18 +748,16 @@ const Navigation = () => {
           >
             <button
               onClick={() => handleDropdownClick("hire")}
-              className={`flex items-center gap-1 font-medium transition-colors ${
-                activeDropdown === "hire"
+              className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "hire"
                   ? "text-primary"
                   : "text-dark hover:text-primary"
-              }`}
+                }`}
             >
               Hire{" "}
               <ChevronDown
                 size={16}
-                className={`transition-transform ${
-                  activeDropdown === "hire" ? "rotate-180" : ""
-                }`}
+                className={`transition-transform ${activeDropdown === "hire" ? "rotate-180" : ""
+                  }`}
               />
             </button>
           </div>

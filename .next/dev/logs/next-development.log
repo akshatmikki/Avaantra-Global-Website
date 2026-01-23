@@ -1,108 +1,808 @@
-[00:00:52.067] Server  LOG     ✓ Ready in 40.8s
-[00:00:55.638] Server  LOG     ○ Compiling /solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams ...
-[00:01:15.186] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[00:01:42.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:44.605] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[00:01:44.695] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","route":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams"}
-[00:01:44.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769056698411}
-[00:04:41.587] Server  LOG     ✓ Compiled in 5.9s
-[00:06:56.889] Server  LOG     ✓ Compiled in 776ms
-[00:07:10.124] Server  LOG     ✓ Compiled in 515ms
-[00:08:52.856] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:08:52.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769057126423}
-[00:46:49.881] Server  LOG     ✓ Compiled in 435ms
-[00:46:51.464] Server  LOG     ✓ Compiled in 355ms
-[00:47:55.592] Server  LOG     ✓ Compiled in 411ms
-[00:49:03.988] Server  LOG     ✓ Compiled in 204ms
-[00:49:06.777] Server  LOG     ✓ Compiled in 278ms
-[00:51:47.034] Server  LOG     ✓ Compiled in 212ms
-[02:17:39.822] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[02:17:41.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:17:41.503] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[02:17:41.758] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/solutions/For-Agencies","route":"/solutions/For-Agencies"}
-[02:17:41.758] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769064855283}
-[02:19:02.065] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[02:19:02.065] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769064935591}
-[02:20:46.419] Server  LOG     ✓ Compiled in 337ms
-[02:21:25.780] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Software-Development","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065079302}
-[02:22:48.141] Server  LOG     ✓ Compiled in 406ms
-[02:30:30.103] Server  LOG     ✓ Compiled in 482ms
-[02:30:45.408] Server  LOG     ✓ Compiled in 372ms
-[02:31:14.316] Server  LOG     ✓ Compiled in 398ms
-[02:31:38.760] Server  LOG     ✓ Compiled in 627ms
-[02:32:13.606] Server  LOG     ✓ Compiled in 754ms
-[02:32:45.642] Server  LOG     ✓ Compiled in 629ms
-[02:33:15.098] Server  LOG     ✓ Compiled in 425ms
-[02:34:07.439] Server  LOG     ✓ Compiled in 358ms
-[02:34:27.599] Server  LOG     ✓ Compiled in 577ms
-[02:34:48.162] Server  LOG     ✓ Compiled in 547ms
-[02:35:47.016] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065940492}
-[02:36:05.992] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/DevOps-&-Automation","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065959516}
-[02:36:17.381] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Fast-MVP-Launch","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065970904}
-[02:36:26.595] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery/Dedicated-Engineering-Teams","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065980121}
-[02:36:34.732] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065988232}
-[02:36:44.149] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769065997671}
-[02:36:53.643] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Software-Development","o":"http://localhost:3000/solutions/For-Agencies/White-Label-Software-Development","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066007164}
-[02:43:28.038] Server  LOG     ✓ Compiled in 255ms
-[02:45:33.797] Server  LOG     ✓ Compiled in 306ms
-[02:46:27.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Dedicated-Teams-for-Agencies","o":"http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066580666}
-[02:46:29.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions color: rgb(120, 120, 120) color: inherit {"dp":"/solutions","o":"http://localhost:3000/solutions","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066583489}
-[02:46:40.241] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/Dedicated-Teams-for-Agencies","o":"http://localhost:3000/solutions/For-Agencies/Dedicated-Teams-for-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066593764}
-[02:47:58.827] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066672354}
-[02:48:06.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/industries color: rgb(120, 120, 120) color: inherit {"dp":"/industries","o":"http://localhost:3000/industries","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769066680379}
-[02:51:00.078] Server  LOG     ✓ Compiled in 207ms
-[02:55:41.122] Server  LOG     ✓ Compiled in 524ms
-[03:00:57.367] Server  LOG     ✓ Compiled in 551ms
-[03:01:08.428] Server  LOG     ✓ Compiled in 240ms
-[03:01:26.401] Server  LOG     ✓ Compiled in 254ms
-[03:01:55.188] Server  LOG     ✓ Compiled in 228ms
-[03:02:30.180] Server  LOG     ✓ Compiled in 377ms
-[03:02:43.709] Server  LOG     ✓ Compiled in 491ms
-[03:03:05.450] Server  LOG     ✓ Compiled in 471ms
-[03:03:16.651] Server  LOG     ✓ Compiled in 514ms
-[03:03:34.309] Server  LOG     ✓ Compiled in 630ms
-[03:03:47.919] Server  LOG     ✓ Compiled in 848ms
-[03:04:00.848] Server  LOG     ✓ Compiled in 1111ms
-[03:04:16.115] Server  LOG     ✓ Compiled in 917ms
-[03:04:33.764] Server  LOG     ✓ Compiled in 627ms
-[03:04:51.784] Server  LOG     ✓ Compiled in 862ms
-[03:05:10.138] Server  LOG     ✓ Compiled in 568ms
-[03:05:20.996] Server  LOG     ✓ Compiled in 527ms
-[03:05:40.887] Server  LOG     ✓ Compiled in 449ms
-[03:05:48.748] Server  LOG     ✓ Compiled in 673ms
-[03:06:00.091] Server  LOG     ✓ Compiled in 533ms
-[03:10:17.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Retail-&-eCommerce color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Retail-&-eCommerce","o":"http://localhost:3000/for-industries/Retail-&-eCommerce","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068011453}
-[03:14:34.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068268024}
-[03:15:08.404] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[03:15:08.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:15:09.295] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[03:15:09.416] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
-[03:15:09.416] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068302945}
-[03:17:01.542] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[03:17:02.126] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:17:02.536] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[03:17:02.536] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:17:02.536] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[03:17:02.536] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
-[03:17:02.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068416066}
-[03:17:47.173] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
-[03:17:47.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:17:47.919] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
-[03:17:47.919] Browser WARN    Image with src "http://localhost:3000/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/for-industries/Saas-&-B2B","route":"/for-industries/Saas-&-B2B"}
-[03:17:47.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Saas-&-B2B color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Saas-&-B2B","o":"http://localhost:3000/for-industries/Saas-&-B2B","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068461448}
-[03:19:02.535] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[03:19:02.536] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3000/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068536053}
-[03:19:20.264] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/solutions/Accelerate-Product-Delivery color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/Accelerate-Product-Delivery","o":"http://localhost:3000/solutions/Accelerate-Product-Delivery","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068553791}
-[03:20:17.899] Server  LOG     ✓ Compiled in 272ms
-[03:20:28.877] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Retail-&-eCommerce color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Retail-&-eCommerce","o":"http://localhost:3000/for-industries/Retail-&-eCommerce","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769068622406}
-[03:31:09.285] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/for-industries/Martech-&-AdTech color: rgb(120, 120, 120) color: inherit {"dp":"/for-industries/Martech-&-AdTech","o":"http://localhost:3000/for-industries/Martech-&-AdTech","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769069262804}
-[03:31:46.637] Server  LOG     ✓ Compiled in 804ms
-[05:15:39.641] Server  LOG     ✓ Compiled in 350ms
+[00:00:03.627] Server  LOG     ✓ Ready in 2.8s
+[01:32:03.363] Server  LOG     ○ Compiling / ...
+[01:32:13.133] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[01:32:18.139] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:19.019] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[01:32:20.000] Browser WARN    Image with src "http://localhost:3001/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:32:20.000] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:32:20.000] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:32:20.001] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769162111133}
+[01:36:03.864] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:03.901] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:03.956] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:03.987] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.016] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.035] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.070] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.091] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.120] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.148] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.168] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.190] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.210] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.232] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.251] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.269] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.288] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.307] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.331] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.363] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.422] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.473] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.556] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.635] Server  ERROR   ⨯ ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:36:04.673] Server  LOG     ✓ Compiled in 2.7s
+[01:36:06.791] Browser ERROR   ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:36:06.791] Browser ERROR   ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:36:06.791] Browser ERROR   ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:36:06.791] Browser ERROR   ./components/navigation.tsx:6:1
+Module not found: Can't resolve 'react-i18next'
+  4 | import Link from "next/link";
+  5 | import Image from "next/image";
+> 6 | import { useTranslation } from "react-i18next";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import {
+  8 |   CreditCard,
+  9 |   HeartPulse,
+
+Import traces:
+  Client Component Browser:
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Client Component Browser]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Client Component SSR]
+    ./components/layout-client.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:36:07.254] Server  LOG     ✓ Compiled in 2.7s
+[01:36:08.785] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[01:36:12.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:14.006] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[01:36:15.003] Browser WARN    Image with src "http://localhost:3001/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:36:15.003] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:36:15.003] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:36:15.003] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769162346410}
+[01:37:33.036] Server  ERROR   ⨯ TypeError: {imported module ./nodemodules/next/dist/server/route-modules/app-page/vendored/rsc/react.js}.createContext is not a function
+[01:37:33.941] Server  ERROR   ⨯ TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:37:36.090] Server  ERROR   ⨯ TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:37:37.324] Server  ERROR   ⨯ TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:37:37.825] Server  LOG     ✓ Compiled in 945ms
+[01:37:38.399] Browser ERROR   uncaughtError: TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:37:39.621] Server  LOG     ✓ Compiled in 880ms
+[01:38:39.947] Server  ERROR   ⨯ TypeError: {imported module ./nodemodules/next/dist/server/route-modules/app-page/vendored/rsc/react.js}.createContext is not a function
+[01:38:40.637] Server  ERROR   ⨯ TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:38:41.079] Browser ERROR   uncaughtError: TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[01:40:36.378] Server  LOG     ✓ Compiled in 698ms
+[01:40:37.451] Server  WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {}
+[01:40:42.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:44.996] Browser WARN    react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next {"code":"NO_I18NEXT_INSTANCE"}
+[01:40:46.005] Browser WARN    Image with src "http://localhost:3001/avaantra-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:40:46.005] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:40:46.005] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:40:46.005] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769162616884}
+[01:42:16.350] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:42:16.350] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/solutions/For-Agencies color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies","o":"http://localhost:3001/solutions/For-Agencies","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769162707768}
+[01:42:29.899] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/solutions/For-Agencies/White-Label-Marketing color: rgb(120, 120, 120) color: inherit {"dp":"/solutions/For-Agencies/White-Label-Marketing","o":"http://localhost:3001/solutions/For-Agencies/White-Label-Marketing","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769162721320}
+[01:54:04.874] Server  LOG     ✓ Compiled in 1201ms
