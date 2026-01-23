@@ -281,6 +281,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/for-agencies/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-agencies">> = Specific
+  const handler = {} as typeof import("../../../app/for-agencies/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/for-industries/AI-&-Data-Platforms/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/for-industries/AI-&-Data-Platforms">> = Specific
@@ -299,10 +308,28 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/for-industries/Education-&-EdTech-Software-Development-Solutions/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-industries/Education-&-EdTech-Software-Development-Solutions">> = Specific
+  const handler = {} as typeof import("../../../app/for-industries/Education-&-EdTech-Software-Development-Solutions/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/for-industries/Fintech/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/for-industries/Fintech">> = Specific
   const handler = {} as typeof import("../../../app/for-industries/Fintech/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/for-industries/HealthTech-Software-Development-Solutions/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/for-industries/HealthTech-Software-Development-Solutions">> = Specific
+  const handler = {} as typeof import("../../../app/for-industries/HealthTech-Software-Development-Solutions/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -797,7 +824,7 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 // Validate ../../../app/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy">> = Specific
-  const handler = {} as typeof import("../../../app/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy/page.js")
+  const handler = {} as typeof import("../../../app/solutions/Launch-&-Grow-SaaS-GTM/Saas-Growth-Startegy/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

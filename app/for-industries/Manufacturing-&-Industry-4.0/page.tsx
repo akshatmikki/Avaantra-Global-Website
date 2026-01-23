@@ -114,6 +114,7 @@ export default function ManufacturingPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for Manufacturing Transformation"
+        subheading="We bridge engineering intelligence with digital expertise to accelerate transformation for manufacturers."
         features={[
           {
             title: "End-to-End Industry 4.0 Implementation",
@@ -261,19 +262,53 @@ export default function ManufacturingPage() {
         faqs={[
           {
             question: "Do you modernize legacy manufacturing systems?",
-            answer: "Yes. We migrate and integrate legacy MES or ERP into Industry 4.0 environments.",
+            answer:
+              "Yes — we migrate and integrate legacy MES or ERP into Industry 4.0-ready environments.",
           },
           {
             question: "Can you connect IoT devices across factories?",
-            answer: "Absolutely. We integrate devices with cloud platforms for unified visibility.",
+            answer:
+              "Absolutely. We integrate IoT devices with cloud platforms for unified visibility.",
           },
           {
-            question: "What industries do you serve?",
-            answer: "Automotive, electronics, heavy machinery, energy, FMCG, and industrial equipment.",
+            question: "What industries do you serve within manufacturing?",
+            answer:
+              "Automotive, electronics, heavy machinery, energy, FMCG, and industrial equipment.",
+          },
+          {
+            question: "How do you ensure data security across plants?",
+            answer:
+              "Through OT cybersecurity, encrypted communication, and zero-trust frameworks.",
           },
           {
             question: "What’s the timeline for Industry 4.0 implementation?",
-            answer: "Typically 12–20 weeks depending on complexity and plant readiness.",
+            answer:
+              "Typically 12–20 weeks, depending on complexity and plant readiness.",
+          },
+          {
+            question: "Do you support cloud or hybrid deployments?",
+            answer:
+              "Yes — AWS, Azure, and private or hybrid cloud setups are fully supported.",
+          },
+          {
+            question: "Can you provide digital twin solutions?",
+            answer:
+              "Yes — we build digital replicas for simulations and predictive analysis.",
+          },
+          {
+            question: "Do you integrate AI into production lines?",
+            answer:
+              "Yes — for predictive maintenance, defect detection, and workflow automation.",
+          },
+          {
+            question: "Can you help with MES or ERP customizations?",
+            answer:
+              "Yes — we customize and integrate SAP, Oracle, and other enterprise systems as required.",
+          },
+          {
+            question: "Do you offer maintenance post-deployment?",
+            answer:
+              "Yes — our DevOps and support teams ensure continuous monitoring and optimization.",
           },
         ]}
       />

@@ -32,7 +32,8 @@ export default function FinTechPage() {
       {/* HERO */}
       <HeroSection
         title="Engineering Trust, Compliance & Innovation in FinTech"
-        subtitle="Build secure, scalable, and compliant FinTech platforms customers trust and regulators approve."
+        subtitle="Build future-ready FinTech products — secure, scalable, and compliant.
+ From payments to wealth management, Avaantra Global helps you launch digital financial platforms that customers love and regulators trust."
         primaryCTA="Request Free Consultation"
         secondaryCTA="See FinTech Case Studies"
       />
@@ -40,11 +41,11 @@ export default function FinTechPage() {
       {/* WHY FINTECH */}
       <InfoSection
         title="Why FinTech Innovation Matters"
-        description="Innovation in finance is no longer optional. AI-driven credit scoring, blockchain payments, and open banking ecosystems are redefining how financial products are built and consumed."
+        description="The financial industry is being redefined by technology. From AI-driven credit scoring and blockchain-based payments to open banking ecosystems, innovation isn’t optional — it’s the cost of survival. But innovation in finance comes with complexity. This is where Avaantra Global bridges innovation with compliance, helping FinTech companies build solutions that are trusted, transparent, and future-proof."
         points={[
-          "Evolving regulatory frameworks (KYC, AML, PCI-DSS, PSD2)",
-          "Growing security threats and compliance audits",
-          "Rising demand for instant, mobile-first experiences",
+          "Constantly evolving regulatory frameworks (KYC, AML, PCI-DSS, PSD2)",
+          "Rising security risks and frequent compliance audits",
+          "User expectations for instant, mobile-first financial experiences",
         ]}
         quote="In FinTech, trust isn’t earned through marketing — it’s engineered through code."
       />
@@ -52,32 +53,38 @@ export default function FinTechPage() {
       {/* SERVICES */}
       <ServiceGrid
         title="Our FinTech Development Services"
+        subheading="We deliver full-cycle FinTech software development — from concept to launch, backed by 22+ years of cross-industry experience."
         services={[
           {
             title: "Digital Banking Solutions",
             description:
               "Neo-banks, core banking systems, and wallet platforms",
-            value: "Audit-ready, scalable systems",
+            value: "Launch faster with audit-ready systems",
           },
           {
             title: "Payment Gateway Development",
             description: "PCI-DSS compliant gateways and orchestration",
-            value: "Secure global transactions",
+            value: "Secure global transactions, seamless UX",
           },
           {
             title: "Lending & Credit Platforms",
             description: "Loan origination, underwriting, AI scoring",
-            value: "Up to 70% faster processing",
+            value: "Reduce loan processing time by up to 70%",
           },
           {
             title: "WealthTech Platforms",
             description: "Robo-advisory and investment analytics",
-            value: "Real-time insights",
+            value: "Empower investors with real-time insights",
           },
           {
             title: "RegTech & Compliance Automation",
             description: "AI-driven KYC/AML and reporting",
-            value: "Simplified audits",
+            value: "Simplified audits, ensure regulatory alignment",
+          },
+          {
+            title: "InsurTech Solutions",
+            description: "Claims automation, policy management, and AI fraud detection",
+            value: "Lower operational cost, improve claim accuracy",
           },
           {
             title: "Blockchain & Digital Assets",
@@ -93,7 +100,7 @@ export default function FinTechPage() {
         title="Types of FinTech Software We Build"
         items={[
           { title: "Payments & Transfers", icon: CreditCard },
-          { title: "Digital & Open Banking", icon: Landmark },
+          { title: "Banking Solutions", icon: Landmark },
           { title: "Lending & BNPL", icon: Wallet },
           { title: "WealthTech", icon: LineChart },
           { title: "RegTech", icon: FileSearch },
@@ -106,6 +113,7 @@ export default function FinTechPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global"
+        subheading="We understand FinTech not just as developers — but as engineers of trust."
         features={[
           { title: "20+ Years Domain Expertise", icon: ShieldCheck },
           { title: "Compliance-First Engineering", icon: Lock },
@@ -119,30 +127,35 @@ export default function FinTechPage() {
 
       {/* PROCESS */}
       <ProcessSteps
-        title="Our FinTech Delivery Process"
+        title="Our Process — How We Build Future-Ready FinTech Platforms"
         steps={[
           {
-            title: "Discovery & Compliance",
-            description: "Business goals and regulatory mapping",
+            title: "Discovery & Compliance Mapping",
+            description:
+              "Identify business goals, regulatory requirements, and ecosystem integrations with an AI-driven feasibility and compliance matrix.",
           },
           {
             title: "Architecture & Design",
-            description: "Scalable, compliant blueprint",
+            description:
+              "Design scalable, secure software architecture with built-in regulatory alignment and future-readiness.",
           },
           {
-            title: "Agile Development",
-            description: "Bi-weekly feature delivery",
+            title: "Agile Development & Integration",
+            description:
+              "Iterative sprint-based development with full transparency and biweekly delivery of working modules.",
           },
           {
             title: "Testing & Audit Simulation",
-            description: "Pen tests and QA",
+            description:
+              "Comprehensive QA, penetration testing, and audit-like simulations for security and performance validation.",
           },
           {
-            title: "Deployment & Support",
-            description: "Cloud, DevOps, monitoring",
+            title: "Deployment & Ongoing Support",
+            description:
+              "Cloud deployment, DevOps automation, and continuous compliance monitoring for long-term stability.",
           },
         ]}
-        duration="12–24 weeks"
+        duration="12–24 weeks (depending on scale)"
       />
 
       {/* TECH STACK */}
@@ -166,15 +179,17 @@ export default function FinTechPage() {
           {
             title: "Digital Lending Platform (UAE)",
             result:
-              "Loan approvals reduced from 48 hours to 5 hours with 98% compliance accuracy",
+              "Automated AI-based loan scoring with integrated KYC/AML reduced approval time from 48 hours to 5 hours, achieving 98% compliance accuracy.",
           },
           {
             title: "Payment Gateway Modernization (UK)",
-            result: "100% PCI audit pass and 32% faster transaction processing",
+            result:
+              "Rebuilt payment orchestration with multi-currency and PSD2 readiness, resulting in 100% PCI-DSS audit pass and 32% faster transaction processing.",
           },
           {
             title: "WealthTech App (India)",
-            result: "40% engagement increase and 28% higher revenue per user",
+            result:
+              "AI-powered robo-advisory enabled scalable investment guidance, driving 40% higher user engagement and 28% increase in revenue per customer.",
           },
         ]}
       />
@@ -231,21 +246,52 @@ export default function FinTechPage() {
             question:
               "Do you build FinTech software from scratch or customize existing systems?",
             answer:
-              "Both. We build end-to-end platforms or modernize legacy systems into cloud-native solutions.",
+              "Both — we build end-to-end products or modernize legacy systems into compliant, cloud-native platforms.",
           },
           {
             question: "Are your systems PCI-DSS and PSD2 compliant?",
             answer:
-              "Yes. Compliance is built into every FinTech solution we deliver.",
+              "Yes. Every FinTech project is designed with full PCI-DSS, PSD2, and AML compliance.",
           },
           {
             question: "How long does it take to launch a FinTech MVP?",
-            answer: "Typically 8–12 weeks depending on complexity.",
+            answer:
+              "Typically 8–12 weeks, depending on complexity and integrations.",
+          },
+          {
+            question: "Can you integrate with core banking or third-party APIs?",
+            answer:
+              "Yes — we work with Plaid, Mambu, Stripe, Temenos, and other leading APIs.",
+          },
+          {
+            question: "Do you handle KYC/AML automation?",
+            answer:
+              "Absolutely. We build AI-driven KYC and AML workflows that comply with FATF and EU standards.",
+          },
+          {
+            question: "What makes Avaantra different from other FinTech developers?",
+            answer:
+              "We combine deep regulatory understanding with AI-led engineering and global delivery experience.",
+          },
+          {
+            question: "Can you help with app security audits?",
+            answer:
+              "Yes — our DevSecOps team ensures continuous penetration testing and compliance audit readiness.",
           },
           {
             question: "Do you provide post-launch maintenance?",
             answer:
-              "Yes. Continuous monitoring, updates, and compliance support are included.",
+              "Yes. Continuous monitoring, updates, and compliance maintenance are included.",
+          },
+          {
+            question: "How do you ensure customer data privacy?",
+            answer:
+              "Through encrypted data handling, anonymization, and secure access layers across all systems.",
+          },
+          {
+            question: "Can you help startups with investor-ready MVPs?",
+            answer:
+              "Yes — we specialize in investor-grade MVPs with full technical documentation and compliance proof.",
           },
         ]}
       />

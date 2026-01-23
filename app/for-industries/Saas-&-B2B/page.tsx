@@ -218,19 +218,43 @@ export default function SaaSPage() {
         faqs={[
           {
             question: "Do you only build SaaS from scratch?",
-            answer: "No. We modernize existing platforms and migrate on-premise systems to the cloud.",
+            answer: "No. We also modernize existing platforms and migrate on-premise apps to the cloud.",
           },
           {
             question: "How do you ensure SaaS scalability?",
-            answer: "Microservices, Kubernetes orchestration, and load balancing.",
+            answer: "Through modular microservices, load balancing, and Kubernetes orchestration.",
           },
           {
-            question: "Can you help with SaaS GTM strategy?",
-            answer: "Yes. We align engineering with growth and acquisition strategy.",
+            question: "Can you help with SaaS marketing and GTM strategy?",
+            answer: "Yes. We combine engineering with growth marketing to ensure adoption and retention.",
           },
           {
-            question: "What’s your SaaS development timeline?",
-            answer: "8–10 weeks for MVP, 14–20 weeks for enterprise rollout.",
+            question: "How do you handle security?",
+            answer: "All products follow SOC 2, GDPR, and ISO protocols with continuous monitoring.",
+          },
+          {
+            question: "Do you support post-launch optimization?",
+            answer: "Yes. We handle updates, new features, and conversion optimization post-launch.",
+          },
+          {
+            question: " What’s your SaaS development timeline?",
+            answer: "8–10 weeks for MVP; 14–20 weeks for enterprise rollout.",
+          },
+          {
+            question: "Which monetization models do you support?",
+            answer: "Subscription, freemium, tiered pricing, usage-based, and hybrid models.",
+          },
+          {
+            question: "Can you integrate AI into our existing SaaS?",
+            answer: "Absolutely — from predictive analytics to chatbots and personalization engines.",
+          },
+          {
+            question: "What’s the minimum budget to start?",
+            answer: " MVPs typically start from $15K; full platforms vary based on features and integrations.",
+          },
+          {
+            question: "Do you offer white-label SaaS development?",
+            answer: "Yes — perfect for agencies or partners reselling under their brand.",
           },
         ]}
       />

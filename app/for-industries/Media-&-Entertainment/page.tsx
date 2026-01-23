@@ -115,6 +115,7 @@ export default function MediaEntertainmentPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for MediaTech Development"
+        subheading="We bring together technology, creativity, and data science to build media ecosystems that deliver measurable engagement and ROI."
         features={[
           {
             title: "Full-Stack Media Expertise",
@@ -260,23 +261,57 @@ export default function MediaEntertainmentPage() {
       <FAQGrid
         title="Frequently Asked Questions"
         faqs={[
-          {
-            question: "Do you build OTT and streaming platforms from scratch?",
-            answer: "Yes. We build complete OTT systems with streaming, analytics, and monetization.",
-          },
-          {
-            question: "Can you integrate ads and subscriptions?",
-            answer: "Absolutely. We support ads, subscriptions, and hybrid revenue models.",
-          },
-          {
-            question: "Do you support DRM and content protection?",
-            answer: "Yes. We implement DRM, encryption, and anti-piracy frameworks.",
-          },
-          {
-            question: "How long does it take to launch?",
-            answer: "12–16 weeks for MVP; 20–24 weeks for full platforms.",
-          },
-        ]}
+  {
+    question: "Do you build OTT and streaming platforms from scratch?",
+    answer:
+      "Yes — we build end-to-end OTT systems including video encoding, streaming, and analytics.",
+  },
+  {
+    question: "Can you integrate monetization and ad networks?",
+    answer:
+      "Absolutely — we integrate ad servers, payment systems, and in-app purchase models.",
+  },
+  {
+    question: "Do you support DRM and content protection?",
+    answer:
+      "Yes — we implement DRM, encryption, and anti-piracy frameworks.",
+  },
+  {
+    question: "Can you migrate our existing CMS or OTT to cloud?",
+    answer:
+      "Yes — we modernize legacy platforms and migrate to AWS, Azure, or GCP.",
+  },
+  {
+    question: "Do you build AI recommendation engines?",
+    answer:
+      "Yes — our ML team creates algorithms for personalized viewing experiences.",
+  },
+  {
+    question: "Can you build multi-device streaming apps?",
+    answer:
+      "Yes — for iOS, Android, web, smart TVs, and OTT boxes.",
+  },
+  {
+    question: "Do you support live streaming and VoD together?",
+    answer:
+      "Yes — we design hybrid architectures for both live and on-demand content.",
+  },
+  {
+    question: "What’s your average delivery timeline?",
+    answer:
+      "12–16 weeks for MVP; 20–24 weeks for full OTT or publishing platforms.",
+  },
+  {
+    question: "How do you ensure content scalability?",
+    answer:
+      "Through cloud-native infrastructure with auto-scaling and CDN optimization.",
+  },
+  {
+    question: "Do you offer analytics dashboards?",
+    answer:
+      "Yes — for engagement, retention, ad performance, and revenue tracking.",
+  },
+]}
       />
 
       {/* FINAL CTA */}

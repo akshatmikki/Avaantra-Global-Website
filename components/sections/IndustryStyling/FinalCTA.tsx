@@ -24,7 +24,7 @@ export function FinalCTA({
         </Button>
 
         {secondaryCTA && (
-          <Button size="lg" variant="outline" className="border-white/30 text-white">
+          <Button size="lg" variant="outline"  className="relative bg-orange-500 text-white hover:bg-orange-400 rounded-full px-10 h-12 text-base font-semibold shadow-xl flex items-center gap-2">
             {secondaryCTA}
           </Button>
         )}

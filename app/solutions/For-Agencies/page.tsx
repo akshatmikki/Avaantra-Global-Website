@@ -53,38 +53,49 @@ export default function AgenciesPage() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
 
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10 rounded-full px-8 bg-transparent"
             >
               Build Your Dedicated Team
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
 
       {/* Why Agencies */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-12 text-center">
-            Why Agencies Choose Avaantra Global
-          </h2>
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Why Agencies Choose Avaantra Global
+            </h2>
+            <p className="text-lg text-slate-600 max-w-4xl mx-auto">
+              Agencies grow fast — until delivery hits a wall.
+              You win more clients, more retainers, more campaigns…
+              but not enough hands to deliver reliably.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Problem vs Solution */}
+          <div className="grid md:grid-cols-2 gap-8 mb-14">
             {/* Problem */}
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-dark mb-4">The Problem</h3>
-              <ul className="space-y-3 text-gray-700">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-6">
+                The Problem
+              </h3>
+              <ul className="space-y-4 text-slate-700 text-lg">
                 {[
                   "Hiring is slow and expensive",
                   "Freelancers are unpredictable",
                   "Margins get squeezed",
-                  "Deadlines start slipping",
+                  "Client deadlines start slipping",
                   "Delivery becomes a risk",
                 ].map((item, idx) => (
-                  <li key={idx} className="flex gap-2">
-                    <span className="text-red-500">✗</span>
+                  <li key={idx} className="flex gap-3 items-start">
+                    <span className="text-orange-500 font-bold mt-1">✗</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -92,17 +103,19 @@ export default function AgenciesPage() {
             </div>
 
             {/* Solution */}
-            <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-dark mb-4">The Solution</h3>
-              <ul className="space-y-3 text-gray-700">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-6">
+                The Avaantra Solution
+              </h3>
+              <ul className="space-y-4 text-slate-700 text-lg">
                 {[
                   "Elastic delivery capacity on demand",
                   "Senior engineers, marketers & designers",
                   "Predictable quality and timelines",
-                  "100% white-label execution",
+                  "100% white-label execution under your brand",
                 ].map((item, idx) => (
-                  <li key={idx} className="flex gap-2">
-                    <CheckCircle className="text-green-500 mt-1" size={18} />
+                  <li key={idx} className="flex gap-3 items-start">
+                    <CheckCircle className="text-orange-500 mt-1" size={18} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -110,95 +123,148 @@ export default function AgenciesPage() {
             </div>
           </div>
 
-          <div className="bg-gray-50 border border-gray-200 p-8 rounded-2xl text-center">
-            <p className="text-2xl font-bold text-dark italic">
+          {/* Positioning Statement */}
+          <div className="bg-white border border-slate-200 rounded-2xl p-10 text-center">
+            <p className="text-2xl font-bold text-slate-900 italic mb-4">
               “You handle the client. We handle the delivery.”
+            </p>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              Avaantra gives agencies elastic capacity —
+              senior talent that integrates into your team,
+              works under your brand, and delivers with predictable quality.
             </p>
           </div>
         </div>
       </section>
 
       {/* How We Help */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-dark">
+          {/* Header */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
             How Avaantra Supports Agencies
           </h2>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+            We help agencies scale delivery without stress —
+            quietly, reliably, and completely under your brand.
+          </p>
 
-          <div className="grid md:grid-cols-4 gap-6 mt-12">
+          {/* Support Grid */}
+          <div className="grid md:grid-cols-5 gap-6 mt-14">
             {[
-              "100% white-label delivery",
-              "Dedicated pods aligned to your workflow",
-              "Predictable timelines & pricing",
-              "Zero hiring & HR overhead",
+              {
+                title: "100% White-Label Delivery",
+                desc: "All work delivered under your brand — NDA-backed, transparent, and client-safe.",
+              },
+              {
+                title: "Dedicated Pods",
+                desc: "Engineering, design, and marketing pods aligned to your workflows, tools, and culture.",
+              },
+              {
+                title: "Predictable Timelines & Pricing",
+                desc: "Clear SLAs, fixed expectations, and zero delivery surprises.",
+              },
+              {
+                title: "Zero Hiring & HR Overhead",
+                desc: "No recruiting, training, benefits, or people management to worry about.",
+              },
+              {
+                title: "Elastic Scaling",
+                desc: "Scale teams up or down instantly as client demand changes.",
+              },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-6 shadow">
-                <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
-                <p className="font-semibold text-dark">{item}</p>
+              <div
+                key={idx}
+                className="bg-slate-50 rounded-2xl p-6 border border-slate-100
+                     hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <CheckCircle className="w-8 h-8 text-orange-500 mx-auto mb-4" />
+                <h3 className="font-bold text-slate-900 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
 
-          <p className="mt-10 text-gray-700 font-semibold">
+          {/* Closing Line */}
+          <p className="mt-14 text-lg font-semibold text-slate-900">
             You focus on sales, strategy, and client relationships.
             <br />
-            We quietly power execution.
+            <span className="text-orange-600">
+              We quietly power your execution engine.
+            </span>
           </p>
         </div>
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Agency Services We Offer
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Each service is delivered white-label and NDA-backed.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Each service is delivered{" "}
+              <span className="font-semibold">100% white-label</span>, NDA-backed,
+              and designed to help agencies scale delivery without risk.
             </p>
           </div>
 
+          {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "White-Label Marketing Services",
-                desc: "SEO, PPC, CRO, content, automation & reporting.",
+                desc: "SEO, PPC, CRO, content, automation, analytics & reporting.",
                 link: "/solutions/For-Agencies/White-Label-Marketing",
               },
               {
                 title: "White-Label Software Development",
-                desc: "Web, SaaS, mobile apps, APIs & AI solutions.",
+                desc: "Web, SaaS, mobile apps, APIs & AI-enabled solutions.",
                 link: "/solutions/For-Agencies/White-Label-Software-Development",
               },
               {
                 title: "Dedicated Teams for Agencies",
-                desc: "Your own remote delivery department.",
+                desc: "Your own remote delivery department — fully integrated.",
                 link: "/solutions/For-Agencies/Dedicated-Teams-for-Agencies",
               },
               {
                 title: "Agency Partnership Program",
-                desc: "Priority access, pricing tiers & revenue sharing.",
+                desc: "Priority access, pricing tiers, revenue sharing & growth support.",
                 link: "/solutions/For-Agencies/Agency-Partnership-Program",
               },
               {
                 title: "Scale Engineering Without Hiring Risk",
-                desc: "Senior engineers in 7–15 days.",
+                desc: "Senior engineers deployed in 7–15 days, ready to deliver.",
                 link: "/solutions/For-Agencies/Scale-Engineering-Without-Hiring-Risk",
               },
               {
                 title: "AI & Automation for Agencies",
-                desc: "AI tools, workflow automation & analytics.",
+                desc: "AI tools, workflow automation & analytics for modern agencies.",
                 link: "/solutions/For-Agencies/AI-&-Automation",
               },
             ].map((item, idx) => (
-              <Link key={idx} href={item.link} className="group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-primary transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2 h-full">
-                  <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">
+              <Link key={idx} href={item.link} className="group h-full">
+                <div
+                  className="bg-white rounded-2xl p-8 h-full border border-slate-200
+                       hover:border-orange-500 hover:shadow-xl
+                       transform hover:-translate-y-2 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-slate-900 mb-3
+                           group-hover:text-orange-600 transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{item.desc}</p>
-                  <div className="flex items-center gap-2 text-primary font-semibold">
+
+                  <p className="text-slate-600 mb-6 leading-relaxed">
+                    {item.desc}
+                  </p>
+
+                  <div className="flex items-center gap-2 font-semibold text-orange-600">
                     Learn More
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
                   </div>
@@ -210,179 +276,222 @@ export default function AgenciesPage() {
       </section>
 
       {/* Why Avaantra */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Why Avaantra Is the Perfect White-Label Partner
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Built for agencies who care about delivery quality,
-              predictability, and reputation.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Built for agencies that care about delivery quality,
+              predictability, and protecting their reputation.
             </p>
           </div>
 
+          {/* Trust Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Briefcase className="w-7 h-7 text-primary" />,
+                icon: <Briefcase className="w-7 h-7 text-orange-500" />,
                 title: "22+ Years Industry Experience",
                 desc: "Deep engineering and marketing expertise across global markets.",
               },
               {
-                icon: <Users className="w-7 h-7 text-primary" />,
+                icon: <Users className="w-7 h-7 text-orange-500" />,
                 title: "Senior Talent Only",
-                desc: "No juniors. No training needed. No hand-holding.",
+                desc: "No juniors. No training. No hand-holding.",
               },
               {
-                icon: <ShieldCheck className="w-7 h-7 text-primary" />,
+                icon: <ShieldCheck className="w-7 h-7 text-orange-500" />,
                 title: "NDA & Full Confidentiality",
-                desc: "Clients never know we exist. You stay the face of delivery.",
+                desc: "Clients never know we exist — you stay the face of delivery.",
               },
               {
-                icon: <Settings className="w-7 h-7 text-primary" />,
+                icon: <Settings className="w-7 h-7 text-orange-500" />,
                 title: "Predictable Pricing & SLAs",
                 desc: "Clear costs, clear outcomes, zero surprises.",
               },
               {
-                icon: <Globe className="w-7 h-7 text-primary" />,
+                icon: <Globe className="w-7 h-7 text-orange-500" />,
                 title: "Global Client-Friendly Teams",
-                desc: "US, UK, EU & Middle East-ready communication.",
+                desc: "US, UK, EU & Middle East-ready communication and alignment.",
               },
               {
-                icon: <Rocket className="w-7 h-7 text-primary" />,
+                icon: <Rocket className="w-7 h-7 text-orange-500" />,
                 title: "95% Retention Rate",
-                desc: "Agencies stay because delivery works — every time.",
+                desc: "Agencies stay because delivery works — consistently.",
               },
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300"
+                className="bg-slate-50 rounded-2xl p-8 border border-slate-100
+                     hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="mb-4">{item.icon}</div>
-                <h3 className="text-lg font-bold text-dark mb-2">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <p className="text-slate-600 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
 
-          <p className="text-center mt-12 text-gray-700 font-semibold italic">
-            “Our job is simple: make your agency look amazing.”
+          {/* Positioning Line */}
+          <p className="text-center mt-14 text-xl font-semibold italic text-slate-900">
+            “Our job is simple:{" "}
+            <span className="text-orange-600">
+              make your agency look amazing.
+            </span>”
           </p>
         </div>
       </section>
 
       {/* Process */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-20 px-4 bg-gradient-to-br from-slate-950 to-slate-900 text-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-100">
               Our Process for Agencies
             </h2>
-            <p className="text-gray-300 max-w-3xl mx-auto">
-              Simple, frictionless, and designed to scale delivery without
-              disruption.
+            <p className="text-lg text-slate-300 max-w-3xl mx-auto">
+              Simple, frictionless, and built to scale delivery
+              without disrupting your clients or workflows.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-4">
+          {/* Process Grid */}
+          <div className="grid md:grid-cols-5 gap-5">
             {[
               {
                 step: "01",
                 title: "Partnership Kickoff",
-                desc: "We understand your services, clients, workflows, and goals.",
+                desc: "We understand your services, clients, workflows, and delivery goals.",
               },
               {
                 step: "02",
                 title: "Resource / Pod Allocation",
-                desc: "Senior developers, marketers, designers, or full pods assigned.",
+                desc: "Senior developers, marketers, designers, or full pods are assigned.",
               },
               {
                 step: "03",
                 title: "Tool & Workflow Integration",
-                desc: "Slack, Jira, ClickUp, HubSpot, GA4 — we fit right in.",
+                desc: "Slack, Jira, ClickUp, HubSpot, GA4 — we fit right into your stack.",
               },
               {
                 step: "04",
                 title: "White-Label Delivery",
-                desc: "Execution under your brand, tone, and standards.",
+                desc: "Execution under your brand, tone, and quality standards.",
               },
               {
                 step: "05",
                 title: "Reporting & Optimization",
-                desc: "Weekly standups, dashboards, and continuous improvement.",
+                desc: "Weekly syncs, dashboards, and continuous performance improvement.",
               },
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300"
+                className="bg-white/5 border border-white/10 rounded-2xl p-6
+                     hover:bg-white/10 transition-all duration-300"
               >
-                <div className="text-3xl font-bold text-gray-300 mb-3">
+                <div className="text-3xl font-bold text-orange-400 mb-4">
                   {item.step}
                 </div>
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-300">{item.desc}</p>
+                <h3 className="font-semibold text-slate-100 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
+
+          {/* Outcome Line */}
+          <p className="text-center mt-14 text-lg font-semibold text-slate-200">
+            Outcome:{" "}
+            <span className="text-orange-400">
+              Seamless delivery, full visibility, and zero client disruption.
+            </span>
+          </p>
         </div>
       </section>
 
       {/* Industries */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Industries We Support Through Agencies
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Accept bigger, more complex projects without worrying about
-              execution.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Take on bigger, more complex client engagements
+              without worrying about delivery execution.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          {/* Industries Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               "SaaS & B2B",
               "FinTech",
               "HealthTech",
               "Retail & eCommerce",
-              "Real Estate / PropTech",
+              "Real Estate & PropTech",
               "EdTech",
               "Manufacturing",
               "Media & Entertainment",
             ].map((industry, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl p-6 shadow text-center hover:shadow-lg transition-all"
+                className="bg-slate-50 border border-slate-200 rounded-xl p-6
+                     text-center font-semibold text-slate-800
+                     hover:border-orange-500 hover:text-orange-600
+                     transition-all duration-300"
               >
-                <p className="font-semibold text-dark">{industry}</p>
+                {industry}
               </div>
             ))}
           </div>
+
+          {/* Closing Line */}
+          <p className="text-center mt-12 text-lg font-semibold text-slate-900">
+            This means your agency can confidently say{" "}
+            <span className="text-orange-600">
+              “yes” to larger, more complex projects
+            </span>{" "}
+            — without adding delivery risk.
+          </p>
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
               FAQs — Agencies
             </h2>
+            <p className="text-lg text-slate-600 mt-3">
+              Common questions agencies ask before partnering with Avaantra.
+            </p>
           </div>
 
+          {/* FAQ Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 q: "Will my clients know about Avaantra?",
-                a: "No. Everything is white-label with strict NDAs. Invisible execution.",
+                a: "No. Everything is 100% white-label with strict NDAs. We stay completely invisible.",
               },
               {
                 q: "Can I start with a small team?",
-                a: "Yes — even 1 developer or marketer. Scale anytime.",
+                a: "Yes. Even 1 developer or marketer. Scale up or down anytime.",
               },
               {
                 q: "Do you work with agencies worldwide?",
@@ -390,61 +499,92 @@ export default function AgenciesPage() {
               },
               {
                 q: "What’s the minimum contract duration?",
-                a: "Month-to-month, 90 days, or long-term engagements.",
+                a: "Flexible models: month-to-month, 90 days, or long-term engagements.",
               },
               {
                 q: "How fast can teams start?",
-                a: "Typically within 7–15 days depending on role.",
+                a: "Typically within 7–15 days depending on the role and seniority.",
               },
               {
                 q: "What if a resource doesn’t fit?",
-                a: "Immediate replacement. No friction, no risk.",
+                a: "Immediate replacement — no friction, no risk.",
               },
               {
                 q: "Can you support enterprise projects?",
-                a: "Yes — scoping, architecture, estimates, and delivery.",
+                a: "Yes. We handle scoping, architecture, estimates, and delivery for large clients.",
               },
               {
                 q: "What makes Avaantra better than freelancers?",
-                a: "Predictability, accountability, seniority, and scale.",
+                a: "Predictability, accountability, senior talent, and the ability to scale safely.",
               },
             ].map((item, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-xl p-6">
-                <h3 className="font-semibold text-dark mb-2">{item.q}</h3>
-                <p className="text-gray-600">{item.a}</p>
+              <div
+                key={idx}
+                className="bg-white rounded-2xl p-6 border border-slate-200
+                     hover:shadow-lg transition-all duration-300"
+              >
+                <h3 className="font-semibold text-slate-900 mb-2 flex items-start gap-2">
+                  <span className="text-orange-500 font-bold">Q.</span>
+                  {item.q}
+                </h3>
+                <p className="text-slate-600 leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
+
+          {/* Trust Line */}
+          <p className="text-center mt-14 text-lg font-semibold text-slate-900">
+            Still have questions?{" "}
+            <span className="text-orange-600">
+              We’re happy to walk you through everything.
+            </span>
+          </p>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-black text-white">
+      <section className="py-24 px-4 bg-slate-950 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          {/* Headline */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-100">
             Scale Your Delivery. Protect Your Margins. Impress Your Clients.
           </h2>
-          <p className="text-lg text-gray-300 mb-10">
-            Avaantra Global becomes your silent execution partner — helping you
-            deliver more, faster, and with confidence.
+
+          {/* Subheadline */}
+          <p className="text-lg text-slate-300 mb-12 leading-relaxed">
+            Avaantra Global becomes your{" "}
+            <span className="text-orange-400 font-semibold">
+              silent execution partner
+            </span>{" "}
+            — helping you deliver more, deliver faster,
+            and deliver with confidence.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-black">
-              Start Your Agency Partnership
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <Button
+              size="lg"
+              className="bg-white text-slate-900 font-semibold px-8
+                   hover:bg-slate-100 transform hover:scale-105
+                   transition-all duration-300 hover:shadow-2xl"
+            >
+              🤝 Start Your Agency Partnership
             </Button>
+
             <Button
               size="lg"
               variant="outline"
-              className="bg-white/10 border-white/20 text-white"
+              className="border border-white/30 text-black px-8
+                   hover:bg-white/10 transition-all duration-300"
             >
-              Build a Dedicated Team
+              ⚙️ Build a Dedicated Team
             </Button>
           </div>
 
-          <p className="text-sm text-gray-400">
-            ISO 27001 • GDPR Compliant • 22+ Years Experience • NDA Secured •
-            95% Retention Rate
+          {/* Trust Badges */}
+          <p className="text-sm text-slate-400 tracking-wide">
+            ISO 27001 • GDPR Compliant • 22+ Years Experience • NDA Secured • 95%
+            Retention Rate
           </p>
         </div>
       </section>

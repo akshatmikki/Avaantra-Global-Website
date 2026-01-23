@@ -219,10 +219,8 @@ export default function IndustriesPage() {
               Technology That Helps Every Industry Grow
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 text-pretty">
-              Avaantra Global helps companies improve, digitize, and scale with
-              smart software, AI, and automation. We build solutions that are
-              secure, fast, and ready to help your business grow in a
-              predictable way.
+              Avaantra Global helps companies improve, digitize, and scale with smart software, AI, and automation.
+ We build solutions that are secure, fast, and ready to help your business grow in a predictable way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="group">
@@ -249,8 +247,7 @@ export default function IndustriesPage() {
               Why Industries Choose Avaantra Global
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Every industry is changing. We help businesses grow with smart,
-              secure, and scalable systems.
+             Every industry is changing. Banks need safer and faster systems. Healthcare needs digital tools that save time and improve care. Retail companies need smoother online shopping. Startups need to launch fast and grow faster.
             </p>
           </div>
 
@@ -340,7 +337,6 @@ export default function IndustriesPage() {
               "Fast global delivery with clear communication",
               "Full data safety and industry compliance",
               "Results measured through clear KPIs",
-              "Predictability is built into every project",
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -455,6 +451,7 @@ export default function IndustriesPage() {
               { category: "Backend", tech: "Python, Node, .NET, Java" },
               { category: "Mobile", tech: "Flutter, React Native, Kotlin" },
               { category: "AI", tech: "OpenAI API, TensorFlow, ML tools" },
+              { category: "Data", tech: "BigQuery, Snowflake, Airflow" },
               { category: "Cloud", tech: "AWS, Azure, Google Cloud" },
               { category: "Security", tech: "GDPR, HIPAA, ISO standards" },
             ].map((item, idx) => (

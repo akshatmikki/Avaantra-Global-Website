@@ -71,6 +71,8 @@ import {
   MapPin,
   Layout,
   Mail as MailIcon,
+  BookOpen,
+
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -387,6 +389,16 @@ const Navigation = () => {
       link: "/for-industries/Travel",
       icon: Plane,
     },
+    {
+      title: "Education & EdTech Software Development",
+      link: "/for-industries/Education-&-EdTech-Software-Development",
+      icon: BookOpen
+    },
+    {
+      title: "HealthTech Software Development Solutions",
+      link: "/for-industries/HealthTech-Software-Development-Solutions",
+      icon: HeartPulse
+    }
   ];
 
   const hireMenu = {
@@ -695,8 +707,8 @@ const Navigation = () => {
             <button
               onClick={() => handleDropdownClick("services")}
               className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "services"
-                ? "text-primary"
-                : "text-dark hover:text-primary"
+                  ? "text-primary"
+                  : "text-dark hover:text-primary"
                 }`}
             >
               Services{" "}
@@ -716,8 +728,8 @@ const Navigation = () => {
             <button
               onClick={() => handleDropdownClick("solutions")}
               className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "solutions"
-                ? "text-primary"
-                : "text-dark hover:text-primary"
+                  ? "text-primary"
+                  : "text-dark hover:text-primary"
                 }`}
             >
               Solutions{" "}
@@ -737,8 +749,8 @@ const Navigation = () => {
             <button
               onClick={() => handleDropdownClick("industries")}
               className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "industries"
-                ? "text-primary"
-                : "text-dark hover:text-primary"
+                  ? "text-primary"
+                  : "text-dark hover:text-primary"
                 }`}
             >
               Industries{" "}
@@ -758,8 +770,8 @@ const Navigation = () => {
             <button
               onClick={() => handleDropdownClick("hire")}
               className={`flex items-center gap-1 font-medium transition-colors ${activeDropdown === "hire"
-                ? "text-primary"
-                : "text-dark hover:text-primary"
+                  ? "text-primary"
+                  : "text-dark hover:text-primary"
                 }`}
             >
               Hire{" "}
@@ -991,16 +1003,11 @@ const Navigation = () => {
                 <Link
                   href="/solutions/For-Agencies"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     FOR AGENCIES
                   </h3>
-
-                  {/* subtle arrow cue */}
-                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    →
-                  </span>
                 </Link>
 
                 <ul className="space-y-3">
@@ -1030,16 +1037,11 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Accelerate-Product-Delivery"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     ACCELERATE PRODUCT DELIVERY
                   </h3>
-
-                  {/* subtle arrow cue */}
-                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    →
-                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
@@ -1068,16 +1070,11 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Launch-&-Grow-SaaS-GTM"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     LAUNCH AND GROW SAAS GTM
                   </h3>
-
-                  {/* subtle arrow cue */}
-                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    →
-                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.LaunchAndGrow.map((item, idx) => {
@@ -1106,16 +1103,11 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Startups"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     STARTUPS
                   </h3>
-
-                  {/* subtle arrow cue */}
-                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    →
-                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.startups.map((item, idx) => {
@@ -1502,33 +1494,12 @@ const Navigation = () => {
                 <Link
                   href="/solutions/For-Agencies"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h4
-                    className="
-                      text-primary font-bold text-sm uppercase
-                      transition-all
-                      group-hover:underline
-                    "
-                  >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     FOR AGENCIES
                   </h4>
-
-                  {/* hover cue */}
-                  <span
-                    className="
-                      text-primary
-                      opacity-0
-                      translate-x-[-2px]
-                      group-hover:opacity-100
-                      group-hover:translate-x-0
-                      transition-all
-                    "
-                  >
-                    →
-                  </span>
                 </Link>
-
 
                 <div className="space-y-2">
                   {solutionsMenu.forAgencies.map((item, idx) => {
@@ -1551,33 +1522,12 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Accelerate-Product-Delivery"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h4
-                    className="
-                      text-primary font-bold text-sm uppercase
-                      transition-all
-                      group-hover:underline
-                    "
-                  >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     ACCELERATE PRODUCT DELIVERY
                   </h4>
-
-                  {/* hover cue */}
-                  <span
-                    className="
-                      text-primary
-                      opacity-0
-                      translate-x-[-2px]
-                      group-hover:opacity-100
-                      group-hover:translate-x-0
-                      transition-all
-                    "
-                  >
-                    →
-                  </span>
                 </Link>
-
                 <div className="space-y-2">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
                     const Icon = item.icon;
@@ -1599,33 +1549,12 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Launch-&-Grow-SaaS-GTM"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h4
-                    className="
-                      text-primary font-bold text-sm uppercase
-                      transition-all
-                      group-hover:underline
-                    "
-                  >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     LAUNCH AND GROW SAAS GTM
                   </h4>
-
-                  {/* hover cue */}
-                  <span
-                    className="
-                      text-primary
-                      opacity-0
-                      translate-x-[-2px]
-                      group-hover:opacity-100
-                      group-hover:translate-x-0
-                      transition-all
-                    "
-                  >
-                    →
-                  </span>
                 </Link>
-
                 <div className="space-y-2">
                   {solutionsMenu.LaunchAndGrow.map((item, idx) => {
                     const Icon = item.icon;
@@ -1647,33 +1576,12 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Startups"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-flex items-center gap-1 mb-4 group"
+                  className="inline-block mb-4"
                 >
-                  <h4
-                    className="
-                      text-primary font-bold text-sm uppercase
-                      transition-all
-                      group-hover:underline
-                    "
-                  >
+                  <h4 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
                     STARTUPS
                   </h4>
-
-                  {/* hover cue */}
-                  <span
-                    className="
-                      text-primary
-                      opacity-0
-                      translate-x-[-2px]
-                      group-hover:opacity-100
-                      group-hover:translate-x-0
-                      transition-all
-                    "
-                  >
-                    →
-                  </span>
                 </Link>
-
                 <div className="space-y-2">
                   {solutionsMenu.startups.map((item, idx) => {
                     const Icon = item.icon;

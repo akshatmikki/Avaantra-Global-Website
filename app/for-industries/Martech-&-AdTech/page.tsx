@@ -114,6 +114,7 @@ export default function MarTechAdTechPage() {
       {/* WHY AVAANTRA */}
       <FeatureGrid
         title="Why Choose Avaantra Global for MarTech & AdTech Development"
+        subheading="We don’t just build software — we build marketing ecosystems that grow intelligently."
         features={[
           {
             title: "Deep Domain Knowledge",
@@ -260,20 +261,54 @@ export default function MarTechAdTechPage() {
         title="Frequently Asked Questions"
         faqs={[
           {
-            question: "Do you build complete marketing platforms or modules?",
-            answer: "Both. We build full ecosystems or standalone automation and analytics modules.",
+            question: "Do you build complete marketing platforms or specific modules?",
+            answer:
+              "Both. We can build entire ecosystems or integrate standalone automation and analytics modules.",
           },
           {
-            question: "Can you integrate our CRM with marketing tools?",
-            answer: "Yes. We integrate Salesforce, HubSpot, Marketo, and more.",
+            question: "Can you connect our CRM with existing marketing tools?",
+            answer:
+              "Yes — we integrate Salesforce, HubSpot, Marketo, and other APIs seamlessly.",
           },
           {
-            question: "Do you provide AI-powered targeting features?",
-            answer: "Absolutely. We build custom ML models for personalization.",
+            question: "Do you provide AI-powered features like predictive targeting?",
+            answer:
+              "Absolutely — our AI team builds custom machine learning models for personalization.",
           },
           {
-            question: "Can you ensure GDPR and data privacy compliance?",
-            answer: "Yes. Every solution is built with GDPR, CCPA, and ISO standards.",
+            question: "Do you help agencies with white-label platforms?",
+            answer:
+              "Yes, we provide white-label marketing automation and analytics systems.",
+          },
+          {
+            question: "Can you ensure compliance with GDPR and data privacy laws?",
+            answer:
+              "Yes — every solution follows GDPR, CCPA, and ISO 27001 guidelines.",
+          },
+          {
+            question: "Do you build demand-side or supply-side platforms?",
+            answer:
+              "Yes — we’ve developed DSPs, SSPs, and ad exchanges for media networks.",
+          },
+          {
+            question: "How long does it take to build a MarTech MVP?",
+            answer:
+              "Typically 8–12 weeks, depending on features and integrations.",
+          },
+          {
+            question: "Can you integrate AI into legacy marketing systems?",
+            answer:
+              "Yes — we modernize platforms and add AI-driven analytics and automation.",
+          },
+          {
+            question: "Do you support post-launch analytics and optimization?",
+            answer:
+              "Yes — our ongoing service includes performance tuning and actionable data insights.",
+          },
+          {
+            question: "What’s your minimum engagement model?",
+            answer:
+              "We offer project-based, retainer, and white-label engagement models.",
           },
         ]}
       />
