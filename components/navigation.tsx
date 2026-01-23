@@ -69,6 +69,7 @@ import {
   RefreshCw,
   Phone,
   MapPin,
+  Layout,
   Mail as MailIcon,
   BookOpen,
 
@@ -402,93 +403,113 @@ const Navigation = () => {
 
   const hireMenu = {
     developers: [
-      {
-        title: "Hire Dedicated Developers",
-        link: "/hire/dedicated-teams",
-        icon: FileText,
-      },
+      // {
+      //   title: "Hire Dedicated Developers",
+      //   link: "/Hire/hire-developers",
+      //   icon: FileText,
+      // },
       {
         title: "Hire .NET Developers",
-        link: "/hire/developers#dotnet",
+        link: "/Hire/hire-developers/dotnet-developers",
         icon: CircleDot,
       },
       {
         title: "Hire Python Developers",
-        link: "/hire/developers#python",
-        icon: Code,
+        link: "/Hire/hire-developers/python-developers",
+        icon: Cloud,
       },
       {
         title: "Hire Java Developers",
-        link: "/hire/developers#java",
+        link: "/Hire/hire-developers/java-developers",
         icon: Code,
       },
       {
         title: "Hire MEAN Developers",
-        link: "/hire/developers#mean",
+        link: "/Hire/hire-developers/mean-developers",
         icon: Layers,
       },
       {
         title: "Hire MERN Developers",
-        link: "/hire/developers#mern",
+        link: "/Hire/hire-developers/mern-developers",
         icon: Link2,
       },
       {
         title: "Hire Full-Stack Developers",
-        link: "/hire/developers#fullstack",
+        link: "/Hire/hire-developers/fullstack-developers",
         icon: AlignJustify,
       },
       {
         title: "Hire React Developers",
-        link: "/hire/developers#react",
-        icon: Settings,
+        link: "/Hire/hire-developers/react-developers",
+        icon: Heart,
       },
       {
         title: "Hire Node.js Developers",
-        link: "/hire/developers#nodejs",
+        link: "/Hire/hire-developers/nodejs-developers",
         icon: Code,
       },
       {
         title: "Hire Mobile App Developers",
-        link: "/hire/developers#mobile",
+        link: "/Hire/hire-developers/mobile-developers",
         icon: Smartphone,
       },
       {
         title: "Hire AWS Developers",
-        link: "/hire/developers#aws",
-        icon: Cloud,
+        link: "/Hire/hire-developers/aws-developers",
+        icon: Code,
       },
       {
         title: "Hire Azure Developers",
-        link: "/hire/developers#azure",
+        link: "/Hire/hire-developers/azure-developers",
         icon: Cloud,
       },
       {
         title: "Hire DevOps Engineers",
-        link: "/hire/developers#devops",
+        link: "/Hire/hire-developers/devops-engineers",
         icon: Settings,
       },
       {
         title: "Hire QA Engineers",
-        link: "/hire/developers#qa",
+        link: "/Hire/hire-developers/qa-engineers",
         icon: UserCheck,
       },
       {
         title: "Hire UI/UX Designers",
-        link: "/hire/developers#design",
+        link: "/Hire/hire-developers/ui-ux-designers",
         icon: PenTool,
       },
       {
+        title: "Hire Data Scientists",
+        link: "/Hire/hire-developers/data-scientists",
+        icon: FileText,
+      },
+      {
         title: "Hire AI Developers",
-        link: "/hire/developers#ai",
+        link: "/Hire/hire-developers/ai-developers",
         icon: Sparkles,
+      },
+      {
+        title: "Hire Machine Learning Engineers",
+        link: "/Hire/hire-developers/machine-learning-engineers",
+        icon: Brain,
+      },
+      {
+        title: "Hire Salesforce Developers",
+        link: "/Hire/hire-developers/salesforce-developers",
+        icon: Shield,
+      },
+      {
+        title: "Hire Angular Developers",
+        link: "/Hire/hire-developers/angular-developers",
+        icon: Layout,
       },
     ],
     marketing: [
-      {
-        title: "Hire Marketing Experts",
-        link: "/hire/marketing-experts",
-        icon: Briefcase,
-      },
+      // {
+      //   title: "Hire Marketing Experts",
+      //   link: "/Hire/hire-marketing-experts",
+      //   icon: Briefcase,
+      // },
       {
         title: "Hire SEO Experts",
         link: "/hire/marketing-experts#seo",
@@ -536,11 +557,11 @@ const Navigation = () => {
       },
     ],
     leadership: [
-      {
-        title: "Hire Virtual Leadership",
-        link: "/hire/virtual-cto",
-        icon: Brain,
-      },
+      // {
+      //   title: "Hire Virtual Leadership",
+      //   link: "/Hire/hire-virtual-leadership",
+      //   icon: Brain,
+      // },
       { title: "Hire Virtual CTO", link: "/hire/virtual-cto", icon: Terminal },
       { title: "Hire Virtual CMO", link: "/hire/virtual-cto#cmo", icon: Fish },
       {
@@ -565,11 +586,11 @@ const Navigation = () => {
       },
     ],
     teams: [
-      {
-        title: "Hire Dedicated Teams",
-        link: "/hire/dedicated-teams",
-        icon: Shield,
-      },
+      // {
+      //   title: "Hire Dedicated Teams",
+      //   link: "/Hire/hire-dedicated-teams",
+      //   icon: Shield,
+      // },
       {
         title: "SaaS Development Team",
         link: "/hire/dedicated-teams#saas",
@@ -1153,7 +1174,7 @@ const Navigation = () => {
             {/* View All Industries Button */}
             <div className="border-t border-gray-200 px-8 py-4 flex justify-center mt-6">
               <Link
-                href="/industries"
+                href="/industry"
                 className="bg-primary hover:bg-[#E76A32] text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer"
                 onClick={() => setActiveDropdown(null)}
               >
@@ -1167,7 +1188,9 @@ const Navigation = () => {
       {/* Hire Full-Screen Dropdown */}
       {activeDropdown === "hire" && (
         <div
-          className="hidden md:block absolute left-0 right-0 top-full bg-white border-b border-gray-200 shadow-xl z-50"
+          className="hidden md:block absolute left-0 right-0 top-full
+      bg-white border-b border-gray-200 shadow-xl z-50
+      max-h-[80vh] overflow-y-auto"
           onMouseEnter={() => handleMouseEnter("hire")}
           onMouseLeave={() => handleMouseLeave("hire")}
         >
@@ -1175,9 +1198,21 @@ const Navigation = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* HIRE DEVELOPERS Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  HIRE DEVELOPERS
-                </h3>
+                <Link
+                  href="/Hire/hire-developers"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    HIRE DEVELOPERS
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {hireMenu.developers.map((item, idx) => {
                     const Icon = item.icon;
@@ -1202,9 +1237,21 @@ const Navigation = () => {
 
               {/* HIRE MARKETING EXPERTS Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  HIRE MARKETING EXPERTS
-                </h3>
+                <Link
+                  href="/Hire/hire-marketing-experts"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    HIRE MARKETING EXPERTS
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {hireMenu.marketing.map((item, idx) => {
                     const Icon = item.icon;
@@ -1229,9 +1276,21 @@ const Navigation = () => {
 
               {/* HIRE VIRTUAL LEADERSHIP Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  HIRE VIRTUAL LEADERSHIP
-                </h3>
+                <Link
+                  href="/Hire/hire-virtual-leadership"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    HIRE VIRTUAL LEADERSHIP
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {hireMenu.leadership.map((item, idx) => {
                     const Icon = item.icon;
@@ -1256,9 +1315,20 @@ const Navigation = () => {
 
               {/* HIRE DEDICATED TEAMS Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  HIRE DEDICATED TEAMS
-                </h3>
+                <Link
+                  href="/Hire/hire-dedicated-teams"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    HIRE DEDICATED TEAMS
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
                 <ul className="space-y-3">
                   {hireMenu.teams.map((item, idx) => {
                     const Icon = item.icon;
@@ -1282,15 +1352,16 @@ const Navigation = () => {
               </div>
             </div>
             {/* View All Hire Options Button */}
-            <div className="border-t border-gray-200 px-8 py-4 flex justify-center mt-6">
+            <div className="sticky bottom-0 bg-white border-t border-gray-200 px-8 py-4 flex justify-center">
               <Link
-                href="/hire"
-                className="bg-primary hover:bg-[#E76A32] text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer"
+                href="/Hire"
+                className="bg-primary hover:bg-[#E76A32] text-white px-6 py-2 rounded-lg text-sm font-medium"
                 onClick={() => setActiveDropdown(null)}
               >
                 View All Hire Options
               </Link>
             </div>
+
           </div>
         </div>
       )}
@@ -1560,7 +1631,7 @@ const Navigation = () => {
               })}
 
               <Link
-                href="/industries"
+                href="/industry"
                 className="block mt-4 bg-primary hover:bg-[#E76A32] text-white px-6 py-2 rounded-lg text-sm font-medium text-center cursor-pointer"
                 onClick={() => setIsMobileOpen(false)}
               >
@@ -1576,9 +1647,36 @@ const Navigation = () => {
             </summary>
             <div className="pl-4 mt-2 space-y-4">
               <div>
-                <h4 className="text-primary font-bold text-xs uppercase mb-2">
-                  HIRE DEVELOPERS
-                </h4>
+                <Link
+                  href="/Hire/hire-developers"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h4
+                    className="
+                      text-primary font-bold text-sm uppercase
+                      transition-all
+                      group-hover:underline
+                    "
+                  >
+                    HIRE DEVELOPERS
+                  </h4>
+
+                  {/* hover cue */}
+                  <span
+                    className="
+                      text-primary
+                      opacity-0
+                      translate-x-[-2px]
+                      group-hover:opacity-100
+                      group-hover:translate-x-0
+                      transition-all
+                    "
+                  >
+                    →
+                  </span>
+                </Link>
+
                 <div className="space-y-2">
                   {hireMenu.developers.slice(0, 5).map((item, idx) => {
                     const Icon = item.icon;
@@ -1597,9 +1695,35 @@ const Navigation = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-primary font-bold text-xs uppercase mb-2">
-                  HIRE MARKETING EXPERTS
-                </h4>
+                <Link
+                  href="/Hire/hire-marketing-experts"
+                  onClick={() => setActiveDropdown(null)}
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h4
+                    className="
+                      text-primary font-bold text-sm uppercase
+                      transition-all
+                      group-hover:underline
+                    "
+                  >
+                    HIRE MARKETING EXPERTS
+                  </h4>
+
+                  {/* hover cue */}
+                  <span
+                    className="
+                      text-primary
+                      opacity-0
+                      translate-x-[-2px]
+                      group-hover:opacity-100
+                      group-hover:translate-x-0
+                      transition-all
+                    "
+                  >
+                    →
+                  </span>
+                </Link>
                 <div className="space-y-2">
                   {hireMenu.marketing.slice(0, 5).map((item, idx) => {
                     const Icon = item.icon;

@@ -743,7 +743,6 @@ export default function WhiteLabelMarketingPage() {
           </Link>
         </div>
       </section>
-
     </main>
   );
 }

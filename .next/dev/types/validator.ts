@@ -47,6 +47,222 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 }
 
 
+// Validate ../../../app/Hire/hire-dedicated-teams/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-dedicated-teams">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-dedicated-teams/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/ai-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/ai-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/ai-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/angular-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/angular-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/angular-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/aws-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/aws-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/aws-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/azure-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/azure-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/azure-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/data-scientists/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/data-scientists">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/data-scientists/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/devops-engineers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/devops-engineers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/devops-engineers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/dotnet-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/dotnet-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/dotnet-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/fullstack-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/fullstack-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/fullstack-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/java-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/java-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/java-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/machine-learning-engineers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/machine-learning-engineers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/machine-learning-engineers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/mean-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/mean-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/mean-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/mern-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/mern-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/mern-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/mobile-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/mobile-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/mobile-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/nodejs-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/nodejs-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/nodejs-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/python-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/python-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/python-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/qa-engineers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/qa-engineers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/qa-engineers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/react-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/react-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/react-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/salesforce-developers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/salesforce-developers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/salesforce-developers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-developers/ui-ux-designers/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-developers/ui-ux-designers">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-developers/ui-ux-designers/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-marketing-experts/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-marketing-experts">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-marketing-experts/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/hire-virtual-leadership/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire/hire-virtual-leadership">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/hire-virtual-leadership/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/Hire/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/Hire">> = Specific
+  const handler = {} as typeof import("../../../app/Hire/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/about/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/about">> = Specific
@@ -209,55 +425,10 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
-// Validate ../../../app/for-startups/page.tsx
+// Validate ../../../app/industry/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/for-startups">> = Specific
-  const handler = {} as typeof import("../../../app/for-startups/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/hire/dedicated-teams/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/hire/dedicated-teams">> = Specific
-  const handler = {} as typeof import("../../../app/hire/dedicated-teams/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/hire/marketing-experts/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/hire/marketing-experts">> = Specific
-  const handler = {} as typeof import("../../../app/hire/marketing-experts/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/hire/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/hire">> = Specific
-  const handler = {} as typeof import("../../../app/hire/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/hire/virtual-cto/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/hire/virtual-cto">> = Specific
-  const handler = {} as typeof import("../../../app/hire/virtual-cto/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/industries/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/industries">> = Specific
-  const handler = {} as typeof import("../../../app/industries/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/industry">> = Specific
+  const handler = {} as typeof import("../../../app/industry/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -623,6 +794,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/solutions/ForAgencies/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/solutions/ForAgencies">> = Specific
+  const handler = {} as typeof import("../../../app/solutions/ForAgencies/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/solutions/Launch-&-Grow-SaaS-GTM/Conversion-Optimization">> = Specific
@@ -644,7 +824,7 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 // Validate ../../../app/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy">> = Specific
-  const handler = {} as typeof import("../../../app/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy/page.js")
+  const handler = {} as typeof import("../../../app/solutions/Launch-&-Grow-SaaS-GTM/Saas-Growth-Startegy/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -699,6 +879,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends AppPageConfig<"/solutions/Startups">> = Specific
   const handler = {} as typeof import("../../../app/solutions/Startups/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/solutions/for-startups/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/solutions/for-startups">> = Specific
+  const handler = {} as typeof import("../../../app/solutions/for-startups/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
