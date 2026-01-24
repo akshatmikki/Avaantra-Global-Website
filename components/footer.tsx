@@ -51,10 +51,10 @@ export default function Footer() {
           <FooterColumn
             title="Services"
             links={[
-              ["Software Development", "/services/software-development"],
-              ["Digital Marketing", "/services/digital-marketing"],
-              ["AI & Automation", "/services/ai-automation"],
+              ["Software Engineering", "/service/software-engineering"],
               ["Product Engineering", "/services/product-engineering"],
+              ["Digital Marketing", "/services/digital-marketing"],
+              ["AI Services & Solutions", "/services/ai-services-solutions"],
               ["UI/UX Design", "/services/ui-ux"],
             ]}
           />
@@ -66,8 +66,8 @@ export default function Footer() {
               ["For Agencies", "/solutions/ForAgencies"],
               ["SaaS GTM", "/solutions/Launch-&-Grow-SaaS-GTM"],
               ["Startups", "/solutions/for-startups"],
-              ["Healthcare", "/solutions/healthcare"],
               ["Accelerate Product Delivery", "/solutions/Accelerate-Product-Delivery"],
+              ["Healthcare", "/solutions/healthcare"],
             ]}
           />
 

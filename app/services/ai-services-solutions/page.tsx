@@ -64,6 +64,205 @@ export default function AIServicesSolutionsPage() {
           </div>
         </div>
       </section>
+      {/* AI Services */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4 md:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl font-bold mb-4">Our AI Services</h2>
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        Practical AI solutions designed to automate, optimize, and scale your business.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "AI Strategy & Consulting",
+          desc: "Identify high-impact AI use cases aligned with business goals",
+        },
+        {
+          title: "Custom AI Development",
+          desc: "Tailored AI models and systems built for your workflows",
+        },
+        {
+          title: "Chatbots & Virtual Assistants",
+          desc: "AI-powered chatbots for support, sales, and operations",
+        },
+        {
+          title: "Predictive Analytics",
+          desc: "Forecast trends, demand, and outcomes using data-driven models",
+        },
+        {
+          title: "Process Automation",
+          desc: "Automate repetitive tasks using AI and intelligent workflows",
+        },
+        {
+          title: "AI Integration",
+          desc: "Seamlessly integrate AI into existing products and platforms",
+        },
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+        >
+          <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+          <p className="text-gray-600">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* AI Process */}
+<section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 md:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl font-bold mb-4">Our AI Implementation Process</h2>
+      <p className="text-gray-600">
+        From idea to deployment — AI built responsibly and effectively.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-5 gap-6">
+      {[
+        "Use Case Discovery",
+        "Data Assessment",
+        "Model Development",
+        "Deployment & Integration",
+        "Monitoring & Optimization",
+      ].map((step, idx) => (
+        <div
+          key={idx}
+          className="bg-white p-6 rounded-xl shadow text-center"
+        >
+          <div className="text-3xl font-bold text-primary mb-3">
+            {idx + 1}
+          </div>
+          <p className="font-semibold">{step}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Industries */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4 md:px-8">
+    <div className="text-center mb-14">
+      <h2 className="text-3xl font-bold mb-4">Industries We Build AI For</h2>
+    </div>
+
+    <div className="grid md:grid-cols-4 gap-6">
+      {[
+        "SaaS & Technology",
+        "E-commerce",
+        "Healthcare",
+        "Finance & FinTech",
+      ].map((industry, idx) => (
+        <div
+          key={idx}
+          className="bg-gray-50 p-6 rounded-xl shadow text-center font-semibold"
+        >
+          {industry}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Case Study */}
+<section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 md:px-8">
+    <div className="text-center mb-14">
+      <h2 className="text-3xl font-bold">AI Case Study</h2>
+    </div>
+
+    <div className="bg-white rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8 shadow">
+      <div>
+        <p className="font-semibold mb-2">Client</p>
+        <p className="text-gray-600 mb-4">B2B SaaS Company</p>
+
+        <p className="font-semibold mb-2">Challenge</p>
+        <p className="text-gray-600 mb-4">
+          Manual operations and lack of actionable insights
+        </p>
+
+        <p className="font-semibold mb-2">Solution</p>
+        <p className="text-gray-600">
+          AI-driven analytics dashboard and automated workflows
+        </p>
+      </div>
+
+      <div>
+        <p className="font-semibold mb-4 text-primary">Results</p>
+        <ul className="space-y-3">
+          {[
+            "40% operational efficiency gain",
+            "Faster decision-making with AI insights",
+            "Scalable automation across teams",
+          ].map((item, idx) => (
+            <li key={idx} className="flex gap-3 font-semibold">
+              <span className="text-primary">✔</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* FAQs */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4 md:px-8">
+    <div className="text-center mb-14">
+      <h2 className="text-3xl font-bold">FAQs</h2>
+    </div>
+
+    <div className="max-w-4xl mx-auto space-y-6">
+      {[
+        {
+          q: "Do you build custom AI solutions?",
+          a: "Yes — all solutions are tailored to your data and business needs.",
+        },
+        {
+          q: "Can AI integrate with our existing systems?",
+          a: "Absolutely. We integrate AI into your current tech stack.",
+        },
+        {
+          q: "Is AI suitable for small businesses?",
+          a: "Yes — when applied to the right use cases with clear ROI.",
+        },
+        {
+          q: "Do you provide ongoing AI support?",
+          a: "Yes — monitoring, optimization, and model updates are included.",
+        },
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 className="font-semibold mb-2">{item.q}</h3>
+          <p className="text-gray-600">{item.a}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Final CTA */}
+<section className="py-24 bg-gradient-to-br from-dark via-gray-900 to-dark text-light">
+  <div className="container mx-auto px-4 md:px-8 text-center">
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      Ready to Build AI-Powered Solutions?
+    </h2>
+    <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
+      Turn AI from a buzzword into a real competitive advantage.
+    </p>
+
+    <Button className="bg-primary hover:bg-primary-dark text-light rounded-full px-10 py-6 text-lg">
+      Book Free AI Consultation →
+    </Button>
+  </div>
+</section>
+
       <ScrollToTop />
     </>
   )
