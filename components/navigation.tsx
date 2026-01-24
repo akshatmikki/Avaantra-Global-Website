@@ -410,97 +410,97 @@ const Navigation = () => {
       // },
       {
         title: "Hire .NET Developers",
-        link: "/Hire/hire-developers/dotnet-developers",
+        link: "/hire/hire-developers/dotnet-developers",
         icon: CircleDot,
       },
       {
         title: "Hire Python Developers",
-        link: "/Hire/hire-developers/python-developers",
+        link: "/hire/hire-developers/python-developers",
         icon: Cloud,
       },
       {
         title: "Hire Java Developers",
-        link: "/Hire/hire-developers/java-developers",
+        link: "/hire/hire-developers/java-developers",
         icon: Code,
       },
       {
         title: "Hire MEAN Developers",
-        link: "/Hire/hire-developers/mean-developers",
+        link: "/hire/hire-developers/mean-developers",
         icon: Layers,
       },
       {
         title: "Hire MERN Developers",
-        link: "/Hire/hire-developers/mern-developers",
+        link: "/hire/hire-developers/mern-developers",
         icon: Link2,
       },
       {
         title: "Hire Full-Stack Developers",
-        link: "/Hire/hire-developers/fullstack-developers",
+        link: "/hire/hire-developers/fullstack-developers",
         icon: AlignJustify,
       },
       {
         title: "Hire React Developers",
-        link: "/Hire/hire-developers/react-developers",
+        link: "/hire/hire-developers/react-developers",
         icon: Heart,
       },
       {
         title: "Hire Node.js Developers",
-        link: "/Hire/hire-developers/nodejs-developers",
+        link: "/hire/hire-developers/nodejs-developers",
         icon: Code,
       },
       {
         title: "Hire Mobile App Developers",
-        link: "/Hire/hire-developers/mobile-developers",
+        link: "/hire/hire-developers/mobile-developers",
         icon: Smartphone,
       },
       {
         title: "Hire AWS Developers",
-        link: "/Hire/hire-developers/aws-developers",
+        link: "/hire/hire-developers/aws-developers",
         icon: Code,
       },
       {
         title: "Hire Azure Developers",
-        link: "/Hire/hire-developers/azure-developers",
+        link: "/hire/hire-developers/azure-developers",
         icon: Cloud,
       },
       {
         title: "Hire DevOps Engineers",
-        link: "/Hire/hire-developers/devops-engineers",
+        link: "/hire/hire-developers/devops-engineers",
         icon: Settings,
       },
       {
         title: "Hire QA Engineers",
-        link: "/Hire/hire-developers/qa-engineers",
+        link: "/hire/hire-developers/qa-engineers",
         icon: UserCheck,
       },
       {
         title: "Hire UI/UX Designers",
-        link: "/Hire/hire-developers/ui-ux-designers",
+        link: "/hire/hire-developers/ui-ux-designers",
         icon: PenTool,
       },
       {
         title: "Hire Data Scientists",
-        link: "/Hire/hire-developers/data-scientists",
+        link: "/hire/hire-developers/data-scientists",
         icon: FileText,
       },
       {
         title: "Hire AI Developers",
-        link: "/Hire/hire-developers/ai-developers",
+        link: "/hire/hire-developers/ai-developers",
         icon: Sparkles,
       },
       {
         title: "Hire Machine Learning Engineers",
-        link: "/Hire/hire-developers/machine-learning-engineers",
+        link: "/hire/hire-developers/machine-learning-engineers",
         icon: Brain,
       },
       {
         title: "Hire Salesforce Developers",
-        link: "/Hire/hire-developers/salesforce-developers",
+        link: "/hire/hire-developers/salesforce-developers",
         icon: Shield,
       },
       {
         title: "Hire Angular Developers",
-        link: "/Hire/hire-developers/angular-developers",
+        link: "/hire/hire-developers/angular-developers",
         icon: Layout,
       },
     ],
@@ -512,54 +512,54 @@ const Navigation = () => {
       // },
       {
         title: "Hire SEO Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         icon: Users,
       },
       {
         title: "Hire SMO Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/smo-experts",
         icon: Settings,
       },
       {
         title: "Hire PPC Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/ppc-experts",
         icon: Target,
       },
       {
         title: "Hire Performance Marketing Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/performance-marketing-experts",
         icon: TrendingUp,
       },
       {
         title: "Hire Marketing Automation Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/marketing-automation-experts",
         icon: Settings,
       },
       {
         title: "Hire Email Marketing Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/email-marketing-experts",
         icon: Mail,
       },
       {
         title: "Hire Conversion Optimization Experts",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/conversion-optimization-experts",
         icon: HardHat,
       },
       {
         title: "Hire Content Writers",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/content-writers",
         icon: PenTool,
       },
       {
         title: "Hire Digital Marketing Consultants",
-        link: "/Hire/hire-marketing-experts/seo-experts",
+        link: "/hire/hire-marketing-experts/seo-experts",
         // link: "/Hire/hire-marketing-experts/marketing-consultants",
         icon: Briefcase,
       },
@@ -570,29 +570,29 @@ const Navigation = () => {
       //   link: "/Hire/hire-virtual-leadership",
       //   icon: Brain,
       // },
-      { title: "Hire Virtual CTO", link: "/Hire/hire-virtual-leadership/virtual-cto", icon: Terminal },
-      { title: "Hire Virtual CMO", link: "/Hire/hire-virtual-leadership/virtual-cto", icon: Fish },
+      { title: "Hire Virtual CTO", link: "/hire/hire-virtual-leadership/virtual-cto", icon: Terminal },
+      { title: "Hire Virtual CMO", link: "/hire/hire-virtual-leadership/virtual-cto", icon: Fish },
       {
         title: "Hire Business Technology Consultants",
-        link: "/Hire/hire-virtual-leadership/virtual-cto",
+        link: "/hire/hire-virtual-leadership/virtual-cto",
         // link: "/Hire/hire-virtual-leadership/busniess-technology-consultants",
         icon: Lightbulb,
       },
       {
         title: "Hire Product Managers",
-        link: "/Hire/hire-virtual-leadership/virtual-cto",
+        link: "/hire/hire-virtual-leadership/virtual-cto",
         // link: "/Hire/hire-virtual-leadership/product-managers",
         icon: Link2,
       },
       {
         title: "Hire Project Managers",
-        link: "/Hire/hire-virtual-leadership/virtual-cto",
+        link: "/hire/hire-virtual-leadership/virtual-cto",
         // link: "/Hire/hire-virtual-leadership/project-managers",
         icon: SquareStack,
       },
       {
         title: "Hire Fractional CXO Team",
-        link: "/Hire/hire-virtual-leadership/virtual-cto",
+        link: "/hire/hire-virtual-leadership/virtual-cto",
         // link: "/Hire/hire-virtual-leadership/fractional-cxo-team",
         icon: Flag,
       },
@@ -605,30 +605,30 @@ const Navigation = () => {
       // },
       {
         title: "Hire SaaS Development Team",
-        link: "/Hire/hire-dedicated-teams/saas-development-team",
+        link: "/hire/hire-dedicated-teams/saas-development-team",
         icon: Users,
       },
       {
         title: "Hire Web Development Team",
-        link: "/Hire/hire-dedicated-teams/saas-development-team",
+        link: "/hire/hire-dedicated-teams/saas-development-team",
         // link: "/Hire/hire-dedicated-teams/web-development-team",
         icon: Cloud,
       },
       {
         title: "Hire Mobile App Development Team",
-        link: "/Hire/hire-dedicated-teams/saas-development-team",
+        link: "/hire/hire-dedicated-teams/saas-development-team",
         // link: "/Hire/hire-dedicated-teams/mobile-app-team",
         icon: Smartphone,
       },
       {
         title: "Hire AI / Data Science Team",
-        link: "/Hire/hire-dedicated-teams/saas-development-team",
+        link: "/hire/hire-dedicated-teams/saas-development-team",
         // link: "/Hire/hire-dedicated-teams/ai-data-science-team",
         icon: Database,
       },
       {
         title: "Hire Digital Marketing Team",
-        link: "/Hire/hire-dedicated-teams/saas-development-team",
+        link: "/hire/hire-dedicated-teams/saas-development-team",
         // link: "/Hire/hire-dedicated-teams/digital-marketing-team",
         icon: RefreshCw,
       },
@@ -1217,7 +1217,7 @@ const Navigation = () => {
               {/* HIRE DEVELOPERS Column */}
               <div>
                 <Link
-                  href="/Hire/hire-developers"
+                  href="/hire/hire-developers"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >
@@ -1256,7 +1256,7 @@ const Navigation = () => {
               {/* HIRE MARKETING EXPERTS Column */}
               <div>
                 <Link
-                  href="/Hire/hire-marketing-experts"
+                  href="/hire/hire-marketing-experts"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >
@@ -1295,7 +1295,7 @@ const Navigation = () => {
               {/* HIRE VIRTUAL LEADERSHIP Column */}
               <div>
                 <Link
-                  href="/Hire/hire-virtual-leadership"
+                  href="/hire/hire-virtual-leadership"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >
@@ -1334,7 +1334,7 @@ const Navigation = () => {
               {/* HIRE DEDICATED TEAMS Column */}
               <div>
                 <Link
-                  href="/Hire/hire-dedicated-teams"
+                  href="/hire/hire-dedicated-teams"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >
@@ -1372,7 +1372,7 @@ const Navigation = () => {
             {/* View All Hire Options Button */}
             <div className="sticky bottom-0 bg-white border-t border-gray-200 px-8 py-4 flex justify-center">
               <Link
-                href="/Hire"
+                href="/hire"
                 className="bg-primary hover:bg-[#E76A32] text-white px-6 py-2 rounded-lg text-sm font-medium"
                 onClick={() => setActiveDropdown(null)}
               >
