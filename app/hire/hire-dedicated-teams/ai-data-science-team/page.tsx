@@ -1,470 +1,232 @@
-import HireHero from "@/components/sections/hire/hire-developers/Hero";
-import RealProblem from "@/components/sections/hire/hire-developers/RealProblem";
-import OurPromise from "@/components/sections/hire/hire-developers/Promise";
-import OurExpertise from "@/components/sections/hire/hire-developers/OurExpertise";
-import IndustriesWeServe from "@/components/sections/hire/hire-developers/IndustriesWeServe";
-import WhyAvaantra from "@/components/sections/hire/hire-developers/WhyAvaantra";
-import HiringProcess from "@/components/sections/hire/hire-developers/HiringProcess";
-import EngagementModels from "@/components/sections/hire/hire-developers/EngagementModels";
-import Comparison from "@/components/sections/hire/hire-developers/Comparison";
-import SecurityIP from "@/components/sections/hire/hire-developers/SecurityIP";
-import Testimonials from "@/components/sections/hire/hire-developers/HireTestimonials";
-import CaseStudy from "@/components/sections/hire/hire-developers/CaseStudy";
-import FAQs from "@/components/sections/hire/hire-developers/FAQs";
-import WhyThisWorks from "@/components/sections/hire/hire-developers/WhyThisWorks";
-import FinalCTA from "@/components/sections/hire/hire-developers/CTA";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowRight,
+  CheckCircle,
+  Brain,
+  Database,
+  BarChart3,
+  ShieldCheck,
+  Cpu,
+} from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title:
-    "Hire AI Developers | Chatbot, NLP & Generative AI Experts | Avaantra Global",
+    "Hire AI & Data Science Team | Machine Learning & Analytics Experts | Avaantra Global",
   description:
-    "Hire dedicated AI developers to build smart, scalable, and future-ready AI solutions. Avaantra Global provides experts in NLP, computer vision, and generative AI — ready in 15 days.",
+    "Hire dedicated AI and Data Science teams to build predictive models, analytics dashboards, and automation workflows. Avaantra Global delivers AI excellence at speed.",
 };
 
-export default function AIDevelopersPage() {
+export default function HireAIDataScienceTeamPage() {
   return (
-    <>
-      {/* Hero Section */}
-      <HireHero
-        title="Hire Dedicated AI Developers"
-        highlight="Build Smarter, Faster, and Future-Ready Products"
-        subtitle="AI isn’t the future — it’s the competitive advantage you need now. Avaantra Global helps you hire skilled AI developers to integrate automation, machine learning, and intelligent systems directly into your business and products."
-        primaryCta="Hire AI Developers in 15 Days"
-        secondaryCta="See How Our AI Experts Deliver"
-        uspList={[
-          "AI engineers skilled in NLP, LLMs, computer vision, and generative AI",
-          "7–15 day onboarding with zero hiring backlog",
-          "End-to-end ML pipelines and model integration expertise",
-          "40–60% faster AI adoption using proven frameworks",
-          "100% IP and data ownership with NDA protection",
-          "Optional managed AI pods for multi-skill delivery",
-        ]}
-        stats={[
-          { value: "7–15 Days", label: "Onboarding" },
-          { value: "3–4X", label: "Faster Model Deployment" },
-          { value: "30–50%", label: "Operational Automation" },
-          { value: "100%", label: "Secure AI Integration" },
-        ]}
-      />
+    <main className="min-h-screen bg-light">
+      {/* Hero */}
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Hire AI & Data Science Team — Build Intelligence Into Every Decision
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100 max-w-4xl mx-auto mb-10">
+            AI isn’t a luxury anymore — it’s how modern companies stay ahead.
+            Avaantra Global helps you hire data scientists, ML engineers, and AI
+            developers who turn data into profit-driving predictions.
+          </p>
 
-      {/* Real Problem */}
-      <RealProblem
-        heading="The Real Problem"
-        subheading="Most companies want to use AI — very few deploy it successfully."
-        problems={[
-          {
-            text: "Internal teams lack real-world AI and ML implementation expertise.",
-          },
-          { text: "Off-the-shelf models don’t fit business-specific data." },
-          { text: "Integrating AI into existing systems is complex." },
-          { text: "Hiring experienced AI talent takes months and high cost." },
-        ]}
-        conclusionTitle="You don’t just need AI developers."
-        conclusionText="You need AI partners who understand both technology and business context — and deliver measurable results fast."
-      />
+          <Link href="/contact">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+              Hire AI & Data Science Team in 15 Days
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
 
-      {/* Our Promise */}
-      <OurPromise
-        heading="Our Promise: Real AI That Works, Scales, and Delivers ROI"
-        subheading="We help startups, SaaS platforms, and enterprises hire AI developers within 7–15 days."
-        promises={[
-          { text: "LLM, OpenAI, LangChain, TensorFlow, and PyTorch experts" },
-          {
-            text: "Rapid build, deployment, and system integration of AI models",
-          },
-          { text: "Managed sprints with transparent reporting" },
-          { text: "Optional project management and QA support" },
-          {
-            text: "Production-grade AI with monitoring, retraining, and MLOps support",
-          },
-        ]}
-        outcomes={[
-          { value: "3–4X", label: "Faster Model Deployment" },
-          { value: "30–50%", label: "Operational Automation" },
-          { value: "100%", label: "Secure, Custom AI Integration" },
-          { value: "Higher", label: "Model Accuracy & Reliability" },
-        ]}
-      />
-      <OurExpertise
-        heading="Our AI Development Expertise"
-        subheading="We build practical, production-ready AI systems that solve real business problems — not experimental demos."
-        items={[
-          {
-            title: "Natural Language Processing (NLP)",
-            description:
-              "Enable intelligent, human-like interactions across text and voice channels.",
-            toolsTitle: "NLP Capabilities",
-            tools: [
-              "Chatbots, sentiment analysis, and text summarization",
-              "LLM fine-tuning (OpenAI, GPT-4, Claude, Mistral)",
-              "Custom intent classification and entity extraction",
-              "Multilingual and domain-specific language models",
-            ],
-            outcome:
-              "Smarter, context-aware customer interactions that improve engagement and support efficiency.",
-          },
-          {
-            title: "Machine Learning & Predictive Analytics",
-            description:
-              "Predict outcomes, detect patterns, and automate decision-making at scale.",
-            toolsTitle: "ML & Analytics",
-            tools: [
-              "TensorFlow, PyTorch, Scikit-learn",
-              "Forecasting, recommendation systems, anomaly detection",
-              "Model optimization, evaluation, and retraining pipelines",
-            ],
-            outcome:
-              "Real-time, data-driven decisions that scale with your business growth.",
-          },
-          {
-            title: "Computer Vision & Image Recognition",
-            description: "Extract intelligence from images and video streams.",
-            toolsTitle: "Vision AI",
-            tools: [
-              "OpenCV, YOLO, Vision Transformer models",
-              "OCR, object detection, and facial recognition",
-              "Visual analytics and automated quality inspection",
-            ],
-            outcome:
-              "Accurate, fast, and automated image-based solutions for real-world use cases.",
-          },
-          {
-            title: "Generative AI & Custom LLM Development",
-            description:
-              "Build generative systems tailored to your data and workflows.",
-            toolsTitle: "Generative AI",
-            tools: [
-              "GPT and LangChain application integrations",
-              "RAG (Retrieval-Augmented Generation) systems",
-              "Voice, text, and image generation models",
-            ],
-            outcome:
-              "Human-like automation that enhances creativity, productivity, and customer experience.",
-          },
-          {
-            title: "AI Integration & Deployment",
-            description:
-              "Ship AI safely and reliably into production environments.",
-            toolsTitle: "Deployment & MLOps",
-            tools: [
-              "MLOps pipelines and API integrations",
-              "Docker, Kubernetes, AWS SageMaker, Azure ML",
-              "Monitoring, retraining, and performance tracking",
-            ],
-            outcome:
-              "Scalable, production-ready AI systems that perform reliably in real-world environments.",
-          },
-          {
-            title: "AI Governance, Ethics & Compliance",
-            description:
-              "Ensure AI systems are transparent, auditable, and regulation-ready.",
-            toolsTitle: "Responsible AI",
-            tools: [
-              "Model explainability & bias detection",
-              "Audit logs and decision traceability",
-              "Human-in-the-loop review systems",
-              "Regulatory alignment (EU AI Act readiness)",
-            ],
-            outcome:
-              "Trustworthy AI systems that meet compliance, legal, and ethical standards.",
-          },
-        ]}
-      />
-      <IndustriesWeServe
-        heading="Industries We Serve"
-        subheading="Our AI developers apply domain expertise to build solutions that deliver measurable business impact."
-        industries={[
-          {
-            icon: "💳",
-            title: "FinTech & Banking",
-            description:
-              "Fraud detection, predictive credit scoring, risk analysis, and personalized financial insights.",
-          },
-          {
-            icon: "🧠",
-            title: "SaaS & B2B Platforms",
-            description:
-              "AI-powered automation, intelligent chatbots, and predictive product analytics.",
-          },
-          {
-            icon: "🏥",
-            title: "Healthcare & Pharma",
-            description:
-              "Diagnostic AI, medical image recognition, and intelligent patient support systems.",
-          },
-          {
-            icon: "🛒",
-            title: "Retail & E-commerce",
-            description:
-              "Recommendation engines, visual search, demand forecasting, and behavior prediction.",
-          },
-          {
-            icon: "📚",
-            title: "Education & Training",
-            description:
-              "Personalized learning paths, adaptive content, and generative learning systems.",
-          },
-          {
-            icon: "🏭",
-            title: "Manufacturing & Supply Chain",
-            description:
-              "Predictive maintenance, demand forecasting, quality inspection, and AI-driven supply optimization.",
-          },
-        ]}
-        outcome="AI solutions built to solve real-world problems with measurable ROI and scalability."
-      />
-      <WhyAvaantra
-        heading="Why Hire AI Developers from Avaantra Global"
-        subheading="Because real AI success requires more than models — it needs production thinking and business alignment."
-        advantages={[
-          {
-            text: "5–10 years average experience across AI, ML, and data engineering",
-          },
-          {
-            text: "Hands-on expertise in LLMs, NLP, computer vision, and predictive analytics",
-          },
-          {
-            text: "Production-grade AI with MLOps, monitoring, and retraining pipelines",
-          },
-          { text: "Business-first approach — models tied to measurable ROI" },
-          { text: "Sprint-based delivery with optional PM and QA oversight" },
-          { text: "100% IP, model, and data ownership with full transparency" },
-        ]}
-        closingLine="We don’t just build AI models — we deploy intelligence that actually works in the real world."
-      />
+          <div className="grid md:grid-cols-5 gap-4 mt-14 max-w-5xl mx-auto text-left">
+            {[
+              "Data + AI + DevOps team in 15–20 days",
+              "Predictive modeling, NLP & automation",
+              "40–60% cost savings vs in-house",
+              "Real-time analytics & dashboards",
+              "100% data security & IP ownership",
+            ].map((t, i) => (
+              <div key={i} className="bg-white/5 p-4 rounded-xl flex gap-3">
+                <CheckCircle className="text-orange-400 w-5 h-5 mt-1" />
+                <p className="text-sm text-blue-100">{t}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <HiringProcess
-        heading="Our Hiring Process"
-        subheading="A focused, transparent process to bring production-ready AI talent into your team quickly."
-        steps={[
-          {
-            step: "1",
-            title: "Requirement Discovery",
-            process:
-              "Define AI use cases, business goals, data availability, and infrastructure.",
-            benefit: "Targeted skill mapping aligned with real AI outcomes",
-          },
-          {
-            step: "2",
-            title: "Candidate Shortlisting",
-            process: "Receive 3–5 pre-vetted AI developers within 48 hours.",
-            benefit: "Save weeks of sourcing and screening",
-          },
-          {
-            step: "3",
-            title: "Interview & Approve",
-            process:
-              "Evaluate technical depth, problem-solving ability, and domain fit.",
-            benefit: "Full control over who joins your team",
-          },
-          {
-            step: "4",
-            title: "Onboard & Kickstart",
-            process:
-              "Developers integrate with your tools, repos, and workflows.",
-            benefit: "Rapid AI project kickoff within days",
-          },
-          {
-            step: "5",
-            title: "Deliver & Optimize",
-            process:
-              "Sprint-based delivery, feedback loops, and performance reporting.",
-            benefit: "Measurable performance improvements and ROI tracking",
-          },
-        ]}
-      />
-      <EngagementModels
-        heading="Engagement Models"
-        subheading="Flexible engagement options designed to match your AI maturity, timeline, and scale."
-        models={[
-          {
-            title: "Dedicated AI Developer",
-            bestFor: "Continuous model development and optimization",
-            howItWorks:
-              "A full-time AI engineer working exclusively on your models, data, and integrations.",
-            outcome:
-              "Long-term innovation, deep system understanding, and full control",
-          },
-          {
-            title: "Managed AI Pod",
-            bestFor:
-              "End-to-end AI delivery across data, models, and infrastructure",
-            howItWorks:
-              "Avaantra manages a cross-functional pod including AI, data, and DevOps experts.",
-            outcome: "2–3X faster velocity with minimal management overhead",
-          },
-          {
-            title: "Project-Based",
-            bestFor: "AI MVPs, pilots, or proof-of-concepts",
-            howItWorks: "Fixed-scope delivery with clear milestones and KPIs.",
-            outcome: "Fast, focused execution with measurable results",
-          },
-          {
-            title: "Hybrid Model",
-            bestFor: "Scaling AI systems and ongoing maintenance",
-            howItWorks:
-              "Combination of dedicated engineers and managed delivery support.",
-            outcome: "Flexibility with long-term ROI and reliability",
-          },
-        ]}
-      />
-      <Comparison
-        heading="Avaantra vs Freelancers vs In-House AI Teams"
-        subheading="A clear comparison to help you choose the smartest AI delivery model."
-        rows={[
-          {
-            aspect: "Hiring Speed",
-            freelancer: "4–8 weeks",
-            inHouse: "3–6 months",
-            avaantra: "7–15 days",
-          },
-          {
-            aspect: "AI & ML Expertise",
-            freelancer: "Narrow / Tool-based",
-            inHouse: "Good but costly",
-            avaantra: "End-to-End (NLP, LLMs, CV, MLOps)",
-          },
-          {
-            aspect: "Production Readiness",
-            freelancer: "Low",
-            inHouse: "High",
-            avaantra: "High + Managed",
-          },
-          {
-            aspect: "Cost Efficiency",
-            freelancer: "Medium",
-            inHouse: "Very High",
-            avaantra: "40–60% Savings",
-          },
-          {
-            aspect: "Scalability",
-            freelancer: "Limited",
-            inHouse: "Slow",
-            avaantra: "Instant & Flexible",
-          },
-          {
-            aspect: "Accountability",
-            freelancer: "Low",
-            inHouse: "High",
-            avaantra: "High + Reporting",
-          },
-          {
-            aspect: "IP & Data Ownership",
-            freelancer: "Risky",
-            inHouse: "Yes",
-            avaantra: "100% Yours",
-          },
-        ]}
-      />
-      <SecurityIP
-        heading="Security, Data & IP Protection"
-        subheading="Your data, models, and intellectual property are protected at every stage."
-        points={[
-          { text: "NDA and legal agreements signed before onboarding" },
-          {
-            text: "Encrypted data access across training, staging, and production",
-          },
-          { text: "Strict role-based access control for datasets and models" },
-          { text: "GDPR, SOC2, and ISO-aligned security practices" },
-          {
-            text: "100% ownership of datasets, models, prompts, and pipelines",
-          },
-          {
-            text: "Private model hosting with no shared inference environments",
-          },
-          {
-            text: "Prompt, dataset, and vector-store isolation per client project",
-          },
-        ]}
-        closingLine="Your data stays yours. Your models stay yours. No exceptions."
-      />
+      {/* Problem */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            The Real Problem with AI Adoption
+          </h2>
+        </div>
 
-      <Testimonials
-        heading="What Clients Say"
-        testimonials={[
-          {
-            quote:
-              "Avaantra’s AI engineers built our chatbot MVP in just five weeks. The speed and accuracy were impressive.",
-            name: "Founder",
-            role: "SaaS Startup",
-            location: "India",
-          },
-          {
-            quote:
-              "They integrated GPT-based workflows seamlessly into our CRM without disrupting existing systems.",
-            name: "VP",
-            role: "Marketing Tech Company",
-            location: "Singapore",
-          },
-          {
-            quote:
-              "Their focus on security and production readiness made enterprise adoption easy.",
-            name: "CTO",
-            role: "B2B Platform",
-            location: "Germany",
-          },
-        ]}
-      />
-      <CaseStudy
-        heading="Case Study: AI-Powered Customer Support Automation"
-        client="SaaS CRM Platform"
-        challenge="Customer support teams were overwhelmed with manual ticket handling and slow response times."
-        solution="Avaantra deployed a team of three AI engineers to build an NLP-powered support automation system using LangChain and secure DevOps pipelines."
-        metrics={[
-          { value: "62%", label: "Reduction in Support Ticket Load" },
-          { value: "48%", label: "Faster Response Time" },
-          { value: "99%", label: "Data Privacy Compliance" },
-        ]}
-      />
-      <FAQs
-        heading="FAQs — Before You Hire AI Developers"
-        faqs={[
-          {
-            question: "What kind of AI developers can I hire?",
-            answer:
-              "We provide experts across NLP, computer vision, predictive analytics, and generative AI.",
-          },
-          {
-            question: "Can you integrate AI with my existing app or CRM?",
-            answer:
-              "Yes. Our AI teams specialize in API-based and plug-in integrations with existing systems.",
-          },
-          {
-            question: "Do you build with OpenAI or custom models?",
-            answer:
-              "Both. We fine-tune existing LLMs or build domain-specific models based on your needs.",
-          },
-          {
-            question: "How long does it take to build an AI MVP?",
-            answer:
-              "Typically 6–8 weeks, depending on complexity and data readiness.",
-          },
-          {
-            question: "How do you ensure data privacy?",
-            answer:
-              "We follow SOC2, GDPR, and ISO-aligned practices. All data is encrypted and fully owned by you.",
-          },
-          {
-            question: "Can AI developers also handle MLOps?",
-            answer:
-              "Yes. We provide end-to-end support including deployment, scaling, monitoring, and retraining.",
-          },
-        ]}
-      />
-      <WhyThisWorks
-        heading="Why This Works"
-        paragraphs={[
-          "Because AI isn’t about hype — it’s about results.",
-          "We combine the right people, proven processes, and production-ready technology to make AI adoption practical and predictable.",
-          "With Avaantra Global, AI becomes a growth lever — not a risky experiment.",
-        ]}
-        highlight="Real AI systems. Real business impact. Predictable delivery."
-      />
-      <FinalCTA
-        heading="Hire AI Developers in 15 Days — Build Smarter, Faster & Predictable AI Systems."
-        subheading="Work with AI engineers who understand models, data, infrastructure, and business impact."
-        ctaText="Book a Free Hiring Consultation"
-      />
-    </>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 bg-purple-50 p-12 rounded-2xl">
+          <ul className="space-y-4 text-gray-700">
+            {[
+              "Data scattered across silos",
+              "No analytics-driven decision framework",
+              "ML models fail due to poor deployment",
+              "AI initiatives stall after POC stage",
+            ].map((t, i) => (
+              <li key={i} className="flex gap-3">
+                <span className="text-red-500">✗</span> {t}
+              </li>
+            ))}
+          </ul>
+          <div className="bg-white p-6 rounded-xl shadow">
+            <h3 className="font-bold text-xl mb-3">
+              AI Needs Operational Discipline
+            </h3>
+            <p className="text-gray-600">
+              You don’t need hype or disconnected models. You need AI systems
+              that deploy, scale, and deliver measurable business outcomes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Promise */}
+      <section className="py-20 px-4 bg-gray-50 text-center">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Our Promise: Predictive Intelligence, Delivered
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              "3–4X faster insight generation",
+              "99% model uptime",
+              "45% lower analytics cost",
+            ].map((t, i) => (
+              <div key={i} className="bg-white p-8 rounded-xl shadow">
+                <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-4" />
+                <p className="font-semibold">{t}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+            Our AI & Data Science Expertise
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Data Engineering & Pipelines",
+                desc: "ETL, Airflow, Databricks, AWS Glue",
+                icon: Database,
+              },
+              {
+                title: "Machine Learning & AI",
+                desc: "Scikit-learn, TensorFlow, PyTorch",
+                icon: Brain,
+              },
+              {
+                title: "Business Intelligence",
+                desc: "Power BI, Tableau, Looker",
+                icon: BarChart3,
+              },
+              {
+                title: "MLOps & Deployment",
+                desc: "MLflow, Docker, Kubernetes",
+                icon: Cpu,
+              },
+              {
+                title: "Security & Compliance",
+                desc: "GDPR, HIPAA, SOC2-aligned pipelines",
+                icon: ShieldCheck,
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl transition"
+              >
+                <item.icon className="w-8 h-8 text-orange-500 mb-4" />
+                <h3 className="font-bold text-xl mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section className="py-20 px-4 bg-white text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10">
+          Industries We Serve
+        </h2>
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          {[
+            "FinTech",
+            "Healthcare",
+            "Retail",
+            "EdTech",
+          ].map((t, i) => (
+            <div
+              key={i}
+              className="bg-gray-50 p-6 rounded-xl shadow font-semibold"
+            >
+              {t}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+            FAQs
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "What’s the difference between hiring AI developers vs teams?",
+                a: "Teams include data scientists, ML engineers, and MLOps experts for end-to-end delivery.",
+              },
+              {
+                q: "How secure is my data?",
+                a: "All systems follow GDPR, HIPAA, and SOC2-aligned security practices.",
+              },
+              {
+                q: "Can dashboards be included?",
+                a: "Yes — analytics and reporting are part of every engagement.",
+              },
+              {
+                q: "Do you handle cloud deployment?",
+                a: "Yes — AWS, Azure, and GCP-based ML pipelines are supported.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-xl shadow">
+                <h3 className="font-semibold mb-2">{item.q}</h3>
+                <p className="text-gray-600">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-4 bg-blue-900 text-white text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Build Smarter, Predictive Systems
+        </h2>
+        <Link href="/contact">
+          <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+            Hire AI & Data Science Team
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
+        </Link>
+      </section>
+    </main>
   );
 }
