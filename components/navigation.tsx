@@ -391,7 +391,7 @@ const Navigation = () => {
     },
     {
       title: "Education & EdTech Software Development",
-      link: "/for-industries/Education-&-EdTech-Software-Development",
+      link: "/for-industries/Education-&-EdTech-Software-Development-Solutions",
       icon: BookOpen
     },
     {
