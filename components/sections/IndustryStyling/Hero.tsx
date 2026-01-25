@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -23,9 +24,21 @@ export function HeroSection({
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">
-          <Button size="lg">
-            {primaryCTA} <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="
+      cursor-pointer
+      transition-all duration-200
+      bg-orange-500
+      hover:bg-orange-600
+      hover:scale-[1.02]
+    "
+            >
+              {primaryCTA} <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+
           {secondaryCTA && (
             <Button
               size="lg"

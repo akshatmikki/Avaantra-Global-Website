@@ -33,7 +33,7 @@ export default function HireMarketingAutomationExpertsPage() {
             convert leads automatically.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+            <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
               Hire Automation Experts in 15 Days
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -240,7 +240,7 @@ export default function HireMarketingAutomationExpertsPage() {
           Automate Growth, Not Just Emails
         </h2>
         <Link href="/contact">
-          <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+          <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
             Hire Marketing Automation Experts
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>

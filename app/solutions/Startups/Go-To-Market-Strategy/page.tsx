@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
@@ -38,13 +39,15 @@ export default function GTMStrategyPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="group bg-white text-emerald-700 hover:bg-emerald-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-            >
-              Book a Free GTM Strategy Call
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="cursor-pointer group bg-white text-emerald-700 hover:bg-emerald-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              >
+                Book a Free GTM Strategy Call
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+              </Button>
+            </Link>
 
             <Button
               size="lg"
@@ -82,9 +85,7 @@ export default function GTMStrategyPage() {
             </ul>
 
             <div className="bg-white rounded-xl p-6 shadow">
-              <p className="text-gray-700 mb-4">
-                Your product has value.
-              </p>
+              <p className="text-gray-700 mb-4">Your product has value.</p>
               <p className="text-gray-700 mb-6">
                 But your audience doesn’t see it yet.
               </p>
@@ -225,254 +226,258 @@ export default function GTMStrategyPage() {
       </section>
 
       {/* Process */}
-<section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-emerald-900 text-white">
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Our Process: From Launch Idea to Market Leadership
-      </h2>
-      <p className="text-emerald-200">
-        A structured GTM system designed for traction, not guesswork.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-5 gap-4">
-      {[
-        {
-          step: "1",
-          title: "Discovery & GTM Audit",
-          desc: "Market, competitors, and customer journey analysis (Week 1).",
-        },
-        {
-          step: "2",
-          title: "Strategy Blueprint",
-          desc: "Positioning, messaging, and channel plan (Weeks 2–3).",
-        },
-        {
-          step: "3",
-          title: "System Setup",
-          desc: "Automation, tracking, CRM, and lead systems (Weeks 3–4).",
-        },
-        {
-          step: "4",
-          title: "Campaign Launch",
-          desc: "Pre-launch and launch execution (Weeks 5–6).",
-        },
-        {
-          step: "5",
-          title: "Measure & Scale",
-          desc: "Performance tracking and GTM optimization (Weeks 7–8).",
-        },
-      ].map((item, idx) => (
-        <div
-          key={idx}
-          className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300"
-        >
-          <div className="text-3xl font-bold text-emerald-300 mb-3">
-            {item.step}
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-emerald-900 text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Process: From Launch Idea to Market Leadership
+            </h2>
+            <p className="text-emerald-200">
+              A structured GTM system designed for traction, not guesswork.
+            </p>
           </div>
-          <h3 className="font-bold mb-2">{item.title}</h3>
-          <p className="text-sm text-emerald-100">{item.desc}</p>
+
+          <div className="grid md:grid-cols-5 gap-4">
+            {[
+              {
+                step: "1",
+                title: "Discovery & GTM Audit",
+                desc: "Market, competitors, and customer journey analysis (Week 1).",
+              },
+              {
+                step: "2",
+                title: "Strategy Blueprint",
+                desc: "Positioning, messaging, and channel plan (Weeks 2–3).",
+              },
+              {
+                step: "3",
+                title: "System Setup",
+                desc: "Automation, tracking, CRM, and lead systems (Weeks 3–4).",
+              },
+              {
+                step: "4",
+                title: "Campaign Launch",
+                desc: "Pre-launch and launch execution (Weeks 5–6).",
+              },
+              {
+                step: "5",
+                title: "Measure & Scale",
+                desc: "Performance tracking and GTM optimization (Weeks 7–8).",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300"
+              >
+                <div className="text-3xl font-bold text-emerald-300 mb-3">
+                  {item.step}
+                </div>
+                <h3 className="font-bold mb-2">{item.title}</h3>
+                <p className="text-sm text-emerald-100">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-emerald-200 mt-10 font-semibold">
+            Outcome: Confident launch, measurable traction, and scalable GTM
+            systems.
+          </p>
         </div>
-      ))}
-    </div>
+      </section>
 
-    <p className="text-center text-emerald-200 mt-10 font-semibold">
-      Outcome: Confident launch, measurable traction, and scalable GTM systems.
-    </p>
-  </div>
-</section>
+      {/* Engagement Models */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
+              Engagement Models
+            </h2>
+            <p className="text-lg text-gray-600">
+              Choose how hands-on you want Avaantra to be.
+            </p>
+          </div>
 
-{/* Engagement Models */}
-<section className="py-20 px-4 bg-white">
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-14">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-        Engagement Models
-      </h2>
-      <p className="text-lg text-gray-600">
-        Choose how hands-on you want Avaantra to be.
-      </p>
-    </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "GTM Fast Track",
+                bestFor: "Early-stage startups",
+                how: "6–8 week end-to-end GTM launch",
+                outcome: "Live traction & validated launch",
+              },
+              {
+                title: "Managed GTM Pod",
+                bestFor: "Funded startups",
+                how: "Tech + marketing hybrid sprint team",
+                outcome: "Speed with execution power",
+              },
+              {
+                title: "Consulting + Execution Retainer",
+                bestFor: "Scaling startups",
+                how: "Strategy plus monthly growth campaigns",
+                outcome: "Continuous traction",
+              },
+              {
+                title: "Audit + Training",
+                bestFor: "In-house teams",
+                how: "GTM playbooks and process setup",
+                outcome: "Internal team enablement",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="border rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold mb-4 text-dark">
+                  {item.title}
+                </h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>
+                    <strong>Best For:</strong> {item.bestFor}
+                  </li>
+                  <li>
+                    <strong>How It Works:</strong> {item.how}
+                  </li>
+                  <li>
+                    <strong>Outcome:</strong> {item.outcome}
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
 
-    <div className="grid md:grid-cols-2 gap-6">
-      {[
-        {
-          title: "GTM Fast Track",
-          bestFor: "Early-stage startups",
-          how: "6–8 week end-to-end GTM launch",
-          outcome: "Live traction & validated launch",
-        },
-        {
-          title: "Managed GTM Pod",
-          bestFor: "Funded startups",
-          how: "Tech + marketing hybrid sprint team",
-          outcome: "Speed with execution power",
-        },
-        {
-          title: "Consulting + Execution Retainer",
-          bestFor: "Scaling startups",
-          how: "Strategy plus monthly growth campaigns",
-          outcome: "Continuous traction",
-        },
-        {
-          title: "Audit + Training",
-          bestFor: "In-house teams",
-          how: "GTM playbooks and process setup",
-          outcome: "Internal team enablement",
-        },
-      ].map((item, idx) => (
-        <div
-          key={idx}
-          className="border rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
-        >
-          <h3 className="text-xl font-bold mb-4 text-dark">{item.title}</h3>
-          <ul className="space-y-2 text-gray-600">
-            <li>
-              <strong>Best For:</strong> {item.bestFor}
-            </li>
-            <li>
-              <strong>How It Works:</strong> {item.how}
-            </li>
-            <li>
-              <strong>Outcome:</strong> {item.outcome}
-            </li>
+          <p className="text-center mt-10 text-gray-600 font-semibold">
+            All models include dashboards, reporting, dedicated strategists, and
+            tool integration.
+          </p>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+              What Founders Say
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                quote:
+                  "Avaantra helped us go from zero to 1,000 active users in 60 days.",
+                by: "Founder, FinTech Startup (India)",
+              },
+              {
+                quote:
+                  "They built a complete GTM system — messaging, automation, and growth.",
+                by: "CTO, AI SaaS (USA)",
+              },
+              {
+                quote:
+                  "Structured, data-backed, and effective. Our launch finally made sense.",
+                by: "CEO, HealthTech Startup (Singapore)",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white rounded-xl p-6 shadow">
+                <p className="italic text-gray-700 mb-4">“{item.quote}”</p>
+                <p className="font-semibold text-dark">{item.by}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto bg-emerald-50 rounded-2xl p-10">
+          <h2 className="text-3xl font-bold mb-6 text-dark">
+            Case Study: From Idea to Market Traction
+          </h2>
+
+          <p className="mb-2">
+            <strong>Client:</strong> SaaS Startup (Singapore)
+          </p>
+          <p className="mb-2">
+            <strong>Challenge:</strong> Needed GTM traction before investor demo
+          </p>
+          <p className="mb-6">
+            <strong>Solution:</strong> Positioning, CRM automation, and
+            pre-launch funnel
+          </p>
+
+          <ul className="space-y-3 font-semibold">
+            <li>✅ 2,300 beta users in 45 days</li>
+            <li>✅ +38% trial-to-paid conversion</li>
+            <li>✅ Seed funding secured post-launch</li>
           </ul>
         </div>
-      ))}
-    </div>
+      </section>
 
-    <p className="text-center mt-10 text-gray-600 font-semibold">
-      All models include dashboards, reporting, dedicated strategists, and tool
-      integration.
-    </p>
-  </div>
-</section>
+      {/* FAQs */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark">
+              FAQs — Before You Launch
+            </h2>
+          </div>
 
-{/* Testimonials */}
-<section className="py-20 px-4 bg-gray-50">
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-14">
-      <h2 className="text-3xl md:text-4xl font-bold text-dark">
-        What Founders Say
-      </h2>
-    </div>
-
-    <div className="grid md:grid-cols-3 gap-6">
-      {[
-        {
-          quote:
-            "Avaantra helped us go from zero to 1,000 active users in 60 days.",
-          by: "Founder, FinTech Startup (India)",
-        },
-        {
-          quote:
-            "They built a complete GTM system — messaging, automation, and growth.",
-          by: "CTO, AI SaaS (USA)",
-        },
-        {
-          quote:
-            "Structured, data-backed, and effective. Our launch finally made sense.",
-          by: "CEO, HealthTech Startup (Singapore)",
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="bg-white rounded-xl p-6 shadow">
-          <p className="italic text-gray-700 mb-4">“{item.quote}”</p>
-          <p className="font-semibold text-dark">{item.by}</p>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Is this suitable for pre-launch startups?",
+                a: "Yes. We design both pre-launch and post-launch GTM plans.",
+              },
+              {
+                q: "How soon can we see results?",
+                a: "Typically within 4–8 weeks of campaign execution.",
+              },
+              {
+                q: "Can you execute campaigns as well?",
+                a: "Yes. We handle strategy, automation, content, and ads.",
+              },
+              {
+                q: "What if we already have a team?",
+                a: "We collaborate or manage specific GTM components.",
+              },
+              {
+                q: "Do you help with investor traction reports?",
+                a: "Yes. We provide GTM validation metrics for fundraising.",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white rounded-xl p-6 shadow">
+                <h3 className="font-bold text-dark mb-2">{item.q}</h3>
+                <p className="text-gray-600">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-{/* Case Study */}
-<section className="py-20 px-4 bg-white">
-  <div className="max-w-4xl mx-auto bg-emerald-50 rounded-2xl p-10">
-    <h2 className="text-3xl font-bold mb-6 text-dark">
-      Case Study: From Idea to Market Traction
-    </h2>
+      {/* Final CTA */}
+      <section className="py-20 px-4 bg-gradient-to-br from-emerald-600 to-emerald-800 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Launch Your Startup the Smart Way?
+          </h2>
+          <p className="text-lg text-emerald-100 mb-8">
+            Turn your launch into a system — not a gamble.
+          </p>
 
-    <p className="mb-2">
-      <strong>Client:</strong> SaaS Startup (Singapore)
-    </p>
-    <p className="mb-2">
-      <strong>Challenge:</strong> Needed GTM traction before investor demo
-    </p>
-    <p className="mb-6">
-      <strong>Solution:</strong> Positioning, CRM automation, and pre-launch
-      funnel
-    </p>
-
-    <ul className="space-y-3 font-semibold">
-      <li>✅ 2,300 beta users in 45 days</li>
-      <li>✅ +38% trial-to-paid conversion</li>
-      <li>✅ Seed funding secured post-launch</li>
-    </ul>
-  </div>
-</section>
-
-{/* FAQs */}
-<section className="py-20 px-4 bg-gray-50">
-  <div className="max-w-4xl mx-auto">
-    <div className="text-center mb-14">
-      <h2 className="text-3xl md:text-4xl font-bold text-dark">
-        FAQs — Before You Launch
-      </h2>
-    </div>
-
-    <div className="space-y-6">
-      {[
-        {
-          q: "Is this suitable for pre-launch startups?",
-          a: "Yes. We design both pre-launch and post-launch GTM plans.",
-        },
-        {
-          q: "How soon can we see results?",
-          a: "Typically within 4–8 weeks of campaign execution.",
-        },
-        {
-          q: "Can you execute campaigns as well?",
-          a: "Yes. We handle strategy, automation, content, and ads.",
-        },
-        {
-          q: "What if we already have a team?",
-          a: "We collaborate or manage specific GTM components.",
-        },
-        {
-          q: "Do you help with investor traction reports?",
-          a: "Yes. We provide GTM validation metrics for fundraising.",
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="bg-white rounded-xl p-6 shadow">
-          <h3 className="font-bold text-dark mb-2">{item.q}</h3>
-          <p className="text-gray-600">{item.a}</p>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="cursor-pointer group bg-white text-emerald-700 hover:bg-emerald-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+            >
+              Book a Free GTM Strategy Call
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+            </Button>
+          </Link>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-{/* Final CTA */}
-<section className="py-20 px-4 bg-gradient-to-br from-emerald-600 to-emerald-800 text-white">
-  <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl md:text-4xl font-bold mb-6">
-      Ready to Launch Your Startup the Smart Way?
-    </h2>
-    <p className="text-lg text-emerald-100 mb-8">
-      Turn your launch into a system — not a gamble.
-    </p>
-
-    <Button
-      size="lg"
-      variant="secondary"
-      className="group bg-white text-emerald-700 hover:bg-emerald-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-    >
-      Book a Free GTM Strategy Call
-      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-    </Button>
-  </div>
-</section>
-
+      </section>
     </main>
   );
 }

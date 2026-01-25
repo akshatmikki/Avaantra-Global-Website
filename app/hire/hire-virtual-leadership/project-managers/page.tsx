@@ -39,7 +39,7 @@ export default function HireProjectManagersPage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="group bg-orange-500 text-white hover:bg-orange-400 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+                className="cursor-pointer group bg-orange-500 text-white hover:bg-orange-400 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
               >
                 Hire Project Managers in 15 Days
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
@@ -304,7 +304,7 @@ export default function HireProjectManagersPage() {
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-orange-500 hover:bg-orange-400 text-white"
+              className="cursor-pointer bg-orange-500 hover:bg-orange-400 text-white"
             >
               Book a Free Consultation
             </Button>

@@ -32,7 +32,7 @@ export default function HireEmailMarketingExpertsPage() {
             predictable revenue channels.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+            <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
               Hire Email Experts in 15 Days
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -262,7 +262,7 @@ export default function HireEmailMarketingExpertsPage() {
           Make Email Your Highest-ROI Channel
         </h2>
         <Link href="/contact">
-          <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+          <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
             Hire Email Marketing Experts
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>

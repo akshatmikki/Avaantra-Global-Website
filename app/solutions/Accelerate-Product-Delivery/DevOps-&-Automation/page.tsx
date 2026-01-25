@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
@@ -107,13 +108,15 @@ export default function DevOpsAutomationPage() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
             <Button
               size="lg"
-              className="group bg-orange-500 text-black hover:bg-orange-400 rounded-full px-10 h-12 text-base font-semibold shadow-lg transition-all"
+              className="cursor-pointer group bg-orange-500 text-black hover:bg-orange-400 rounded-full px-10 h-12 text-base font-semibold shadow-lg transition-all"
             >
               Book a Free DevOps Consultation
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -706,15 +709,17 @@ export default function DevOpsAutomationPage() {
       🎯 Ready to Automate and Accelerate Delivery?
     </h3>
 
+      <Link href="/contact">
     <Button
       size="lg"
-      className="bg-white text-slate-900 hover:bg-slate-100
+      className="cursor-pointer bg-white text-slate-900 hover:bg-slate-100
                  px-8 py-4 text-lg font-semibold
                  transform hover:scale-105 transition-all duration-300
                  hover:shadow-2xl"
     >
       Book Your Free DevOps Consultation →
     </Button>
+      </Link>
   </div>
 </section>
 

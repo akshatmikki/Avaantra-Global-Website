@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
@@ -40,13 +41,15 @@ export default function FundingReadinessPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
             <Button
               size="lg"
-              className="group bg-white text-slate-900 hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="cursor-pointer group bg-white text-slate-900 hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
               Book a Free Funding Readiness Call
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
+            </Link>
 
             <Button
               size="lg"
@@ -467,15 +470,17 @@ export default function FundingReadinessPage() {
           <p className="text-lg text-gray-300 mb-8">
             Walk into investor meetings with proof, not promises.
           </p>
-
+              
+              <Link href="/contact">
           <Button
             size="lg"
             variant="secondary"
-            className="group bg-white text-black hover:bg-gray-200 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+            className="cursor-pointer group bg-white text-black hover:bg-gray-200 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
           >
             Book a Free Funding Readiness Call
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
+          </Link>
         </div>
       </section>
     </main>

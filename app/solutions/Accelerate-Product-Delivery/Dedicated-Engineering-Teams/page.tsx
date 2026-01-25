@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
@@ -59,15 +60,17 @@ export default function DedicatedEngineeringTeamsPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Primary CTA */}
+            <Link href="/contact">
             <Button
               size="lg"
-              className="group bg-white text-slate-900 px-8 py-4 text-lg font-semibold
+              className="cursor-pointer group bg-white text-slate-900 px-8 py-4 text-lg font-semibold
                    hover:bg-slate-100 transform hover:scale-105
                    transition-all duration-300 hover:shadow-2xl"
             >
               Book a Free Engineering Strategy Call
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
+            </Link>
 
             {/* Secondary CTA */}
 
@@ -687,15 +690,17 @@ export default function DedicatedEngineeringTeamsPage() {
             Scale delivery without slowing down your business.
           </p>
 
+            <Link href="/contact">
           <Button
             size="lg"
-            className="group bg-white text-slate-900 px-8 py-4 text-lg font-semibold
+            className="cursor-pointer group bg-white text-slate-900 px-8 py-4 text-lg font-semibold
                  hover:bg-slate-100 transform hover:scale-105
                  transition-all duration-300 hover:shadow-2xl"
           >
             Book a Free Engineering Strategy Call
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
+            </Link>
 
           <p className="mt-6 text-sm text-slate-400">
             No long-term contracts • NDA available • Scale anytime
