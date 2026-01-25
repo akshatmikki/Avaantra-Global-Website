@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -63,13 +64,23 @@ export default function HireHero({
 
         {/* CTA */}
         <div className="mt-14 flex flex-wrap justify-center gap-5 animate-fade-in-up">
-          <Button
-            size="lg"
-            className="relative bg-gradient-to-r from-orange-500 to-orange-600 hover:to-orange-700 shadow-lg shadow-orange-500/30 px-8"
-          >
-            {primaryCta}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="
+      relative
+      cursor-pointer
+      bg-gradient-to-r from-orange-500 to-orange-600
+      hover:from-orange-600 hover:to-orange-700
+      shadow-lg shadow-orange-500/30
+      px-8
+      transition-all duration-200
+    "
+            >
+              {primaryCta}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
 
           {secondaryCta && (
             <Button

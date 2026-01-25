@@ -32,7 +32,7 @@ export default function HireDigitalMarketingTeamPage() {
           </p>
 
           <Link href="/contact">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+            <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
               Hire Digital Marketing Team in 15 Days
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -253,7 +253,7 @@ export default function HireDigitalMarketingTeamPage() {
           Drive Growth Predictably
         </h2>
         <Link href="/contact">
-          <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+          <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
             Hire Digital Marketing Team
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>

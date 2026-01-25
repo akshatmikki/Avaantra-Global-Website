@@ -292,7 +292,7 @@ const Navigation = () => {
       // },
       {
         title: "SaaS Growth Strategy",
-        link: "/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-Strategy",
+        link: "/solutions/Launch-&-Grow-SaaS-GTM/SaaS-Growth-strategy",
         icon: TrendingUp,
       },
       {

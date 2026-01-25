@@ -59,13 +59,15 @@ export default function SaaSCustomerRetentionPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
             <Button
               size="lg"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="cursor-pointer group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
               Book a Free Retention Strategy Call
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
+            </Link>
 
             <Button
               size="lg"
@@ -467,7 +469,7 @@ export default function SaaSCustomerRetentionPage() {
             <Button
               size="lg"
               variant="secondary"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="cursor-pointer group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
               Book a Free Retention Strategy Call
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />

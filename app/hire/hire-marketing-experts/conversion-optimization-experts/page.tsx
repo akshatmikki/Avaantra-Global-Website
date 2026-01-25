@@ -32,7 +32,7 @@ export default function HireConversionOptimizationExpertsPage() {
             landing pages, funnels, and user journeys.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+            <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
               Hire CRO Experts in 15 Days
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -267,7 +267,7 @@ export default function HireConversionOptimizationExpertsPage() {
           Make Every Visitor Count
         </h2>
         <Link href="/contact">
-          <Button size="lg" className="bg-orange-500 hover:bg-orange-400">
+          <Button size="lg" className="cursor-pointer bg-orange-500 hover:bg-orange-400">
             Hire Conversion Optimization Experts
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>

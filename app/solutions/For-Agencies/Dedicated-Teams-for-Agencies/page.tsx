@@ -60,13 +60,15 @@ export default function DedicatedTeamsForAgenciesPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
             <Button
               size="lg"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="cursor-pointer group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
               Book a Free Team Strategy Session
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
+            </Link>
 
             <Button
               size="lg"
@@ -480,7 +482,7 @@ export default function DedicatedTeamsForAgenciesPage() {
             <Button
               size="lg"
               variant="secondary"
-              className="group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="cursor-pointer group bg-white text-purple-700 hover:bg-purple-50 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
               Book a Free Dedicated Team Consultation
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -20,25 +21,31 @@ export default function FinalCTA({
 
       <div className="max-w-5xl mx-auto px-6 text-center">
         <div className="max-w-3xl mx-auto animate-fade-in-up">
-
           <h2 className="text-3xl md:text-4xl font-semibold text-white">
             {heading}
           </h2>
 
-          <p className="mt-4 text-lg text-slate-300">
-            {subheading}
-          </p>
+          <p className="mt-4 text-lg text-slate-300">{subheading}</p>
 
           <div className="mt-10 flex justify-center">
-            <Button
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg"
-            >
-              {ctaText}
-              <ArrowRight className="ml-3 h-5 w-5" />
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="
+      bg-orange-500
+      hover:bg-orange-600
+      text-white
+      px-8 py-6
+      text-lg
+      cursor-pointer
+      transition-colors duration-200
+    "
+              >
+                {ctaText}
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
-
         </div>
       </div>
     </section>
