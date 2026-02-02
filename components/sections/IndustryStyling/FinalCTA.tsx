@@ -30,7 +30,7 @@ export function FinalCTA({
           </Button>
         </Link>
 
-        {secondaryCTA && (
+        {/* {secondaryCTA && (
           <Button
             size="lg"
             variant="outline"
@@ -38,7 +38,7 @@ export function FinalCTA({
           >
             {secondaryCTA}
           </Button>
-        )}
+        )} */}
       </div>
 
       {trustText && <p className="mt-10 text-sm">{trustText}</p>}

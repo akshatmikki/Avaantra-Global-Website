@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function FinalCTA() {
   return (
@@ -14,9 +15,11 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-primary hover:bg-[#E76A32] rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32', color: '#1C2856' }}>
+          <Link href="/contact">
+          <Button className="cursor-pointer bg-primary hover:bg-[#E76A32] rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32', color: '#1C2856' }}>
             Book a Free Strategy Call →
           </Button>
+          </Link>
           <Button
             variant="outline"
             className="border-2 border-light text-light hover:bg-light/10 rounded-full px-8 py-6 text-base font-semibold bg-transparent"

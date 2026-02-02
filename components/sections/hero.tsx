@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -22,9 +23,11 @@ export default function Hero() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button className="bg-primary hover:bg-[#E76A32] text-white rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32' }}>
+                <Link href="/contact">
+                <Button className="cursor-pointer bg-primary hover:bg-[#E76A32] text-white rounded-full px-8 py-6 text-base font-semibold" style={{ backgroundColor: '#E76A32' }}>
                   Book a Free Strategy Call <ArrowRight size={18} className="ml-2" />
                 </Button>
+                </Link>
                 <Button
                   variant="outline"
                   className="border-2 hover:bg-gray-50 rounded-full px-8 py-6 text-base font-semibold bg-transparent"
