@@ -116,11 +116,11 @@ const Navigation = () => {
       },
     ],
     productEngineering: [
-      {
-        title: "Product Engineering Overview",
-        link: "/services/product-engineering",
-        icon: Briefcase,
-      },
+      // {
+      //   title: "Product Engineering Overview",
+      //   link: "/services/product-engineering",
+      //   icon: Briefcase,
+      // },
       {
         title: "Product Roadmap & Discovery",
         link: "/services/product-roadmap-discovery",
@@ -148,11 +148,11 @@ const Navigation = () => {
       },
     ],
     digitalMarketing: [
-      {
-        title: "Digital Marketing Services",
-        link: "/services/digital-marketing",
-        icon: Server,
-      },
+      // {
+      //   title: "Digital Marketing Services",
+      //   link: "/services/digital-marketing",
+      //   icon: Server,
+      // },
       {
         title: "Performance Marketing",
         link: "/services/performance-marketing",
@@ -185,11 +185,11 @@ const Navigation = () => {
       },
     ],
     aiSolutions: [
-      {
-        title: "AI Services & Solutions Overview",
-        link: "/services/ai-services-solutions",
-        icon: Target,
-      },
+      // {
+      //   title: "AI Services & Solutions Overview",
+      //   link: "/services/ai-services-solutions",
+      //   icon: Target,
+      // },
       {
         title: "AI Strategy & Consulting",
         link: "/services/ai-strategy-consulting",
@@ -819,7 +819,7 @@ const Navigation = () => {
                   🇺🇸 English
                 </button>
 
-                <button
+                {/* <button
                   onClick={() => {
                     changeLanguage("hi");
                     setIsLangOpen(false);
@@ -827,9 +827,9 @@ const Navigation = () => {
                   className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
                 >
                   🇮🇳 हिंदी
-                </button>
+                </button> */}
 
-                <button
+                {/* <button
                   onClick={() => {
                     changeLanguage("fr");
                     setIsLangOpen(false);
@@ -837,16 +837,18 @@ const Navigation = () => {
                   className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
                 >
                   🇫🇷 Français
-                </button>
+                </button> */}
               </div>
             )}
           </div>
-          <Button
-            className="bg-primary hover:bg-[#E76A32] text-light rounded-full px-6"
-            style={{ backgroundColor: "#E76A32" }}
-          >
-            Get Free Consultation →
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="cursor-pointer bg-primary hover:bg-[#E76A32] text-light rounded-full px-6"
+              style={{ backgroundColor: "#E76A32" }}
+            >
+              Get Free Consultation →
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -869,10 +871,18 @@ const Navigation = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* SOFTWARE ENGINEERING Column */}
               <div>
-                <Link href="/service/software-engineering" className="inline-block">
-                  <h3 className="text-primary font-bold text-sm uppercase mb-4 hover:underline cursor-pointer">
+                <Link
+                  href="/service/software-engineering"
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
                     SOFTWARE ENGINEERING
                   </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {servicesMenu.softwareEngineering.map((item, idx) => {
@@ -898,9 +908,20 @@ const Navigation = () => {
 
               {/* PRODUCT ENGINEERING Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  PRODUCT ENGINEERING
-                </h3>
+                <Link
+                  href="/service/product-engineering"
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    PRODUCT ENGINEERING Overview
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {servicesMenu.productEngineering.map((item, idx) => {
                     const Icon = item.icon;
@@ -925,9 +946,20 @@ const Navigation = () => {
 
               {/* DIGITAL MARKETING Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  DIGITAL MARKETING
-                </h3>
+                <Link
+                  href="/service/digital-marketing-services"
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    DIGITAL MARKETING SERVICES
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {servicesMenu.digitalMarketing.map((item, idx) => {
                     const Icon = item.icon;
@@ -952,9 +984,20 @@ const Navigation = () => {
 
               {/* AI & SOLUTIONS Column */}
               <div>
-                <h3 className="text-primary font-bold text-sm uppercase mb-4">
-                  AI SERVICES & SOLUTIONS
-                </h3>
+                <Link
+                  href="/service/ai-services-&-solutions"
+                  className="inline-flex items-center gap-1 mb-4 group"
+                >
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
+                    AI SERVICES & SOLUTIONS
+                  </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </Link>
+
                 <ul className="space-y-3">
                   {servicesMenu.aiSolutions.map((item, idx) => {
                     const Icon = item.icon;
@@ -1005,11 +1048,16 @@ const Navigation = () => {
                 <Link
                   href="/solutions/For-Agencies"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-block mb-4"
+                  className="inline-flex items-center gap-1 mb-4 group"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
                     FOR AGENCIES
                   </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
                 </Link>
 
                 <ul className="space-y-3">
@@ -1039,11 +1087,16 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Accelerate-Product-Delivery"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-block mb-4"
+                  className="inline-flex items-center gap-1 mb-4 group"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
                     ACCELERATE PRODUCT DELIVERY
                   </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.accelerateDelivery.map((item, idx) => {
@@ -1072,11 +1125,16 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Launch-&-Grow-SaaS-GTM"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-block mb-4"
+                  className="inline-flex items-center gap-1 mb-4 group"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
                     LAUNCH AND GROW SAAS GTM
                   </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.LaunchAndGrow.map((item, idx) => {
@@ -1105,11 +1163,16 @@ const Navigation = () => {
                 <Link
                   href="/solutions/Startups"
                   onClick={() => setActiveDropdown(null)}
-                  className="inline-block mb-4"
+                  className="inline-flex items-center gap-1 mb-4 group"
                 >
-                  <h3 className="text-primary font-bold text-sm uppercase hover:underline cursor-pointer">
+                  <h3 className="text-primary font-bold text-sm uppercase transition-colors group-hover:underline">
                     STARTUPS
                   </h3>
+
+                  {/* subtle arrow cue */}
+                  <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
                 </Link>
                 <ul className="space-y-3">
                   {solutionsMenu.startups.map((item, idx) => {
@@ -1759,13 +1822,15 @@ const Navigation = () => {
           >
             Contact Us
           </Link>
-          <Button
-            className="w-full bg-primary hover:bg-[#E76A32] text-light rounded-full"
-            style={{ backgroundColor: "#E76A32" }}
-            onClick={() => setIsMobileOpen(false)}
-          >
-            Get Free Consultation
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="cursor-pointer w-full bg-primary hover:bg-[#E76A32] text-light rounded-full"
+              style={{ backgroundColor: "#E76A32" }}
+              onClick={() => setIsMobileOpen(false)}
+            >
+              Get Free Consultation
+            </Button>
+          </Link>
         </div>
       )}
     </nav>

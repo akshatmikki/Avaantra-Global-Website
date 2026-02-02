@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function SoftwareEngineeringPage() {
   return (
@@ -22,12 +23,14 @@ export default function SoftwareEngineeringPage() {
           </p>
 
           <div className="mt-12 flex flex-wrap justify-center gap-5">
-            <button className="bg-orange-500 hover:bg-orange-600 text-black font-semibold px-8 py-4 rounded-lg transition">
-              📅 Book a Free 15-Minute Consultation
-            </button>
+            <Link href="/contact">
+              <button className="cursor-pointer bg-orange-500 hover:bg-orange-600 text-black font-semibold px-8 py-4 rounded-lg transition">
+                📅 Book a Free 15-Minute Consultation
+              </button>
+            </Link>
 
             <a
-              href="/services/dedicated-teams"
+              href="/hire/hire-developers"
               className="inline-flex items-center gap-2 border border-slate-600 text-white px-8 py-4 rounded-lg hover:bg-white hover:text-black transition"
             >
               Hire Developers →
@@ -782,9 +785,11 @@ export default function SoftwareEngineeringPage() {
 
           {/* CTAs */}
           <div className="mt-14 flex flex-wrap justify-center gap-6">
-            <button className="bg-orange-500 hover:bg-orange-600 text-black font-semibold px-10 py-5 rounded-xl transition shadow-lg hover:shadow-xl">
-              📩 Book a Free Strategy Call
-            </button>
+            <Link href="/contact">
+              <button className="cursor-pointer bg-orange-500 hover:bg-orange-600 text-black font-semibold px-10 py-5 rounded-xl transition shadow-lg hover:shadow-xl">
+                📩 Book a Free Strategy Call
+              </button>
+            </Link>
 
             <button
               className="border border-slate-600 text-white px-10 py-5 rounded-xl
