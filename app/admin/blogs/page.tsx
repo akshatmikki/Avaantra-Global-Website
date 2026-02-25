@@ -23,7 +23,7 @@ import {
   Type,
 } from "lucide-react";
 
-const API_BASE = "https://admin.urest.in:8089/api/blogs";
+const API_BASE = "https://admin.urest.in:8089/api/blog";
 const DEFAULT_BLOG_IMAGE =
   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
 const FONT_OPTIONS = ["Arial", "Candara", "Times New Roman", "Georgia", "Verdana"];
