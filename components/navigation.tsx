@@ -1454,13 +1454,6 @@ const Navigation = () => {
           >
             About Us
           </Link>
-          <Link
-            href="/blog"
-            className="block py-2 text-dark hover:text-primary font-medium"
-            onClick={() => setIsMobileOpen(false)}
-          >
-            Blog
-          </Link>
 
           {/* Mobile Services Menu */}
           <details className="cursor-pointer">
@@ -1828,6 +1821,15 @@ const Navigation = () => {
               </Link>
             </div>
           </details>
+
+          <Link
+            href="/blog"
+            className="block py-2 text-dark hover:text-primary font-medium"
+            onClick={() => setIsMobileOpen(false)}
+          >
+            Blog
+          </Link>
+          
           <Link
             href="/contact"
             className="block py-2 text-dark hover:text-primary font-medium"

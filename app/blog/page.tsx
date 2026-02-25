@@ -65,7 +65,7 @@ export default function BlogPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://admin.urest.in:8089/api/blogs/GetAllBlogs")
+    fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs")
       .then((res) => res.json())
       .then((data) => {
         const list: unknown[] = Array.isArray(data)

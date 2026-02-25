@@ -153,7 +153,7 @@ export default function BlogDetailPage() {
 
   useEffect(() => {
     if (!slug) return;
-    fetch("https://admin.urest.in:8089/api/blogs/GetAllBlogs")
+    fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs")
       .then((res) => res.json())
       .then((response) => {
         const list: unknown[] = Array.isArray(response)
@@ -183,7 +183,7 @@ export default function BlogDetailPage() {
     if (!slug) return;
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`https://admin.urest.in:8089/api/blogs/${slug}`);
+        const res = await fetch(`https://admin.urest.in:8089/api/blog/${slug}`);
         if (!res.ok) throw new Error("Blog not found");
         const data = await res.json();
         setBlog(normalizeBlog(data, 0));

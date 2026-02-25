@@ -1033,7 +1033,7 @@ const AdminBlogs = () => {
 
   const buildStructuredBlogPayload = async (resolvedSlug: string) => {
     const tags = getTagList();
-    const authorName = draft.authorName.trim() || "Clinexy Team";
+    const authorName = draft.authorName.trim() || "Avaantra Team";
     const status = draft.status || "Published";
     const featuredImage = (previewImage || draft.featuredImage || DEFAULT_BLOG_IMAGE).trim();
     const bodyMarkdown =
@@ -1401,6 +1401,7 @@ const AdminBlogs = () => {
                     <ImageIcon className="h-4 w-4" />
                   </button>
                   <input
+                  title="insert image"
                     ref={contentImageInputRef}
                     type="file"
                     accept="image/*"
@@ -1678,6 +1679,7 @@ const AdminBlogs = () => {
                       className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
                     />
                     <select
+                    title="status"
                       value={draft.status}
                       onChange={(event) =>
                         setDraft((prev) => ({ ...prev, status: event.target.value }))
