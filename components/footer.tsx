@@ -71,11 +71,11 @@ export default function Footer() {
             ]}
           />
 
-          {/* Resources */}
+          {/* Blog */}
           <FooterColumn
             title="Resources"
             links={[
-              ["Blog", "/blog"],
+              ["All Blogs", "/blog"],
               ["Whitepapers", "/whitepapers"],
               ["Pricing", "/pricing"],
               ["Calculators", "/calculators"],

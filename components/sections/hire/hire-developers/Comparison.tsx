@@ -34,7 +34,7 @@ export default function Comparison({
 
         {/* Comparison Grid */}
         <div className="relative overflow-x-auto animate-fade-in-up">
-          <div className="min-w-[900px] max-w-6xl mx-auto">
+          <div className="min-w-[640px] md:min-w-[900px] max-w-6xl mx-auto">
 
             {/* Header */}
             <div className="grid grid-cols-4 rounded-t-2xl overflow-hidden">

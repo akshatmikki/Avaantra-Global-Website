@@ -405,7 +405,7 @@ const Navigation = () => {
     developers: [
       // {
       //   title: "Hire Dedicated Developers",
-      //   link: "/Hire/hire-developers",
+      //   link: "/hire/hire-developers",
       //   icon: FileText,
       // },
       {
@@ -507,7 +507,7 @@ const Navigation = () => {
     marketing: [
       // {
       //   title: "Hire Marketing Experts",
-      //   link: "/Hire/hire-marketing-experts",
+      //   link: "/hire/hire-marketing-experts",
       //   icon: Briefcase,
       // },
       {
@@ -559,7 +559,7 @@ const Navigation = () => {
     leadership: [
       // {
       //   title: "Hire Virtual Leadership",
-      //   link: "/Hire/hire-virtual-leadership",
+      //   link: "/hire/hire-virtual-leadership",
       //   icon: Brain,
       // },
       { title: "Hire Virtual CTO", link: "/hire/hire-virtual-leadership/virtual-cto", icon: Terminal },
@@ -588,7 +588,7 @@ const Navigation = () => {
     teams: [
       // {
       //   title: "Hire Dedicated Teams",
-      //   link: "/Hire/hire-dedicated-teams",
+      //   link: "/hire/hire-dedicated-teams",
       //   icon: Shield,
       // },
       {
@@ -652,7 +652,7 @@ const Navigation = () => {
           </span>
           <span className="hidden md:inline-flex items-center gap-1">
             <MapPin size={14} />
-            Plot No H-64, Ground Floor Uffim Business Park, Sector 63 Noida
+            Plot No H-64, Ground Floor Ufirm Business Park, Sector 63 Noida
           </span>
           <span className="hidden md:inline-flex items-center gap-1">
             <MailIcon size={14} />
@@ -782,6 +782,12 @@ const Navigation = () => {
               />
             </button>
           </div>
+          <Link
+            href="/blog"
+            className="text-dark hover:text-primary font-medium transition-colors"
+          >
+            Blog
+          </Link>
           <Link
             href="/contact"
             className="text-dark hover:text-primary font-medium transition-colors"
@@ -1448,6 +1454,13 @@ const Navigation = () => {
           >
             About Us
           </Link>
+          <Link
+            href="/blog"
+            className="block py-2 text-dark hover:text-primary font-medium"
+            onClick={() => setIsMobileOpen(false)}
+          >
+            Blog
+          </Link>
 
           {/* Mobile Services Menu */}
           <details className="cursor-pointer">
@@ -1713,7 +1726,7 @@ const Navigation = () => {
             <div className="pl-4 mt-2 space-y-4">
               <div>
                 <Link
-                  href="/Hire/hire-developers"
+                  href="/hire/hire-developers"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >
@@ -1761,7 +1774,7 @@ const Navigation = () => {
               </div>
               <div>
                 <Link
-                  href="/Hire/hire-marketing-experts"
+                  href="/hire/hire-marketing-experts"
                   onClick={() => setActiveDropdown(null)}
                   className="inline-flex items-center gap-1 mb-4 group"
                 >

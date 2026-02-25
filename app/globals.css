@@ -310,3 +310,60 @@
 
 
 }
+
+/* Mobile responsiveness hardening */
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Force dense multi-column grids to stack on phones */
+  .grid.grid-cols-3,
+  .grid.grid-cols-4,
+  .grid.grid-cols-5,
+  .grid.grid-cols-6 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  /* Scale oversized fixed typography used on multiple pages */
+  [class*="text-[48px]"] {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  [class*="text-[40px]"] {
+    font-size: 1.875rem !important;
+    line-height: 1.25 !important;
+  }
+  [class*="text-[38px]"] {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+  }
+  [class*="text-[36px]"] {
+    font-size: 1.625rem !important;
+    line-height: 1.3 !important;
+  }
+  [class*="text-[32px]"] {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Keep decorative blur blobs from causing visual overflow on phones */
+  [class*="absolute"][class*="blur-3xl"][class*="w-[500px]"],
+  [class*="absolute"][class*="blur-3xl"][class*="w-[420px]"],
+  [class*="absolute"][class*="blur-3xl"][class*="w-[400px]"],
+  [class*="absolute"][class*="blur-3xl"][class*="w-[380px]"],
+  [class*="absolute"][class*="blur-3xl"][class*="w-[360px]"] {
+    display: none !important;
+  }
+}
