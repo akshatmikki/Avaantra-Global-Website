@@ -24,6 +24,10 @@ import {
 } from "lucide-react";
 
 const API_BASE = "https://admin.urest.in:8089/api/blog";
+const GET_ALL_BLOGS_ENDPOINT = `${API_BASE}/GetAllBlogs`;
+const CREATE_BLOG_ENDPOINT = `${API_BASE}/CreateStructuredBlog`;
+const GET_BLOG_BY_SLUG_ENDPOINT = (slug: string) =>
+  `${API_BASE}/GetBlog/${encodeURIComponent(slug)}`;
 const DEFAULT_BLOG_IMAGE =
   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
 const FONT_OPTIONS = ["Arial", "Candara", "Times New Roman", "Georgia", "Verdana"];
@@ -35,6 +39,20 @@ type RawBlog = {
   Id?: unknown;
   title?: unknown;
   Title?: unknown;
+  metaTitle?: unknown;
+  MetaTitle?: unknown;
+  metaDescription?: unknown;
+  MetaDescription?: unknown;
+  keywords?: unknown;
+  Keywords?: unknown;
+  metaKeywords?: unknown;
+  MetaKeywords?: unknown;
+  canonicalUrl?: unknown;
+  CanonicalUrl?: unknown;
+  ogImageUrl?: unknown;
+  OgImageUrl?: unknown;
+  ogImage?: unknown;
+  OgImage?: unknown;
   slug?: unknown;
   Slug?: unknown;
   content?: unknown;
@@ -56,6 +74,11 @@ type RawBlog = {
 type BlogRecord = {
   id: string;
   title: string;
+  metaTitle: string;
+  metaDescription: string;
+  keywords: string[];
+  canonicalUrl: string;
+  ogImageUrl: string;
   slug: string;
   content: string;
   sections: ContentSection[];
@@ -68,6 +91,11 @@ type BlogRecord = {
 
 type BlogDraft = {
   title: string;
+  metaTitle: string;
+  metaDescription: string;
+  keywords: string;
+  canonicalUrl: string;
+  ogImageUrl: string;
   slug: string;
   content: string;
   featuredImage: string;
@@ -87,6 +115,11 @@ type ContentSection = {
 
 const emptyDraft: BlogDraft = {
   title: "",
+  metaTitle: "",
+  metaDescription: "",
+  keywords: "",
+  canonicalUrl: "",
+  ogImageUrl: "",
   slug: "",
   content: "",
   featuredImage: "",
@@ -373,6 +406,41 @@ const normalizeBlog = (item: unknown, index: number): BlogRecord => {
   return {
     id: String(raw.id ?? raw.Id ?? index),
     title,
+    metaTitle:
+      (typeof raw.metaTitle === "string" && raw.metaTitle.trim()) ||
+      (typeof raw.MetaTitle === "string" && raw.MetaTitle.trim()) ||
+      title,
+    metaDescription:
+      (typeof raw.metaDescription === "string" && raw.metaDescription.trim()) ||
+      (typeof raw.MetaDescription === "string" && raw.MetaDescription.trim()) ||
+      "",
+    keywords: Array.isArray(raw.keywords)
+      ? raw.keywords.map(String).map((value) => value.trim()).filter(Boolean)
+      : Array.isArray(raw.Keywords)
+        ? raw.Keywords.map(String).map((value) => value.trim()).filter(Boolean)
+        : Array.isArray(raw.metaKeywords)
+          ? raw.metaKeywords.map(String).map((value) => value.trim()).filter(Boolean)
+          : Array.isArray(raw.MetaKeywords)
+            ? raw.MetaKeywords.map(String).map((value) => value.trim()).filter(Boolean)
+        : typeof raw.keywords === "string"
+          ? raw.keywords.split(",").map((value) => value.trim()).filter(Boolean)
+          : typeof raw.Keywords === "string"
+            ? raw.Keywords.split(",").map((value) => value.trim()).filter(Boolean)
+            : typeof raw.metaKeywords === "string"
+              ? raw.metaKeywords.split(",").map((value) => value.trim()).filter(Boolean)
+              : typeof raw.MetaKeywords === "string"
+                ? raw.MetaKeywords.split(",").map((value) => value.trim()).filter(Boolean)
+            : [],
+    canonicalUrl:
+      (typeof raw.canonicalUrl === "string" && raw.canonicalUrl.trim()) ||
+      (typeof raw.CanonicalUrl === "string" && raw.CanonicalUrl.trim()) ||
+      "",
+    ogImageUrl:
+      (typeof raw.ogImageUrl === "string" && raw.ogImageUrl.trim()) ||
+      (typeof raw.OgImageUrl === "string" && raw.OgImageUrl.trim()) ||
+      (typeof raw.ogImage === "string" && raw.ogImage.trim()) ||
+      (typeof raw.OgImage === "string" && raw.OgImage.trim()) ||
+      "",
     slug,
     content,
     sections: normalizedSections,
@@ -402,6 +470,11 @@ const normalizeBlog = (item: unknown, index: number): BlogRecord => {
 
 const toDraft = (blog: BlogRecord): BlogDraft => ({
   title: blog.title,
+  metaTitle: blog.metaTitle,
+  metaDescription: blog.metaDescription,
+  keywords: blog.keywords.join(", "),
+  canonicalUrl: blog.canonicalUrl,
+  ogImageUrl: blog.ogImageUrl,
   slug: blog.slug,
   content: blog.content,
   featuredImage: blog.featuredImage,
@@ -443,12 +516,32 @@ const AdminBlogs = () => {
     fallback?: BlogRecord
   ): Promise<BlogRecord | null> => {
     try {
-      const res = await fetch(`${API_BASE}/${encodeURIComponent(slug)}`);
-      if (!res.ok) return fallback || null;
+      const detailRes = await fetch(GET_BLOG_BY_SLUG_ENDPOINT(slug));
+      if (detailRes.ok) {
+        const detailData = await detailRes.json();
+        const detailed = normalizeBlog(detailData, 0);
+        return {
+          ...(fallback || detailed),
+          ...detailed,
+          content: detailed.content || fallback?.content || "",
+        };
+      }
 
-      const data = await res.json();
-      const detailed = normalizeBlog(data, 0);
-
+      const listRes = await fetch(GET_ALL_BLOGS_ENDPOINT);
+      if (!listRes.ok) return fallback || null;
+      const response = await listRes.json();
+      const list: unknown[] = Array.isArray(response)
+        ? response
+        : Array.isArray(response?.blogs)
+          ? response.blogs
+          : Array.isArray(response?.content)
+            ? response.content
+            : Array.isArray(response?.data)
+              ? response.data
+              : [];
+      const normalized = list.map((item, index) => normalizeBlog(item, index));
+      const detailed = normalized.find((item) => item.slug === slug);
+      if (!detailed) return fallback || null;
       return {
         ...(fallback || detailed),
         ...detailed,
@@ -479,7 +572,7 @@ const AdminBlogs = () => {
     setError("");
 
     try {
-      const res = await fetch(API_BASE);
+      const res = await fetch(GET_ALL_BLOGS_ENDPOINT);
       if (!res.ok) {
         throw new Error(`Could not load blogs (${res.status})`);
       }
@@ -487,6 +580,8 @@ const AdminBlogs = () => {
       const response = await res.json();
       const list: unknown[] = Array.isArray(response)
         ? response
+        : Array.isArray(response?.blogs)
+          ? response.blogs
         : Array.isArray(response?.content)
           ? response.content
           : Array.isArray(response?.data)
@@ -594,7 +689,15 @@ const AdminBlogs = () => {
   };
 
   const setDraftWithSections = (nextDraft: BlogDraft, sectionsOverride?: ContentSection[]) => {
-    setDraft(nextDraft);
+    setDraft({
+      ...emptyDraft,
+      ...nextDraft,
+      metaTitle: nextDraft.metaTitle ?? "",
+      metaDescription: nextDraft.metaDescription ?? "",
+      keywords: nextDraft.keywords ?? "",
+      canonicalUrl: nextDraft.canonicalUrl ?? "",
+      ogImageUrl: nextDraft.ogImageUrl ?? "",
+    });
     if (sectionsOverride && sectionsOverride.length > 0) {
       setContentSections(
         sectionsOverride.map((section) => ({
@@ -1033,6 +1136,14 @@ const AdminBlogs = () => {
 
   const buildStructuredBlogPayload = async (resolvedSlug: string) => {
     const tags = getTagList();
+    const seoKeywords = (draft.keywords || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean);
+    const metaTitle = (draft.metaTitle || "").trim() || (draft.title || "").trim();
+    const metaDescription = (draft.metaDescription || "").trim();
+    const canonicalUrl = (draft.canonicalUrl || "").trim();
+    const ogImageUrl = (draft.ogImageUrl || "").trim();
     const authorName = draft.authorName.trim() || "Avaantra Team";
     const status = draft.status || "Published";
     const featuredImage = (previewImage || draft.featuredImage || DEFAULT_BLOG_IMAGE).trim();
@@ -1051,12 +1162,16 @@ const AdminBlogs = () => {
 
     return {
       title: draft.title.trim(),
+      metaTitle,
+      metaDescription,
+      metaKeywords: seoKeywords.join(", "),
+      canonicalUrl,
+      ogImage: ogImageUrl,
       slug: resolvedSlug,
       authorName,
       tags,
       status,
       featuredImage,
-      FeaturedImage: featuredImage,
       sections,
       content: bodyMarkdown,
     };
@@ -1064,6 +1179,14 @@ const AdminBlogs = () => {
 
   const buildUpdateBlogPayload = async (resolvedSlug: string, blogId: string) => {
     const tags = getTagList();
+    const seoKeywords = (draft.keywords || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean);
+    const metaTitle = (draft.metaTitle || "").trim() || (draft.title || "").trim();
+    const metaDescription = (draft.metaDescription || "").trim();
+    const canonicalUrl = (draft.canonicalUrl || "").trim();
+    const ogImageUrl = (draft.ogImageUrl || "").trim();
     const authorName = draft.authorName.trim() || "Clinexy Team";
     const status = draft.status || "Published";
     const bodyMarkdown =
@@ -1087,13 +1210,17 @@ const AdminBlogs = () => {
     return {
       id: blogId,
       title: draft.title.trim(),
+      metaTitle,
+      metaDescription,
+      metaKeywords: seoKeywords.join(", "),
+      canonicalUrl,
+      ogImage: ogImageUrl,
       slug: resolvedSlug,
       authorId: null,
       authorName,
       tags,
       status,
       featuredImage,
-      FeaturedImage: featuredImage,
       sections,
     };
   };
@@ -1167,7 +1294,7 @@ const AdminBlogs = () => {
       let payload = await buildStructuredBlogPayload(resolvedSlug);
 
       if (mode === "create") {
-        response = await fetch(`${API_BASE}/CreateStructuredBlog`, {
+        response = await fetch(CREATE_BLOG_ENDPOINT, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -1209,7 +1336,7 @@ const AdminBlogs = () => {
           );
           if (retrySlug !== resolvedSlug) {
             payload = await buildStructuredBlogPayload(retrySlug);
-            response = await fetch(`${API_BASE}/CreateStructuredBlog`, {
+            response = await fetch(CREATE_BLOG_ENDPOINT, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -1716,6 +1843,64 @@ const AdminBlogs = () => {
                         className="max-h-72 w-full rounded border border-slate-200 bg-slate-50 object-contain"
                       />
                     )}
+                  </div>
+                </div>
+
+                <div className="rounded-lg border border-slate-200 bg-white p-4">
+                  <div className="mb-3 text-sm font-semibold text-slate-700">SEO Settings</div>
+                  <div className="space-y-3">
+                    <input
+                      value={draft.metaTitle || ""}
+                      onChange={(event) =>
+                        setDraft((prev) => ({ ...prev, metaTitle: event.target.value }))
+                      }
+                      placeholder="Meta Title (60 chars recommended)"
+                      className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+                    />
+                    <textarea
+                      value={draft.metaDescription || ""}
+                      onChange={(event) =>
+                        setDraft((prev) => ({ ...prev, metaDescription: event.target.value }))
+                      }
+                      placeholder="Meta Description (150-160 chars)"
+                      rows={3}
+                      className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+                    />
+                    <input
+                      value={draft.keywords || ""}
+                      onChange={(event) =>
+                        setDraft((prev) => ({ ...prev, keywords: event.target.value }))
+                      }
+                      placeholder="Keywords (comma separated)"
+                      className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+                    />
+                    <input
+                      value={draft.canonicalUrl || ""}
+                      onChange={(event) =>
+                        setDraft((prev) => ({ ...prev, canonicalUrl: event.target.value }))
+                      }
+                      placeholder="Canonical URL"
+                      className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+                    />
+                    <input
+                      value={draft.ogImageUrl || ""}
+                      onChange={(event) =>
+                        setDraft((prev) => ({ ...prev, ogImageUrl: event.target.value }))
+                      }
+                      placeholder="OG Image URL"
+                      className="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+                    />
+                    <div className="rounded border border-slate-200 bg-slate-50 p-3">
+                      <div className="text-sm font-semibold text-primary-700">
+                        {(draft.metaTitle || "").trim() || "Meta title preview"}
+                      </div>
+                      <div className="mt-0.5 text-xs text-emerald-700">
+                        {(draft.canonicalUrl || "").trim() || `avaantra.com/blog/${draft.slug || "your-slug"}`}
+                      </div>
+                      <div className="mt-1 text-sm text-slate-600">
+                        {(draft.metaDescription || "").trim() || "Meta description preview..."}
+                      </div>
+                    </div>
                   </div>
                 </div>
 

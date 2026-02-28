@@ -183,10 +183,31 @@ export default function BlogDetailPage() {
     if (!slug) return;
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`https://admin.urest.in:8089/api/blog/${slug}`);
+        const detailRes = await fetch(
+          `https://admin.urest.in:8089/api/blog/GetBlog/${encodeURIComponent(slug)}`
+        );
+        if (detailRes.ok) {
+          const detailData = await detailRes.json();
+          setBlog(normalizeBlog(detailData, 0));
+          return;
+        }
+
+        const res = await fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs");
         if (!res.ok) throw new Error("Blog not found");
-        const data = await res.json();
-        setBlog(normalizeBlog(data, 0));
+        const response = await res.json();
+        const list: unknown[] = Array.isArray(response)
+          ? response
+          : Array.isArray(response?.blogs)
+            ? response.blogs
+            : Array.isArray(response?.data)
+              ? response.data
+              : Array.isArray(response?.content)
+                ? response.content
+                : [];
+        const normalized = list.map((item, index) => normalizeBlog(item, index));
+        const selected = normalized.find((item) => item.slug === slug);
+        if (!selected) throw new Error("Blog not found");
+        setBlog(selected);
       } catch {
         setError("Blog not found");
       } finally {

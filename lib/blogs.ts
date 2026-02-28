@@ -143,7 +143,7 @@ export async function getAllBlogs(): Promise<BlogRecord[]> {
 
 export async function getBlogBySlug(slug: string): Promise<BlogRecord | null> {
   const encoded = encodeURIComponent(slug);
-  const endpoints = [`${BLOG_API_BASE}/${encoded}`];
+  const endpoints = [`${BLOG_API_BASE}/GetBlog/${encoded}`];
 
   for (const endpoint of endpoints) {
     try {
@@ -155,5 +155,6 @@ export async function getBlogBySlug(slug: string): Promise<BlogRecord | null> {
     }
   }
 
-  return null;
+  const blogs = await getAllBlogs();
+  return blogs.find((blog) => blog.slug === slug) || null;
 }
