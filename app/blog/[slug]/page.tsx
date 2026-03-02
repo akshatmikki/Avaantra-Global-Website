@@ -10,6 +10,8 @@ import rehypeRaw from "rehype-raw";
 
 const DEFAULT_BLOG_IMAGE =
   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
+const WORDPRESS_POSTS_ENDPOINT =
+  "https://darkred-wolverine-323829.hostingersite.com/wp-json/wp/v2/posts";
 
 interface Blog {
   id: string;
@@ -28,10 +30,12 @@ const normalizeBlog = (item: unknown, index: number): Blog => {
     Id?: unknown;
     title?: unknown;
     Title?: unknown;
+    date?: unknown;
     slug?: unknown;
     Slug?: unknown;
     content?: unknown;
     Content?: unknown;
+    _embedded?: unknown;
     featuredImage?: unknown;
     FeaturedImage?: unknown;
     authorName?: unknown;
@@ -41,8 +45,27 @@ const normalizeBlog = (item: unknown, index: number): Blog => {
     createdAt?: unknown;
     CreatedAt?: unknown;
   };
+  const wpTitleObject =
+    raw.title && typeof raw.title === "object" ? (raw.title as { rendered?: unknown }) : null;
+  const wpContentObject =
+    raw.content && typeof raw.content === "object"
+      ? (raw.content as { rendered?: unknown })
+      : null;
+  const wpEmbedded =
+    raw._embedded && typeof raw._embedded === "object"
+      ? (raw._embedded as {
+          author?: Array<{ name?: unknown }>;
+          ["wp:featuredmedia"]?: Array<{ source_url?: unknown }>;
+          ["wp:term"]?: Array<Array<{ name?: unknown }>>;
+        })
+      : null;
+  const wpTerms =
+    wpEmbedded?.["wp:term"]?.flatMap((group) =>
+      Array.isArray(group) ? group.map((term) => term?.name) : []
+    ) ?? [];
 
   const title =
+    (wpTitleObject && typeof wpTitleObject.rendered === "string" && wpTitleObject.rendered) ||
     (typeof raw.title === "string" && raw.title) ||
     (typeof raw.Title === "string" && raw.Title) ||
     "Untitled";
@@ -56,28 +79,50 @@ const normalizeBlog = (item: unknown, index: number): Blog => {
     title,
     slug: slugValue,
     content:
+      (wpContentObject && typeof wpContentObject.rendered === "string" && wpContentObject.rendered) ||
       (typeof raw.content === "string" && raw.content) ||
       (typeof raw.Content === "string" && raw.Content) ||
       "",
     featuredImage:
+      (typeof wpEmbedded?.["wp:featuredmedia"]?.[0]?.source_url === "string" &&
+        wpEmbedded["wp:featuredmedia"][0].source_url.trim()) ||
       (typeof raw.featuredImage === "string" && raw.featuredImage) ||
       (typeof raw.FeaturedImage === "string" && raw.FeaturedImage) ||
       DEFAULT_BLOG_IMAGE,
     authorName:
+      (typeof wpEmbedded?.author?.[0]?.name === "string" && wpEmbedded.author[0].name.trim()) ||
       (typeof raw.authorName === "string" && raw.authorName) ||
       (typeof raw.AuthorName === "string" && raw.AuthorName) ||
       "Avaantra Team",
-    tags: Array.isArray(raw.tags)
-      ? raw.tags.map(String)
-      : Array.isArray(raw.Tags)
-        ? raw.Tags.map(String)
-        : [],
+    tags: wpTerms
+      .map((value) => (typeof value === "string" ? value.trim() : ""))
+      .filter(Boolean),
     createdAt:
+      (typeof raw.date === "string" && raw.date) ||
       (typeof raw.createdAt === "string" && raw.createdAt) ||
       (typeof raw.CreatedAt === "string" && raw.CreatedAt) ||
       undefined,
   };
 };
+
+const extractList = (data: unknown): unknown[] => {
+  if (Array.isArray(data)) return data;
+  if (data && typeof data === "object") {
+    const obj = data as {
+      blogs?: unknown;
+      content?: unknown;
+      data?: unknown;
+    };
+    if (Array.isArray(obj.blogs)) return obj.blogs;
+    if (Array.isArray(obj.content)) return obj.content;
+    if (Array.isArray(obj.data)) return obj.data;
+  }
+  return [];
+};
+
+const getAllPostsEndpoint = () => `${WORDPRESS_POSTS_ENDPOINT}?_embed=1&per_page=100`;
+const getPostBySlugEndpoint = (slug: string) =>
+  `${WORDPRESS_POSTS_ENDPOINT}?slug=${encodeURIComponent(slug)}&_embed=1`;
 
 const decodeContent = (content: string) => {
   const normalizeText = (value: string) => value.replace(/\r\n/g, "\n");
@@ -153,18 +198,10 @@ export default function BlogDetailPage() {
 
   useEffect(() => {
     if (!slug) return;
-    fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs")
+    fetch(getAllPostsEndpoint())
       .then((res) => res.json())
       .then((response) => {
-        const list: unknown[] = Array.isArray(response)
-          ? response
-          : Array.isArray(response?.blogs)
-            ? response.blogs
-            : Array.isArray(response?.data)
-              ? response.data
-              : Array.isArray(response?.content)
-                ? response.content
-                : [];
+        const list: unknown[] = extractList(response);
         const normalized = list.map((item, index) => normalizeBlog(item, index));
         const filtered = normalized
           .filter((b) => b.slug !== slug)
@@ -183,27 +220,21 @@ export default function BlogDetailPage() {
     if (!slug) return;
     const fetchBlog = async () => {
       try {
-        const detailRes = await fetch(
-          `https://admin.urest.in:8089/api/blog/GetBlog/${encodeURIComponent(slug)}`
-        );
+        const detailRes = await fetch(getPostBySlugEndpoint(slug));
         if (detailRes.ok) {
           const detailData = await detailRes.json();
-          setBlog(normalizeBlog(detailData, 0));
-          return;
+          const detailList = extractList(detailData);
+          const selected = detailList.length > 0 ? normalizeBlog(detailList[0], 0) : null;
+          if (selected) {
+            setBlog(selected);
+            return;
+          }
         }
 
-        const res = await fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs");
+        const res = await fetch(getAllPostsEndpoint());
         if (!res.ok) throw new Error("Blog not found");
         const response = await res.json();
-        const list: unknown[] = Array.isArray(response)
-          ? response
-          : Array.isArray(response?.blogs)
-            ? response.blogs
-            : Array.isArray(response?.data)
-              ? response.data
-              : Array.isArray(response?.content)
-                ? response.content
-                : [];
+        const list: unknown[] = extractList(response);
         const normalized = list.map((item, index) => normalizeBlog(item, index));
         const selected = normalized.find((item) => item.slug === slug);
         if (!selected) throw new Error("Blog not found");

@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ImagePlus, PenTool, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BLOG_API_BASE, DEFAULT_BLOG_IMAGE } from "@/lib/blogs";
+import { DEFAULT_BLOG_IMAGE } from "@/lib/blogs";
 
 const ADMIN_AUTH_KEY = "avaantra_admin_auth";
 
@@ -21,7 +21,6 @@ export default function CreateBlogPage() {
     { id: crypto.randomUUID(), text: "", image: "" },
   ]);
   const [image, setImage] = useState("");
-  const [imageFile, setImageFile] = useState<File | null>(null);
   const [tags, setTags] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -36,7 +35,6 @@ export default function CreateBlogPage() {
     const file = event.target.files?.[0];
     if (!file) return;
 
-    setImageFile(file);
     const reader = new FileReader();
     reader.onloadend = () => setImage(reader.result as string);
     reader.readAsDataURL(file);
@@ -106,25 +104,20 @@ export default function CreateBlogPage() {
     }
 
     try {
-      const formData = new FormData();
-      formData.append("Title", title.trim());
-      formData.append("Slug", safeSlug);
-      formData.append(
-        "Content",
-        JSON.stringify({
-          body: mergedContent,
-          image: image || DEFAULT_BLOG_IMAGE,
-        })
-      );
-      formData.append("AuthorName", "Avaantra Team");
-      formData.append("Status", "Published");
-      formData.append("FeaturedImage", image || DEFAULT_BLOG_IMAGE);
-      if (imageFile) formData.append("Image", imageFile);
-      tagList.forEach((tag) => formData.append("Tags", tag));
-
-      const res = await fetch(`${BLOG_API_BASE}/CreateStructuredBlog`, {
+      const res = await fetch("/api/wp/posts", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: title.trim(),
+          slug: safeSlug,
+          content: mergedContent,
+          status: "Published",
+          tags: tagList,
+          excerpt: "",
+          featuredImage: image || DEFAULT_BLOG_IMAGE,
+        }),
       });
       if (!res.ok) throw new Error(`Error saving blog (${res.status})`);
 

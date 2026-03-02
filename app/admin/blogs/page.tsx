@@ -24,10 +24,14 @@ import {
 } from "lucide-react";
 
 const API_BASE = "https://admin.urest.in:8089/api/blog";
-const GET_ALL_BLOGS_ENDPOINT = `${API_BASE}/GetAllBlogs`;
-const CREATE_BLOG_ENDPOINT = `${API_BASE}/CreateStructuredBlog`;
+const WORDPRESS_POSTS_ENDPOINT =
+  "https://darkred-wolverine-323829.hostingersite.com/wp-json/wp/v2/posts";
+const GET_ALL_BLOGS_ENDPOINT = `${WORDPRESS_POSTS_ENDPOINT}?_embed=1&per_page=100`;
 const GET_BLOG_BY_SLUG_ENDPOINT = (slug: string) =>
-  `${API_BASE}/GetBlog/${encodeURIComponent(slug)}`;
+  `${WORDPRESS_POSTS_ENDPOINT}?slug=${encodeURIComponent(slug)}&_embed=1`;
+const CREATE_BLOG_ENDPOINT = `${API_BASE}/CreateStructuredBlog`;
+const WORDPRESS_READ_ONLY_NOTICE =
+  "WordPress source is read-only in this panel. Please create/update/delete posts in WordPress admin.";
 const DEFAULT_BLOG_IMAGE =
   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
 const FONT_OPTIONS = ["Arial", "Candara", "Times New Roman", "Georgia", "Verdana"];
@@ -37,6 +41,8 @@ const EMOJIS = ["😀", "😁", "😂", "😊", "😍", "🤔", "🔥", "🚀", 
 type RawBlog = {
   id?: unknown;
   Id?: unknown;
+  date?: unknown;
+  _embedded?: unknown;
   title?: unknown;
   Title?: unknown;
   metaTitle?: unknown;
@@ -325,6 +331,7 @@ const decodeContent = (contentValue: unknown): string => {
   const readObjectText = (value: unknown): string | null => {
     if (!value || typeof value !== "object") return null;
     const contentObj = value as {
+      rendered?: unknown;
       body?: unknown;
       Body?: unknown;
       content?: unknown;
@@ -335,6 +342,7 @@ const decodeContent = (contentValue: unknown): string => {
     };
 
     const candidate =
+      contentObj.rendered ??
       contentObj.body ??
       contentObj.Body ??
       contentObj.content ??
@@ -375,7 +383,28 @@ const decodeContent = (contentValue: unknown): string => {
 
 const normalizeBlog = (item: unknown, index: number): BlogRecord => {
   const raw = (item ?? {}) as RawBlog;
+  const wpTitle =
+    raw.title && typeof raw.title === "object"
+      ? (raw.title as { rendered?: unknown })
+      : null;
+  const wpContent =
+    raw.content && typeof raw.content === "object"
+      ? (raw.content as { rendered?: unknown })
+      : null;
+  const wpEmbedded =
+    raw._embedded && typeof raw._embedded === "object"
+      ? (raw._embedded as {
+          author?: Array<{ name?: unknown }>;
+          ["wp:featuredmedia"]?: Array<{ source_url?: unknown }>;
+          ["wp:term"]?: Array<Array<{ name?: unknown }>>;
+        })
+      : null;
+  const wpTerms =
+    wpEmbedded?.["wp:term"]?.flatMap((group) =>
+      Array.isArray(group) ? group.map((term) => term?.name) : []
+    ) ?? [];
   const title =
+    (wpTitle && typeof wpTitle.rendered === "string" && wpTitle.rendered.trim()) ||
     (typeof raw.title === "string" && raw.title) ||
     (typeof raw.Title === "string" && raw.Title) ||
     "Untitled";
@@ -385,7 +414,11 @@ const normalizeBlog = (item: unknown, index: number): BlogRecord => {
     toSlug(title) ||
     `blog-${index + 1}`;
 
-  const contentRaw = raw.content ?? raw.Content ?? "";
+  const contentRaw =
+    (wpContent && typeof wpContent.rendered === "string" && wpContent.rendered) ||
+    raw.content ??
+    raw.Content ??
+    "";
   const rawSections = raw.sections ?? raw.Sections;
   const sections: ContentSection[] = parseStructuredSectionsFromContent(rawSections);
   const sectionsFromContentRaw = parseStructuredSectionsFromContent(contentRaw);
@@ -445,14 +478,21 @@ const normalizeBlog = (item: unknown, index: number): BlogRecord => {
     content,
     sections: normalizedSections,
     featuredImage:
+      (typeof wpEmbedded?.["wp:featuredmedia"]?.[0]?.source_url === "string" &&
+        wpEmbedded["wp:featuredmedia"][0].source_url.trim()) ||
       (typeof raw.featuredImage === "string" && raw.featuredImage) ||
       (typeof raw.FeaturedImage === "string" && raw.FeaturedImage) ||
       DEFAULT_BLOG_IMAGE,
     authorName:
+      (typeof wpEmbedded?.author?.[0]?.name === "string" && wpEmbedded.author[0].name.trim()) ||
       (typeof raw.authorName === "string" && raw.authorName) ||
       (typeof raw.AuthorName === "string" && raw.AuthorName) ||
       "Avaantra Team",
-    tags: Array.isArray(raw.tags)
+    tags: wpTerms.length
+      ? wpTerms
+          .map((value) => (typeof value === "string" ? value.trim() : ""))
+          .filter(Boolean)
+      : Array.isArray(raw.tags)
       ? raw.tags.map(String)
       : Array.isArray(raw.Tags)
         ? raw.Tags.map(String)
@@ -462,6 +502,7 @@ const normalizeBlog = (item: unknown, index: number): BlogRecord => {
       (typeof raw.Status === "string" && raw.Status) ||
       "Published",
     createdAt:
+      (typeof raw.date === "string" && raw.date) ||
       (typeof raw.createdAt === "string" && raw.createdAt) ||
       (typeof raw.CreatedAt === "string" && raw.CreatedAt) ||
       undefined,
@@ -485,7 +526,23 @@ const toDraft = (blog: BlogRecord): BlogDraft => ({
   originalSlug: blog.slug,
 });
 
+const extractList = (response: unknown): unknown[] => {
+  if (Array.isArray(response)) return response;
+  if (response && typeof response === "object") {
+    const obj = response as {
+      blogs?: unknown;
+      content?: unknown;
+      data?: unknown;
+    };
+    if (Array.isArray(obj.blogs)) return obj.blogs;
+    if (Array.isArray(obj.content)) return obj.content;
+    if (Array.isArray(obj.data)) return obj.data;
+  }
+  return [];
+};
+
 const AdminBlogs = () => {
+  const isReadOnlySource = true;
   const router = useRouter();
   const [blogs, setBlogs] = useState<BlogRecord[]>([]);
   const [loading, setLoading] = useState(true);
@@ -519,7 +576,10 @@ const AdminBlogs = () => {
       const detailRes = await fetch(GET_BLOG_BY_SLUG_ENDPOINT(slug));
       if (detailRes.ok) {
         const detailData = await detailRes.json();
-        const detailed = normalizeBlog(detailData, 0);
+        const detailList = extractList(detailData);
+        const detailed =
+          detailList.length > 0 ? normalizeBlog(detailList[0], 0) : fallback || null;
+        if (!detailed) return null;
         return {
           ...(fallback || detailed),
           ...detailed,
@@ -530,15 +590,7 @@ const AdminBlogs = () => {
       const listRes = await fetch(GET_ALL_BLOGS_ENDPOINT);
       if (!listRes.ok) return fallback || null;
       const response = await listRes.json();
-      const list: unknown[] = Array.isArray(response)
-        ? response
-        : Array.isArray(response?.blogs)
-          ? response.blogs
-          : Array.isArray(response?.content)
-            ? response.content
-            : Array.isArray(response?.data)
-              ? response.data
-              : [];
+      const list: unknown[] = extractList(response);
       const normalized = list.map((item, index) => normalizeBlog(item, index));
       const detailed = normalized.find((item) => item.slug === slug);
       if (!detailed) return fallback || null;
@@ -578,15 +630,7 @@ const AdminBlogs = () => {
       }
 
       const response = await res.json();
-      const list: unknown[] = Array.isArray(response)
-        ? response
-        : Array.isArray(response?.blogs)
-          ? response.blogs
-        : Array.isArray(response?.content)
-          ? response.content
-          : Array.isArray(response?.data)
-            ? response.data
-            : [];
+      const list: unknown[] = extractList(response);
 
       const normalized = list
         .map((item, index) => normalizeBlog(item, index))
@@ -681,6 +725,10 @@ const AdminBlogs = () => {
   };
 
   const handleCreateNew = () => {
+    if (isReadOnlySource) {
+      setError(WORDPRESS_READ_ONLY_NOTICE);
+      return;
+    }
     setMode("create");
     setDraftWithSections(emptyDraft);
     setPreviewImage("");
@@ -1104,6 +1152,9 @@ const AdminBlogs = () => {
       .filter(Boolean);
 
   const uploadSectionImage = async (file: File): Promise<string> => {
+    if (isReadOnlySource) {
+      throw new Error(WORDPRESS_READ_ONLY_NOTICE);
+    }
     const formData = new FormData();
     formData.append("image", file);
 
@@ -1256,6 +1307,10 @@ const AdminBlogs = () => {
   };
 
   const handleSave = async () => {
+    if (isReadOnlySource) {
+      setError(WORDPRESS_READ_ONLY_NOTICE);
+      return;
+    }
     if (!draft.title.trim()) {
       setError("Title is required.");
       return;
@@ -1367,6 +1422,10 @@ const AdminBlogs = () => {
   };
 
   const handleDelete = async () => {
+    if (isReadOnlySource) {
+      setError(WORDPRESS_READ_ONLY_NOTICE);
+      return;
+    }
     if (mode !== "edit") return;
 
     const identifierToDelete = await resolveCanonicalIdentifier();
@@ -1406,6 +1465,11 @@ const AdminBlogs = () => {
   };
 
   const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
+    if (isReadOnlySource) {
+      setError(WORDPRESS_READ_ONLY_NOTICE);
+      event.target.value = "";
+      return;
+    }
     const file = event.target.files?.[0];
     if (!file) return;
 
@@ -1438,23 +1502,33 @@ const AdminBlogs = () => {
           <div className="flex items-center justify-between bg-[#2f3a9f] px-6 py-3 text-white">
             <div className="text-sm font-semibold">Clinexy Blog Admin Editor</div>
             <div className="text-xs text-white/80">
-              {mode === "create" ? "Creating new blog" : `Editing: ${draft.title || "Untitled"}`}
+              {isReadOnlySource
+                ? "WordPress Read-only Source"
+                : mode === "create"
+                  ? "Creating new blog"
+                  : `Editing: ${draft.title || "Untitled"}`}
             </div>
           </div>
+          {isReadOnlySource && (
+            <div className="border-b border-amber-300 bg-amber-50 px-4 py-2 text-xs text-amber-800">
+              {WORDPRESS_READ_ONLY_NOTICE}
+            </div>
+          )}
 
           <div className="border-b border-slate-300 bg-slate-100 px-4 py-3">
             <div className="relative flex flex-wrap items-center gap-2">
               <button
                 onClick={handleCreateNew}
-                className="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+                disabled={isReadOnlySource}
+                className="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <FilePlus2 className="h-4 w-4" />
                 New
               </button>
               <button
                 onClick={handleSave}
-                disabled={saving}
-                className="inline-flex items-center gap-2 rounded-md border border-emerald-300 bg-emerald-50 px-3 py-1.5 text-sm text-emerald-700 hover:bg-emerald-100 disabled:opacity-60"
+                disabled={isReadOnlySource || saving}
+                className="inline-flex items-center gap-2 rounded-md border border-emerald-300 bg-emerald-50 px-3 py-1.5 text-sm text-emerald-700 hover:bg-emerald-100 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {saving ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
@@ -1465,8 +1539,8 @@ const AdminBlogs = () => {
               </button>
               <button
                 onClick={handleDelete}
-                disabled={mode !== "edit" || deleting}
-                className="inline-flex items-center gap-2 rounded-md border border-rose-300 bg-rose-50 px-3 py-1.5 text-sm text-rose-700 hover:bg-rose-100 disabled:opacity-60"
+                disabled={isReadOnlySource || mode !== "edit" || deleting}
+                className="inline-flex items-center gap-2 rounded-md border border-rose-300 bg-rose-50 px-3 py-1.5 text-sm text-rose-700 hover:bg-rose-100 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {deleting ? (
                   <Loader2 className="h-4 w-4 animate-spin" />

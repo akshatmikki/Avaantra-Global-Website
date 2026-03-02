@@ -5,6 +5,8 @@ import Link from "next/link";
 
 const DEFAULT_BLOG_IMAGE =
   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
+const WORDPRESS_POSTS_ENDPOINT =
+  "https://darkred-wolverine-323829.hostingersite.com/wp-json/wp/v2/posts";
 
 type BlogCard = {
   id: string;
@@ -23,6 +25,7 @@ const normalizeBlog = (item: unknown, index: number): BlogCard => {
     Slug?: unknown;
     title?: unknown;
     Title?: unknown;
+    _embedded?: unknown;
     featuredImage?: unknown;
     FeaturedImage?: unknown;
     authorName?: unknown;
@@ -30,8 +33,23 @@ const normalizeBlog = (item: unknown, index: number): BlogCard => {
     tags?: unknown;
     Tags?: unknown;
   };
+  const wpTitleObject =
+    raw.title && typeof raw.title === "object" ? (raw.title as { rendered?: unknown }) : null;
+  const wpEmbedded =
+    raw._embedded && typeof raw._embedded === "object"
+      ? (raw._embedded as {
+          author?: Array<{ name?: unknown }>;
+          ["wp:featuredmedia"]?: Array<{ source_url?: unknown }>;
+          ["wp:term"]?: Array<Array<{ name?: unknown }>>;
+        })
+      : null;
+  const wpTerms =
+    wpEmbedded?.["wp:term"]?.flatMap((group) =>
+      Array.isArray(group) ? group.map((term) => term?.name) : []
+    ) ?? [];
 
   const title =
+    (wpTitleObject && typeof wpTitleObject.rendered === "string" && wpTitleObject.rendered.trim()) ||
     (typeof raw.title === "string" && raw.title.trim()) ||
     (typeof raw.Title === "string" && raw.Title.trim()) ||
     "Untitled";
@@ -45,18 +63,52 @@ const normalizeBlog = (item: unknown, index: number): BlogCard => {
     slug,
     title,
     featuredImage:
+      (typeof wpEmbedded?.["wp:featuredmedia"]?.[0]?.source_url === "string" &&
+        wpEmbedded["wp:featuredmedia"][0].source_url.trim()) ||
       (typeof raw.featuredImage === "string" && raw.featuredImage.trim()) ||
       (typeof raw.FeaturedImage === "string" && raw.FeaturedImage.trim()) ||
       DEFAULT_BLOG_IMAGE,
     authorName:
+      (typeof wpEmbedded?.author?.[0]?.name === "string" && wpEmbedded.author[0].name.trim()) ||
       (typeof raw.authorName === "string" && raw.authorName.trim()) ||
       (typeof raw.AuthorName === "string" && raw.AuthorName.trim()) ||
       "Avaantra Team",
-    tags: Array.isArray(raw.tags)
-      ? raw.tags.map(String).filter(Boolean)
-      : Array.isArray(raw.Tags)
-        ? raw.Tags.map(String).filter(Boolean)
-        : [],
+    tags: wpTerms
+      .map((value) => (typeof value === "string" ? value.trim() : ""))
+      .filter(Boolean),
+  };
+};
+
+const extractList = (data: unknown): unknown[] => {
+  if (Array.isArray(data)) return data;
+  if (data && typeof data === "object") {
+    const obj = data as {
+      blogs?: unknown;
+      content?: unknown;
+      data?: unknown;
+    };
+    if (Array.isArray(obj.blogs)) return obj.blogs;
+    if (Array.isArray(obj.content)) return obj.content;
+    if (Array.isArray(obj.data)) return obj.data;
+  }
+  return [];
+};
+
+const getPostsEndpoint = () => `${WORDPRESS_POSTS_ENDPOINT}?_embed=1&per_page=100`;
+
+const normalizeTags = (item: unknown): string[] => {
+  const raw = (item ?? {}) as { tags?: unknown; Tags?: unknown };
+  if (Array.isArray(raw.tags)) return raw.tags.map(String).filter(Boolean);
+  if (Array.isArray(raw.Tags)) return raw.Tags.map(String).filter(Boolean);
+  return [];
+};
+
+const normalizeBlogWithFallbackTags = (item: unknown, index: number): BlogCard => {
+  const normalized = normalizeBlog(item, index);
+  if (normalized.tags.length > 0) return normalized;
+  return {
+    ...normalized,
+    tags: normalizeTags(item),
   };
 };
 
@@ -65,19 +117,15 @@ export default function BlogPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs")
+    fetch(getPostsEndpoint())
       .then((res) => res.json())
       .then((data) => {
-        const list: unknown[] = Array.isArray(data)
-          ? data
-          : Array.isArray(data?.blogs)
-            ? data.blogs
-            : Array.isArray(data?.content)
-              ? data.content
-              : Array.isArray(data?.data)
-                ? data.data
-                : [];
-        setBlogs(list.map((item: unknown, index: number) => normalizeBlog(item, index)));
+        const list = extractList(data);
+        setBlogs(
+          list.map((item: unknown, index: number) =>
+            normalizeBlogWithFallbackTags(item, index)
+          )
+        );
         setLoading(false);
       })
       .catch(() => setLoading(false));
