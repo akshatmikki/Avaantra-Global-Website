@@ -7,166 +7,22 @@ import { Calendar, MessageSquare, Users } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-
-const DEFAULT_BLOG_IMAGE =
-  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80";
-
-interface Blog {
-  id: string;
-  title: string;
-  slug: string;
-  content: string;
-  featuredImage: string;
-  authorName: string;
-  tags: string[];
-  createdAt?: string;
-}
-
-const normalizeBlog = (item: unknown, index: number): Blog => {
-  const raw = (item ?? {}) as {
-    id?: unknown;
-    Id?: unknown;
-    title?: unknown;
-    Title?: unknown;
-    slug?: unknown;
-    Slug?: unknown;
-    content?: unknown;
-    Content?: unknown;
-    featuredImage?: unknown;
-    FeaturedImage?: unknown;
-    authorName?: unknown;
-    AuthorName?: unknown;
-    tags?: unknown;
-    Tags?: unknown;
-    createdAt?: unknown;
-    CreatedAt?: unknown;
-  };
-
-  const title =
-    (typeof raw.title === "string" && raw.title) ||
-    (typeof raw.Title === "string" && raw.Title) ||
-    "Untitled";
-  const slugValue =
-    (typeof raw.slug === "string" && raw.slug) ||
-    (typeof raw.Slug === "string" && raw.Slug) ||
-    title.toLowerCase().replace(/\s+/g, "-");
-
-  return {
-    id: String(raw.id ?? raw.Id ?? index),
-    title,
-    slug: slugValue,
-    content:
-      (typeof raw.content === "string" && raw.content) ||
-      (typeof raw.Content === "string" && raw.Content) ||
-      "",
-    featuredImage:
-      (typeof raw.featuredImage === "string" && raw.featuredImage) ||
-      (typeof raw.FeaturedImage === "string" && raw.FeaturedImage) ||
-      DEFAULT_BLOG_IMAGE,
-    authorName:
-      (typeof raw.authorName === "string" && raw.authorName) ||
-      (typeof raw.AuthorName === "string" && raw.AuthorName) ||
-      "Avaantra Team",
-    tags: Array.isArray(raw.tags)
-      ? raw.tags.map(String)
-      : Array.isArray(raw.Tags)
-        ? raw.Tags.map(String)
-        : [],
-    createdAt:
-      (typeof raw.createdAt === "string" && raw.createdAt) ||
-      (typeof raw.CreatedAt === "string" && raw.CreatedAt) ||
-      undefined,
-  };
-};
-
-const decodeContent = (content: string) => {
-  const normalizeText = (value: string) => value.replace(/\r\n/g, "\n");
-
-  const extractFromObject = (parsed: unknown): string | null => {
-    if (!parsed || typeof parsed !== "object") return null;
-
-    const objectContent = parsed as {
-      content?: unknown;
-      markdown?: unknown;
-      text?: unknown;
-      body?: unknown;
-      value?: unknown;
-      sections?: unknown;
-    };
-
-    if (Array.isArray(objectContent.sections)) {
-      const sectionMarkdown = objectContent.sections
-        .map((item) => {
-          const section = (item ?? {}) as {
-            imageUrl?: unknown;
-            text?: unknown;
-          };
-          const image = typeof section.imageUrl === "string" ? section.imageUrl.trim() : "";
-          const text = typeof section.text === "string" ? section.text.trim() : "";
-          const parts: string[] = [];
-          if (image) parts.push(`![Section image](${image})`);
-          if (text) parts.push(text);
-          return parts.join("\n\n");
-        })
-        .filter(Boolean)
-        .join("\n\n");
-      if (sectionMarkdown) return sectionMarkdown;
-    }
-
-    const candidate =
-      objectContent.content ??
-      objectContent.markdown ??
-      objectContent.text ??
-      objectContent.body ??
-      objectContent.value;
-
-    return typeof candidate === "string" ? candidate : null;
-  };
-
-  const decodeValue = (value: unknown, depth = 0): string => {
-    if (depth > 3) return typeof value === "string" ? value : "";
-    if (typeof value === "string") {
-      try {
-        const parsed = JSON.parse(value);
-        return decodeValue(parsed, depth + 1);
-      } catch {
-        return value;
-      }
-    }
-    const extracted = extractFromObject(value);
-    if (extracted) return decodeValue(extracted, depth + 1);
-    return "";
-  };
-
-  const decoded = decodeValue(content);
-  return normalizeText(decoded || content);
-};
+import { BlogRecord, DEFAULT_BLOG_IMAGE, decodeContent, getAllBlogs, getBlogBySlug } from "@/lib/blogs";
 
 export default function BlogDetailPage() {
   const params = useParams<{ slug: string }>();
   const slug = params?.slug;
-  const [blog, setBlog] = useState<Blog | null>(null);
+  const [blog, setBlog] = useState<BlogRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [recentBlogs, setRecentBlogs] = useState<Blog[]>([]);
+  const [recentBlogs, setRecentBlogs] = useState<BlogRecord[]>([]);
   const [activeImage, setActiveImage] = useState<{ src: string; alt: string } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs")
-      .then((res) => res.json())
-      .then((response) => {
-        const list: unknown[] = Array.isArray(response)
-          ? response
-          : Array.isArray(response?.blogs)
-            ? response.blogs
-            : Array.isArray(response?.data)
-              ? response.data
-              : Array.isArray(response?.content)
-                ? response.content
-                : [];
-        const normalized = list.map((item, index) => normalizeBlog(item, index));
-        const filtered = normalized
+    getAllBlogs()
+      .then((blogs) => {
+        const filtered = blogs
           .filter((b) => b.slug !== slug)
           .sort((a, b) => {
             const aTime = a.createdAt ? new Date(a.createdAt).getTime() : 0;
@@ -183,29 +39,7 @@ export default function BlogDetailPage() {
     if (!slug) return;
     const fetchBlog = async () => {
       try {
-        const detailRes = await fetch(
-          `https://admin.urest.in:8089/api/blog/GetBlog/${encodeURIComponent(slug)}`
-        );
-        if (detailRes.ok) {
-          const detailData = await detailRes.json();
-          setBlog(normalizeBlog(detailData, 0));
-          return;
-        }
-
-        const res = await fetch("https://admin.urest.in:8089/api/blog/GetAllBlogs");
-        if (!res.ok) throw new Error("Blog not found");
-        const response = await res.json();
-        const list: unknown[] = Array.isArray(response)
-          ? response
-          : Array.isArray(response?.blogs)
-            ? response.blogs
-            : Array.isArray(response?.data)
-              ? response.data
-              : Array.isArray(response?.content)
-                ? response.content
-                : [];
-        const normalized = list.map((item, index) => normalizeBlog(item, index));
-        const selected = normalized.find((item) => item.slug === slug);
+        const selected = await getBlogBySlug(slug);
         if (!selected) throw new Error("Blog not found");
         setBlog(selected);
       } catch {

@@ -1436,7 +1436,7 @@ const AdminBlogs = () => {
       <div className="mx-auto max-w-[1440px] px-4">
         <div className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-2xl">
           <div className="flex items-center justify-between bg-[#2f3a9f] px-6 py-3 text-white">
-            <div className="text-sm font-semibold">Clinexy Blog Admin Editor</div>
+            <div className="text-sm font-semibold">Avaantra Blog Admin Editor</div>
             <div className="text-xs text-white/80">
               {mode === "create" ? "Creating new blog" : `Editing: ${draft.title || "Untitled"}`}
             </div>

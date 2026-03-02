@@ -20,6 +20,15 @@ type UnknownRecord = Record<string, unknown>;
 
 const readString = (value: unknown) => (typeof value === "string" ? value.trim() : "");
 
+const readObject = (value: unknown) =>
+  value && typeof value === "object" ? (value as UnknownRecord) : null;
+
+const readNestedString = (value: unknown, key: string) => {
+  const objectValue = readObject(value);
+  if (!objectValue) return "";
+  return readString(objectValue[key]);
+};
+
 const pickString = (obj: UnknownRecord, keys: string[]) => {
   for (const key of keys) {
     const value = readString(obj[key]);
@@ -41,6 +50,7 @@ export function decodeContent(rawValue: unknown): string {
     if (!rawValue || typeof rawValue !== "object") return "";
     const objectValue = rawValue as UnknownRecord;
     const candidate =
+      objectValue.rendered ??
       objectValue.content ??
       objectValue.Content ??
       objectValue.body ??
@@ -61,18 +71,38 @@ export function decodeContent(rawValue: unknown): string {
 
 export function normalizeBlog(item: unknown, index: number): BlogRecord {
   const raw = (item || {}) as UnknownRecord;
-  const title = pickString(raw, ["title", "Title"]) || "Untitled";
+  const title =
+    pickString(raw, ["title", "Title"]) ||
+    readNestedString(raw.title, "rendered") ||
+    readNestedString(raw.Title, "rendered") ||
+    "Untitled";
   const slug = pickString(raw, ["slug", "Slug"]) || slugFromTitle(title) || `blog-${index + 1}`;
   const content = decodeContent(raw.content ?? raw.Content ?? "");
-  const featuredImage = pickString(raw, ["featuredImage", "FeaturedImage"]) || DEFAULT_BLOG_IMAGE;
-  const authorName = pickString(raw, ["authorName", "AuthorName"]) || "Avaantra Team";
+  const wpFeaturedMedia = Array.isArray((raw._embedded as UnknownRecord | undefined)?.["wp:featuredmedia"])
+    ? (((raw._embedded as UnknownRecord)["wp:featuredmedia"] as unknown[])[0] as UnknownRecord | undefined)
+    : undefined;
+  const wpAuthor = Array.isArray((raw._embedded as UnknownRecord | undefined)?.author)
+    ? (((raw._embedded as UnknownRecord).author as unknown[])[0] as UnknownRecord | undefined)
+    : undefined;
+  const featuredImage =
+    pickString(raw, ["featuredImage", "FeaturedImage"]) ||
+    readString(wpFeaturedMedia?.source_url) ||
+    DEFAULT_BLOG_IMAGE;
+  const authorName = pickString(raw, ["authorName", "AuthorName"]) || readString(wpAuthor?.name) || "Avaantra Team";
   const status = pickString(raw, ["status", "Status"]) || "Published";
-  const createdAt = pickString(raw, ["createdAt", "CreatedAt"]) || undefined;
+  const createdAt = pickString(raw, ["createdAt", "CreatedAt", "date", "date_gmt"]) || undefined;
 
   const tagsCandidate = raw.tags ?? raw.Tags;
+  const embeddedTerms = ((raw._embedded as UnknownRecord | undefined)?.["wp:term"] ?? []) as unknown[];
+  const wpTags =
+    Array.isArray(embeddedTerms) && embeddedTerms.length > 1 && Array.isArray(embeddedTerms[1])
+      ? (embeddedTerms[1] as unknown[])
+          .map((tag) => readString((tag as UnknownRecord)?.name))
+          .filter(Boolean)
+      : [];
   const tags = Array.isArray(tagsCandidate)
     ? tagsCandidate.map((tag) => String(tag).trim()).filter(Boolean)
-    : [];
+    : wpTags;
 
   return {
     id: String(raw.id ?? raw.Id ?? index),
@@ -108,7 +138,10 @@ export function parseContentBlocks(content: string) {
 }
 
 export async function getAllBlogs(): Promise<BlogRecord[]> {
-  const endpoints = [`${BLOG_API_BASE}/GetAllBlogs`, BLOG_API_BASE];
+  const isWp = BLOG_API_BASE.includes("/wp-json/wp/v2/posts");
+  const endpoints = isWp
+    ? [`${BLOG_API_BASE}${BLOG_API_BASE.includes("?") ? "&" : "?"}_embed`]
+    : [`${BLOG_API_BASE}/GetAllBlogs`, BLOG_API_BASE];
 
   for (const endpoint of endpoints) {
     try {
@@ -143,13 +176,24 @@ export async function getAllBlogs(): Promise<BlogRecord[]> {
 
 export async function getBlogBySlug(slug: string): Promise<BlogRecord | null> {
   const encoded = encodeURIComponent(slug);
-  const endpoints = [`${BLOG_API_BASE}/GetBlog/${encoded}`];
+  const isWp = BLOG_API_BASE.includes("/wp-json/wp/v2/posts");
+  const endpoints = isWp
+    ? [`${BLOG_API_BASE}${BLOG_API_BASE.includes("?") ? "&" : "?"}slug=${encoded}&_embed`]
+    : [`${BLOG_API_BASE}/GetBlog/${encoded}`];
 
   for (const endpoint of endpoints) {
     try {
       const res = await fetch(endpoint, { cache: "no-store" });
       if (!res.ok) continue;
-      return normalizeBlog(await res.json(), 0);
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        const match = data.find((item) => {
+          const raw = item as UnknownRecord;
+          return readString(raw.slug) === slug;
+        });
+        return match ? normalizeBlog(match, 0) : null;
+      }
+      return normalizeBlog(data, 0);
     } catch {
       continue;
     }
